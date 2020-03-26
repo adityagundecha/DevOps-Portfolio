@@ -1,0 +1,570 @@
+/* line 4, ../sass/screen.scss */
+.loader {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 99999;
+}
+
+/* line 13, ../sass/screen.scss */
+.over-loader {
+  background: #ed5565;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+/* line 23, ../sass/screen.scss */
+.hide-loader {
+  display: none;
+}
+
+/* line 26, ../sass/screen.scss */
+.switch-loader {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 999999;
+}
+/* line 32, ../sass/screen.scss */
+.switch-loader ul {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  list-style: none;
+}
+/* line 37, ../sass/screen.scss */
+.switch-loader ul li {
+  display: inline-block;
+  margin: 0 4px;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+}
+/* line 43, ../sass/screen.scss */
+.switch-loader ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+/* line 49, ../sass/screen.scss */
+.switch-loader ul li.active > a {
+  color: #000;
+}
+
+/* line 56, ../sass/screen.scss */
+.loader-live {
+  z-index: 9999991;
+  background: #fff;
+}
+
+/* line 62, ../sass/screen.scss */
+.loader-item.style2 {
+  width: 40px;
+  height: 40px;
+  background-color: #fccb06;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+/* line 69, ../sass/screen.scss */
+.loader-item.style1 {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+/* line 73, ../sass/screen.scss */
+.loader-item.style1 .double-bounce1, .loader-item.style1 .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #fccb06;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+/* line 87, ../sass/screen.scss */
+.loader-item.style1 .double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+/* line 93, ../sass/screen.scss */
+.loader-item.style3 > div {
+  display: inline-block;
+  height: 35px;
+  width: 10px;
+  background-color: #fccb06;
+  border-radius: 2px;
+  margin: 2px;
+  animation-fill-mode: both;
+}
+/* line 100, ../sass/screen.scss */
+.loader-item.style3 > div:nth-child(1) {
+  animation: 1s cubic-bezier(0.2, 0.68, 0.18, 1.08) 0.1s normal none infinite running line-scale;
+}
+/* line 103, ../sass/screen.scss */
+.loader-item.style3 > div:nth-child(2) {
+  animation: 1s cubic-bezier(0.2, 0.68, 0.18, 1.08) 0.2s normal none infinite running line-scale;
+}
+/* line 106, ../sass/screen.scss */
+.loader-item.style3 > div:nth-child(3) {
+  animation: 1s cubic-bezier(0.2, 0.68, 0.18, 1.08) 0.3s normal none infinite running line-scale;
+}
+/* line 109, ../sass/screen.scss */
+.loader-item.style3 > div:nth-child(4) {
+  animation: 1s cubic-bezier(0.2, 0.68, 0.18, 1.08) 0.4s normal none infinite running line-scale;
+}
+/* line 112, ../sass/screen.scss */
+.loader-item.style3 > div:nth-child(5) {
+  animation: 1s cubic-bezier(0.2, 0.68, 0.18, 1.08) 0.5s normal none infinite running line-scale;
+}
+/* line 121, ../sass/screen.scss */
+.loader-item.style4 {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+/* line 127, ../sass/screen.scss */
+.loader-item.style4 .cube1, .loader-item.style4 .cube2 {
+  background-color: #fccb06;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
+  animation: sk-cubemove 1.8s infinite ease-in-out;
+}
+/* line 139, ../sass/screen.scss */
+.loader-item.style4 .cube2 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+/* line 144, ../sass/screen.scss */
+.loader-item.style5 {
+  width: 70px;
+  text-align: center;
+}
+/* line 150, ../sass/screen.scss */
+.loader-item.style5 > div {
+  width: 18px;
+  height: 18px;
+  background-color: #fccb06;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+/* line 161, ../sass/screen.scss */
+.loader-item.style5 .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+/* line 166, ../sass/screen.scss */
+.loader-item.style5 .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+/* line 171, ../sass/screen.scss */
+.loader-item.style6 {
+  width: 40px;
+  height: 40px;
+}
+/* line 175, ../sass/screen.scss */
+.loader-item.style6 .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: #fccb06;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+/* line 183, ../sass/screen.scss */
+.loader-item.style6 .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+/* line 187, ../sass/screen.scss */
+.loader-item.style6 .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+/* line 191, ../sass/screen.scss */
+.loader-item.style6 .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+/* line 195, ../sass/screen.scss */
+.loader-item.style6 .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+/* line 199, ../sass/screen.scss */
+.loader-item.style6 .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+/* line 203, ../sass/screen.scss */
+.loader-item.style6 .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+/* line 207, ../sass/screen.scss */
+.loader-item.style6 .sk-cube7 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+/* line 211, ../sass/screen.scss */
+.loader-item.style6 .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+/* line 215, ../sass/screen.scss */
+.loader-item.style6 .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+/* line 220, ../sass/screen.scss */
+.loader-item.style7 {
+  position: relative;
+  width: 60px;
+}
+/* line 223, ../sass/screen.scss */
+.loader-item.style7 > div {
+  background-color: #fccb06;
+  border-radius: 100%;
+  height: 15px;
+  left: 30px;
+  margin: 2px 2px 2px 15px;
+  top: 30px;
+  width: 15px;
+  animation-fill-mode: both;
+  position: absolute;
+}
+/* line 233, ../sass/screen.scss */
+.loader-item.style7 > div:first-child {
+  animation: 1.5s linear 0s normal none infinite running ball-zig-deflect;
+}
+/* line 236, ../sass/screen.scss */
+.loader-item.style7 > div:last-child {
+  animation: 1.5s linear 0s normal none infinite running ball-zag-deflect;
+}
+/* line 244, ../sass/screen.scss */
+.loader-item.style8 > div {
+  width: 50px;
+  height: 50px;
+  animation: 1.5s linear infinite scale;
+}
+/* line 247, ../sass/screen.scss */
+.loader-item.style8 > div:before {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  animation: 0.75s linear 0s normal none infinite running rotate;
+  background: transparent none repeat scroll 0 0 !important;
+  border-color: #fccb06 #fccb06 transparent;
+  border-image: none;
+  border-radius: 100%;
+  border-style: solid;
+  border-width: 2px;
+  display: inline-block;
+  height: 50px;
+  margin: 2px;
+  width: 50px;
+  content: "";
+}
+/* line 268, ../sass/screen.scss */
+.loader-item.style9 {
+  position: relative;
+  transform: translate(-25px, -25px);
+}
+/* line 271, ../sass/screen.scss */
+.loader-item.style9 > div {
+  animation-fill-mode: both;
+  border: 1px solid #fccb06;
+  border-radius: 100%;
+  height: 10px;
+  position: absolute;
+  background: #fccb06;
+  width: 10px;
+}
+/* line 279, ../sass/screen.scss */
+.loader-item.style9 > div:nth-child(1) {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: ball-triangle-path-1;
+  animation-timing-function: ease-in-out;
+}
+/* line 285, ../sass/screen.scss */
+.loader-item.style9 > div:nth-child(2) {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: ball-triangle-path-2;
+  animation-timing-function: ease-in-out;
+}
+/* line 291, ../sass/screen.scss */
+.loader-item.style9 > div:nth-child(3) {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: ball-triangle-path-3;
+  animation-timing-function: ease-in-out;
+}
+/* line 297, ../sass/screen.scss */
+.loader-item.style9 > div:nth-of-type(1) {
+  top: 50px;
+}
+/* line 300, ../sass/screen.scss */
+.loader-item.style9 > div:nth-of-type(2) {
+  left: 25px;
+}
+/* line 303, ../sass/screen.scss */
+.loader-item.style9 > div:nth-of-type(3) {
+  left: 50px;
+  top: 50px;
+}
+/* line 311, ../sass/screen.scss */
+.loader-item.style10 > div {
+  background-color: #fccb06;
+  border-radius: 100%;
+  display: inline-block;
+  margin: 2px;
+  animation-fill-mode: both;
+  height: 15px;
+  width: 15px;
+}
+/* line 316, ../sass/screen.scss */
+.loader-item.style10 > div:nth-child(0) {
+  animation: 0.6s ease-in-out 0s normal none infinite running ball-pulse-sync;
+}
+/* line 319, ../sass/screen.scss */
+.loader-item.style10 > div:nth-child(1) {
+  animation: 0.6s ease-in-out 70ms normal none infinite running ball-pulse-sync;
+}
+/* line 322, ../sass/screen.scss */
+.loader-item.style10 > div:nth-child(2) {
+  animation: 0.6s ease-in-out 0.14s normal none infinite running ball-pulse-sync;
+}
+/* line 325, ../sass/screen.scss */
+.loader-item.style10 > div:nth-child(3) {
+  animation: 0.6s ease-in-out 0.21s normal none infinite running ball-pulse-sync;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% {
+    -webkit-transform: perspective(120px);
+  }
+  50% {
+    -webkit-transform: perspective(120px) rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg);
+  }
+}
+@keyframes sk-rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+@-webkit-keyframes sk-bounce {
+  0%, 100% {
+    -webkit-transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes sk-bounce {
+  0%, 100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes line-scale {
+  0%, 100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.4);
+  }
+}
+@-webkit-keyframes sk-cubemove {
+  25% {
+    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+  }
+  50% {
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+  }
+  75% {
+    -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+@keyframes sk-cubemove {
+  25% {
+    transform: translateX(42px) rotate(-90deg) scale(0.5);
+    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+  }
+  50% {
+    transform: translateX(42px) translateY(42px) rotate(-179deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+  }
+  50.1% {
+    transform: translateX(42px) translateY(42px) rotate(-180deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+  }
+  75% {
+    transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+    -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+  }
+  100% {
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1);
+  }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1);
+  }
+}
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1);
+  }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1);
+  }
+}
+@keyframes ball-zig-deflect {
+  17%, 84% {
+    transform: translate(-15px, -30px);
+  }
+  34%, 67% {
+    transform: translate(15px, -30px);
+  }
+  100%, 50% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes ball-zag-deflect {
+  17%, 84% {
+    transform: translate(15px, 30px);
+  }
+  34%, 67% {
+    transform: translate(-15px, 30px);
+  }
+  100%, 50% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes scale {
+  30% {
+    transform: scale(0.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes ball-triangle-path-1 {
+  33% {
+    transform: translate(25px, -50px);
+  }
+  66% {
+    transform: translate(50px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes ball-triangle-path-2 {
+  33% {
+    transform: translate(25px, 50px);
+  }
+  66% {
+    transform: translate(-25px, 50px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes ball-triangle-path-3 {
+  33% {
+    transform: translate(-50px, 0px);
+  }
+  66% {
+    transform: translate(-25px, -50px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes ball-pulse-sync {
+  33% {
+    transform: translateY(10px);
+  }
+  66% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

@@ -1,0 +1,557 @@
+.smk_accordion {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 20px;
+}
+/**
+ * --------------------------------------------------------------
+ * Section
+ * --------------------------------------------------------------
+ */
+.smk_accordion .accordion_in {
+  border: 1px solid #e4e4e4;
+  position: relative;
+  z-index: 10;
+  margin-top: -1px;
+  overflow: hidden;
+}
+/**
+ * --------------------------------------------------------------
+ * Head
+ * --------------------------------------------------------------
+ */
+.smk_accordion .accordion_in .acc_head {
+  position: relative;
+  background: #FDFDFD;
+  padding: 10px;
+  font-size: 14px;
+  display: block;
+  cursor: pointer;
+}
+.smk_accordion .accordion_in .acc_head .acc_icon_expand {
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -9px;
+  background: url(plusminus.png) center 0;
+}
+/**
+ * --------------------------------------------------------------
+ * Content
+ * --------------------------------------------------------------
+ */
+.smk_accordion .accordion_in .acc_content {
+  background: #F9F9F9;
+  color: #7B7E85;
+  padding: 3px 10px;
+}
+.smk_accordion .accordion_in .acc_content h1:first-of-type,
+.smk_accordion .accordion_in .acc_content h2:first-of-type,
+.smk_accordion .accordion_in .acc_content h3:first-of-type,
+.smk_accordion .accordion_in .acc_content h4:first-of-type,
+.smk_accordion .accordion_in .acc_content h5:first-of-type,
+.smk_accordion .accordion_in .acc_content h6:first-of-type {
+  margin-top: 5px;
+}
+/**
+ * --------------------------------------------------------------
+ * General
+ * --------------------------------------------------------------
+ */
+.smk_accordion .accordion_in:first-of-type,
+.smk_accordion .accordion_in:first-of-type .acc_head {
+  border-radius:0;
+}
+.smk_accordion .accordion_in:last-of-type,
+.smk_accordion .accordion_in:last-of-type .acc_content {
+  border-radius: 0 0 3px 3px;
+}
+.smk_accordion .accordion_in.acc_active > .acc_content {
+  display: block;
+}
+.smk_accordion .accordion_in.acc_active > .acc_head {
+  background: #F9F9F9;
+}
+.smk_accordion .accordion_in.acc_active > .acc_head .acc_icon_expand {
+  background: url(plusminus.png) center -18px;
+}
+.smk_accordion.acc_with_icon .accordion_in .acc_head,
+.smk_accordion.acc_with_icon .accordion_in .acc_content {
+  padding-left:50px;
+}
+
+/* accordion style 1
+ ------------------------------ */
+ 
+ .smk_accordion .accordion_in.style1 {
+  border: 1px solid #fff;
+}
+
+.smk_accordion .accordion_in.style1.acc_active > .acc_head {
+    background: #fff;
+}
+.smk_accordion .accordion_in.style1 .acc_content {
+    background: #fff;
+    color: #727272;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+ .smk_accordion .accordion_in.style1 .acc_head .acc_icon_expand {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -14px;
+  background: url(plusminus3.png) center -31px;
+}
+
+.smk_accordion .accordion_in.style1.acc_active > .acc_head .acc_icon_expand {
+  background: url(plusminus3.png) center 0px;
+}
+
+
+/* accordion style 2
+ ------------------------------ */
+ 
+ .smk_accordion .accordion_in.style2 {
+  border: 1px solid #fff;
+}
+
+.smk_accordion .accordion_in.style2.acc_active > .acc_head {
+    background: #fff;
+	color:#fce206;
+	border:1px solid #101010;
+}
+.smk_accordion .accordion_in.style2.act-light.acc_active > .acc_head {
+    background: #f5f5f5;
+	color:#000;
+	border:1px solid #f5f5f5;
+}
+.smk_accordion .accordion_in.style2.act-light .acc_head {
+    background: #f5f5f5;
+	color:#000;
+	border:1px solid #f5f5f5;
+}
+.smk_accordion .accordion_in.style2 .acc_head {
+    border:1px solid #e4e4e4;
+	margin-bottom: 15px;
+}
+
+ .smk_accordion .accordion_in.style2 .acc_head .acc_icon_expand {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -14px;
+  background: url(plusminus4.png) center -31px;
+}
+
+.smk_accordion .accordion_in.style2.acc_active > .acc_head .acc_icon_expand {
+  background: url(plusminus4.png) center 0px;
+}
+
+.smk_accordion.acc_with_icon .accordion_in.style2 .acc_head, .smk_accordion.acc_with_icon .accordion_in.style2 .acc_content {
+    padding-left: 50px;
+	background-color:#fff;
+}
+
+.smk_accordion.acc_with_icon .accordion_in.style2 .acc_content.no-lpadd {
+    padding-left:20px;
+	margin:20px 0;
+}
+
+
+/* accordion style 3
+ ------------------------------ */
+ 
+ .smk_accordion .accordion_in.style3 {
+  border: 1px solid #fff;
+}
+
+.smk_accordion .accordion_in.style3.acc_active > .acc_head {
+    background: #fff;
+	color:#fce206;
+	border:1px solid #101010;
+	border-radius: 35px;
+}
+.smk_accordion .accordion_in.style3 .acc_head {
+    border:1px solid #e4e4e4;
+	margin-bottom: 15px;
+}
+
+ .smk_accordion .accordion_in.style3 .acc_head .acc_icon_expand {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -14px;
+  background: url(plusminus4.png) center -31px;
+}
+
+.smk_accordion .accordion_in.style3.acc_active > .acc_head .acc_icon_expand {
+  background: url(plusminus4.png) center 0px;
+}
+
+.smk_accordion.acc_with_icon .accordion_in.style3 .acc_head, .smk_accordion.acc_with_icon .accordion_in.style3 .acc_content {
+    padding-left: 50px;
+	background-color:#fff;
+	border-radius: 35px;
+}
+
+.smk_accordion.acc_with_icon .accordion_in.style3 .acc_content.no-lpadd {
+    padding-left:20px;
+	margin:20px 0;
+}
+
+
+/* accordion style 4
+ ------------------------------ */
+ 
+ .smk_accordion .accordion_in.style4 {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.smk_accordion .accordion_in.style4.acc_active > .acc_head {
+    background: #fccb06;
+	color:#fff;
+	border:1px solid #fccb06;
+	border-radius: 35px;
+}
+.smk_accordion .accordion_in.style4 .acc_head {
+    border:1px solid #e4e4e4;
+	margin-bottom: 15px;
+}
+
+ .smk_accordion .accordion_in.style4 .acc_head .acc_icon_expand {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -14px;
+  background: url(plusminus4.png) center -31px;
+}
+
+.smk_accordion .accordion_in.style4.acc_active > .acc_head .acc_icon_expand {
+  background: url(plusminus4.png) center 0px;
+}
+
+.smk_accordion.acc_with_icon .accordion_in.style4 .acc_head, .smk_accordion.acc_with_icon .accordion_in.style4 .acc_content {
+    padding-left: 50px;
+	border-radius: 35px;
+}
+
+.smk_accordion.acc_with_icon .accordion_in.style4 .acc_content.no-lpadd {
+    padding-left:20px;
+	margin:20px 0;
+}
+
+
+
+/* accordion style 5
+ ------------------------------ */
+ 
+ .smk_accordion .accordion_in.style5 {
+  border: 1px solid #fff;
+}
+
+.smk_accordion .accordion_in.style5.acc_active > .acc_head {
+    background: #101010;
+	color:#fce206;
+	border:1px solid #101010;
+}
+.smk_accordion .accordion_in.style5 .acc_head {
+    border:1px solid #e4e4e4;
+	margin-bottom: 15px;
+}
+
+ .smk_accordion .accordion_in.style5 .acc_head .acc_icon_expand {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -14px;
+  background: url(plusminus4.png) center -31px;
+}
+
+.smk_accordion .accordion_in.style5.acc_active > .acc_head .acc_icon_expand {
+  background: url(plusminus4.png) center 0px;
+}
+
+.smk_accordion.acc_with_icon .accordion_in.style5 .acc_head, .smk_accordion.acc_with_icon .accordion_in.style5 .acc_content {
+    padding-left: 50px;
+}
+
+.smk_accordion.acc_with_icon .accordion_in.style5 .acc_content.no-lpadd {
+    padding-left:20px;
+	margin:20px 0;
+}
+
+
+/* accordion style 6
+ ------------------------------ */
+ 
+ .smk_accordion .accordion_in.style6 {
+  border: 1px solid #fff;
+}
+
+
+.smk_accordion .accordion_in.style6.acc_active > .acc_head {
+    background: #fff;
+	color:#fce206;
+	border:1px solid #101010;
+}
+.smk_accordion .accordion_in.style6.act-light.acc_active > .acc_head {
+    background: #fff;
+	color:#ff971c;
+	border-bottom:1px solid #e6e6e6;
+	border-top:1px solid #fff;
+	border-left:1px solid #fff;
+	border-right:1px solid #fff;
+}
+.smk_accordion .accordion_in.style6.act-light .acc_head {
+    background: #f5f5f5;
+	color:#000;
+	border-bottom:1px solid #e6e6e6;
+	border-top:1px solid #e6e6e6;
+	border-left:1px solid #fff;
+	border-right:1px solid #fff;
+}
+.smk_accordion .accordion_in.style6 .acc_head {
+    border:1px solid #e4e4e4;
+	margin-bottom: 15px;
+	font-size:20px;
+	font-weight:500;
+}
+
+ .smk_accordion .accordion_in.style6 .acc_head .acc_icon_expand {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -14px;
+  background: url(plusminus4.png) center -31px;
+}
+
+.smk_accordion .accordion_in.style6.acc_active > .acc_head .acc_icon_expand {
+  background: url(plusminus4.png) center 0px;
+}
+
+.smk_accordion.acc_with_icon .accordion_in.style6 .acc_head, .smk_accordion.acc_with_icon .accordion_in.style6 .acc_content {
+    padding-left: 50px;
+	background-color:#fff;
+}
+
+.smk_accordion.acc_with_icon .accordion_in.style6 .acc_content.no-lpadd {
+    padding-left:20px;
+	margin:20px 0;
+}
+
+
+
+
+
+
+/* accordion style 7
+ ------------------------------ */
+ 
+ .smk_accordion .accordion_in.style7 {
+  border: none;
+}
+
+
+.smk_accordion .accordion_in.style7.acc_active > .acc_head {
+    background: #fff;
+	color:#04ce47;
+	padding:20px;
+	border:1px solid #101010;
+}
+.smk_accordion .accordion_in.style7.act-light.acc_active > .acc_head {
+    background: #000;
+	color:#fff;
+	padding: 20px 20px 20px 50px;
+	border-bottom:1px solid #fff;
+	border-top:1px solid #fff;
+	border-left:1px solid #fff;
+	border-right:1px solid #fff;
+}
+.smk_accordion .accordion_in.style7.act-light .acc_head {
+    background: #f5f5f5;
+	color:#000;
+	border-bottom:1px solid #fff;
+	border-top:1px solid #fff;
+	border-left:1px solid #fff;
+	border-right:1px solid #fff;
+}
+.smk_accordion .accordion_in.style7 .acc_head {
+    border:1px solid #e4e4e4;
+	margin-bottom: 15px;
+	font-size:20px;
+	font-weight:500;
+}
+
+ .smk_accordion .accordion_in.style7 .acc_head .acc_icon_expand {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -14px;
+  background: url(plusminus4.png) center -31px;
+}
+
+.smk_accordion .accordion_in.style7.acc_active > .acc_head .acc_icon_expand {
+  background: url(plusminus4.png) center 0px;
+}
+
+.smk_accordion.acc_with_icon .accordion_in.style7 .acc_head, .smk_accordion.acc_with_icon .accordion_in.style7 .acc_content {
+    padding: 20px 20px 20px 50px;
+	background-color:#fff;
+}
+
+.smk_accordion.acc_with_icon .accordion_in.style7 .acc_content.no-lpadd {
+    padding:40px;
+	margin:20px 0;
+}
+
+
+
+/* accordion style 8
+ ------------------------------ */
+ 
+ .smk_accordion .accordion_in.style8 {
+  border:none;
+}
+ .smk_accordion .accordion_in.no-border.style8 {
+  border: none;
+}
+.smk_accordion .accordion_in.style8.acc_active > .acc_head {
+    background: #1a1e24;
+	color:#fce206;
+}
+.smk_accordion .accordion_in.style8.act-light.acc_active > .acc_head {
+    background: #0d1926;
+	color: #04ce47;
+	font-size:17px;
+	padding: 25px 55px;
+}
+.smk_accordion .accordion_in.style8.act-light .acc_head {
+    background: #0d1926;
+	color:#000;
+}
+.smk_accordion .accordion_in.style8 .acc_head {
+	margin-bottom: 15px;
+}
+
+ .smk_accordion .accordion_in.style8 .acc_head .acc_icon_expand {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -14px;
+  background: url(plusminus5.png) center -31px;
+}
+
+.smk_accordion .accordion_in.style8.acc_active > .acc_head .acc_icon_expand {
+  background: url(plusminus5.png) center 0px;
+}
+
+.smk_accordion.acc_with_icon .accordion_in.style8 .acc_head, .smk_accordion.acc_with_icon .accordion_in.style8 .acc_content {
+	font-size:17px;
+	padding: 25px 55px;
+	color:#fff;
+	opacity:0.7;
+	background: #0d1926;
+}
+
+.smk_accordion.acc_with_icon .accordion_in.style8 .acc_content.no-lpadd {
+   padding: 25px 55px;
+	margin:20px 0;
+	color:#fff;
+	background: #0d1926;
+}
+
+
+
+/* accordion style 9
+ ------------------------------ */
+ 
+ .smk_accordion .accordion_in.style9 {
+  border: none;
+}
+
+
+.smk_accordion .accordion_in.style9.acc_active > .acc_head {
+    background: #fff;
+	color:#04ce47;
+	padding:20px;
+	border:1px solid #101010;
+}
+.smk_accordion .accordion_in.style9.act-light.acc_active > .acc_head {
+    background: #f5f5f5;
+	color:#000;
+	padding: 20px 20px 20px 50px;
+	border-bottom:1px solid #f5f5f5;
+	border-top:1px solid #f5f5f5;
+	border-left:1px solid #f5f5f5;
+	border-right:1px solid #f5f5f5;
+}
+.smk_accordion .accordion_in.style9.act-light .acc_head {
+    background: #f5f5f5;
+	color:#000;
+	border-bottom:1px solid #ebebeb;
+	border-top:1px solid #ebebeb;
+	border-left:1px solid #ebebeb;
+	border-right:1px solid #ebebeb;
+}
+.smk_accordion .accordion_in.style9 .acc_head {
+    border:1px solid #ebebeb;
+	margin-bottom: 15px;
+	font-size:20px;
+	font-weight:500;
+}
+
+ .smk_accordion .accordion_in.style9 .acc_head .acc_icon_expand {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -14px;
+  background: url(plusminus6.png) center -31px;
+}
+
+.smk_accordion .accordion_in.style9.acc_active > .acc_head .acc_icon_expand {
+  background: url(plusminus6.png) center 0px;
+}
+
+.smk_accordion.acc_with_icon .accordion_in.style9 .acc_head, .smk_accordion.acc_with_icon .accordion_in.style9 .acc_content {
+    padding: 20px 20px 20px 50px;
+	background-color:#fff;
+	border:1px solid #ebebeb;
+}
+
+.smk_accordion.acc_with_icon .accordion_in.style9 .acc_content.no-lpadd {
+    padding:40px;
+	margin:0 0;
+}

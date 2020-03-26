@@ -1,0 +1,459 @@
+// Variables
+// =========
+
+// Colors
+@colorPrimary: #fccb06;
+@colorSecondary: #b2c81e;
+@colorTertiary: #38cef9;
+@colorBg: white;
+@bradius: 5px;
+// Metrics
+@boxWidth: 1240px;
+
+// Other
+@layoutType: "wide";
+@borderType: "square";
+
+@outerBgType: "color";
+@outerBgColor: @colorSecondary;
+@outerBgImage: "";
+
+@preloader: "";
+
+// Mixins
+.animation(@animation) {
+  -webkit-animation: @animation;
+          animation: @animation;
+}
+.transform(@transform) {
+  -webkit-transform: @transform;
+      -ms-transform: @transform; // IE9 only
+          transform: @transform;
+}
+
+
+// Styles
+// ======
+
+// Backgrounds
+body {
+	background: @colorBg !important;
+}
+body when (@layoutType = "boxed") and (@outerBgType = "color") {
+	background: @outerBgColor !important;
+}
+body when (@layoutType = "boxed") and (@outerBgType = "pattern") and not (@outerBgImage = "") {
+	background: url(@outerBgImage) @colorBg repeat left top !important;
+}
+html when (@layoutType = "boxed") and (@outerBgType = "image") and not (@outerBgImage = "") {
+	height: 100%;
+	background: url(@outerBgImage) @colorBg repeat center top / cover fixed !important;
+}
+body when (@layoutType = "boxed") and (@outerBgType = "image") {
+	background: none !important;
+}
+
+// Layout
+.wrapper-boxed when (@layoutType = "boxed") {
+	max-width: @boxWidth;
+}
+
+// Colors
+
+.text-color-primary {
+	color: @colorPrimary !important;
+}
+.bg-color-primary {
+	background-color: @colorPrimary;
+}
+.bg-color-secondary {
+	background-color: @colorSecondary;
+}
+.bg-color-tertiary {
+	background-color: @colorTertiary;
+}
+.btn.btn-color-primary {
+	background-color: @colorPrimary;
+}
+
+
+//theme styles
+
+
+// =========== mega menu ====================
+
+.header-section ul li.active > a {
+    color: @colorPrimary;
+}
+.header-section.style4 ul li ul {
+    background: @colorPrimary;
+}
+.header-section ul li:hover > a, .header-section ul li.active > a {
+    color: @colorPrimary;
+}
+.header-section.style4 ul li.search-parent .search-box {
+    background: @colorPrimary;
+}
+
+.header-section.style4 ul li.search-parent .search-box .form-control {
+    background: @colorPrimary;
+}
+
+@media only screen and (max-width: 1000px) {
+
+ .header-section.style4 #menu ul {
+    background: @colorPrimary;
+} 
+  
+}
+
+.header-section ul li .number {
+    background: @colorPrimary;
+}
+.header-section.style4 ul li.cart-parent .cart-box {
+    background: @colorPrimary;
+}
+
+.header-section ul li.mega-menu > ul > li ul li a:hover {
+ color:@colorPrimary;
+}
+.header-section ul li.search-parent a.m-link {
+    color: @colorPrimary;
+}
+.header-section ul li.cart-parent a.m-link {
+    color: @colorPrimary;
+}
+.header-section.dark-dropdowns.style4 ul li:hover > a, .header-section.dark-dropdowns.style4 ul li.active > a {
+    color: @colorPrimary;
+}
+.header-section.dark-dropdowns.style4 ul li.mega-menu > ul > li ul li a:hover {
+    color: @colorPrimary;
+}
+.header-section.dark-dropdowns.style4 #menu ul li ul li:hover a span.sub-arrow, header-section.dark-dropdowns.style4 #menu ul li ul li.active a span.sub-arrow {
+    color: @colorPrimary;
+  }
+.header-section.dark-dropdowns.style2 ul li:hover > a, .header-section.dark-dropdowns.style2 ul li.active > a {
+    color: @colorPrimary;
+}
+.header-section.dark-dropdowns.style2 ul li.mega-menu > ul > li ul li.active a {
+    color: @colorPrimary;
+}
+ .header-section.dark-dropdowns.style2 ul li.mega-menu > ul > li ul li a:hover {
+    color: @colorPrimary;
+} 
+.btn-top-1 {
+    background-color: @colorPrimary;
+}  
+.header-section.dark-dropdowns.style1 ul li:hover > a, .header-section.dark-dropdowns.style1 ul li.active > a {
+    color: @colorPrimary;
+}
+.header-section.dark-dropdowns.style1 ul li.mega-menu > ul > li ul li a:hover {
+    color: @colorPrimary;
+}  
+.header-section.dark-dropdowns.style1 ul li:hover > a, .header-section.dark-dropdowns.style1 ul li.active > a {
+    color: @colorPrimary;
+} 
+.header-section.act-style-1 ul li.active > a {
+    background-color: @colorPrimary !important;
+}  
+ 
+.header-section.style3 #menu ul li.mega-menu li ul li:hover a, .header-section.style3 #menu ul li.mega-menu li ul li.active a {
+    color: @colorPrimary;
+}  
+.header-section.style3 #menu ul li.mega-menu li ul li:hover a, .header-section.style3 #menu ul li.mega-menu li ul li.active a {
+    color: @colorPrimary;
+  }  
+.header-section.style3 #menu ul li ul li:hover > a, .header-section.style3 #menu ul li ul li.active > a {
+    color: @colorPrimary;
+  }
+  .header-section.style3 #menu ul li ul li:hover a span.sub-arrow, header-section.style3 #menu ul li ul li.active a span.sub-arrow {
+    color: @colorPrimary;
+  }  
+.header-section.style5.dark #menu ul li ul li:hover > a, .header-section.style5.dark #menu ul li ul li.active > a {
+    color: @colorPrimary;
+}
+.header-section ul li.cart-parent .cart-box span {
+    color: @colorPrimary;
+} 
+.header-section ul li.cart-parent .cart-box span {
+    color: @colorPrimary;
+}  
+.header-section ul li.cart-parent .cart-box .btn.btn-primary {
+    background: @colorPrimary none repeat scroll 0 0 !important;
+}  
+  
+  
+  
+// =========== corporate ====================
+
+
+
+.section-primary {
+    background-color: @colorPrimary;
+}
+.text-primary {
+    color: @colorPrimary;
+}
+.btn.btn-prim {
+    background-color: @colorPrimary;
+}
+a.read-more {
+    color: @colorPrimary;
+}
+.cbp-l-filters-buttonCenter .cbp-filter-item.cbp-filter-item-active {
+    background-color: @colorPrimary;
+    border: 1px solid @colorPrimary;
+}
+.cbp-l-filters-buttonCenter .cbp-filter-counter {
+    background-color: @colorPrimary;
+}
+
+
+.cbp-l-filters-buttonCenter .cbp-filter-counter::after {
+
+    border-top: 4px solid @colorPrimary;
+}
+.tp-caption.btn-style-2.Agency-PlayBtn i {
+    color: @colorPrimary;
+}
+.footer-social-icons li a:hover, .footer-social-icons li a.active {
+    color: @colorPrimary;
+}
+.scrollup {
+    background: @colorPrimary url(../images/scroll-top-arrow.png) no-repeat 15px 16px;
+}
+.btn.btn-border.prim {
+    color: @colorPrimary;
+    border-color: @colorPrimary;
+}
+.btn.btn-border:hover.prim {
+	background-color:@colorPrimary;
+	border-color:@colorPrimary;
+}
+
+#togglePlay.pause {
+        background: fadeout(@colorPrimary, 6%);
+}
+#togglePlay.play {
+    background: fadeout(@colorPrimary, 6%);
+}
+.slide-controls-2 .owl-theme .owl-controls .owl-page.active span {
+    background-color: @colorPrimary;
+    border: 1px solid @colorPrimary;
+}
+.slide-controls-2 .owl-theme .owl-controls .owl-page span {
+    border: 1px solid @colorPrimary;
+}
+.footer-tags li a:hover, .footer-tags li a.active {
+    border: 1px solid @colorPrimary;
+    color: @colorPrimary;
+}
+.newsletter-submit-btn {
+    border: 1px solid @colorPrimary;
+    background-color: @colorPrimary;
+}
+.iconlist-2 .icon {
+    color: @colorPrimary;
+}
+.fo-newsletter-submit-1.gyellow {
+    background-color: @colorPrimary;
+    border: 1px solid @colorPrimary;
+}
+.slide-controls-3 .owl-theme .owl-controls .owl-page.active span {
+    background-color: @colorPrimary;
+    border: 1px solid @colorPrimary;
+}
+.pagenation-holder .breadcrumb li.current a {
+    color: @colorPrimary;
+}
+.pages-sidebar-links li a:hover, .pages-sidebar-links li a.active {
+    color: @colorPrimary;
+}
+.smart-forms .btn-primary {
+    background-color: @colorPrimary;
+}
+.iconlist li i {
+    color: @colorPrimary;
+}
+.parallax-overlay.primary {
+ background: fadeout(@colorPrimary, 6%);
+}
+ul.sitemap li a {
+    color: @colorPrimary;
+}
+.error-search-box .input_submit {
+    background-color: @colorPrimary;
+    border: 1px solid @colorPrimary;
+}
+.tp-caption.sbut1 a {
+    background-color: @colorPrimary;
+}
+.cbp-l-filters-button .cbp-filter-item.cbp-filter-item-active {
+    background-color: @colorPrimary;
+}
+.cbp-l-filters-button .cbp-filter-counter {
+    background-color: @colorPrimary;
+}
+.cbp-l-filters-button .cbp-filter-counter::after {
+    border-top: 4px solid @colorPrimary;
+}
+.cbp-l-caption-buttonLeft, .cbp-l-caption-buttonRight {
+    background-color: @colorPrimary;
+}
+.cbp-l-filters-alignRight .cbp-filter-item.cbp-filter-item-active {
+    background-color: @colorPrimary;
+    border-color: @colorPrimary;
+}
+.cbp-l-filters-alignRight .cbp-filter-counter {
+    background-color: @colorPrimary;
+}
+.cbp-l-filters-alignRight .cbp-filter-counter::after {
+    border-top: 4px solid @colorPrimary;
+}
+.cbp-l-grid-masonry-projects .cbp-l-caption-buttonLeft, .cbp-l-grid-masonry-projects .cbp-l-caption-buttonRight {
+    background-color: @colorPrimary;
+}
+.cbp-l-grid-mosaic .cbp-caption-activeWrap {
+    background-color: @colorPrimary;
+    background: fadeout(@colorPrimary, 6%);
+}
+.cbp-l-grid-mosaic-projects .cbp-caption-activeWrap {
+    background-color: @colorPrimary;
+    background: fadeout(@colorPrimary, 6%);
+}
+.cb-feature-box-1 .img-box .postdate-box {
+    background-color: @colorPrimary;
+}
+.cb-feature-box-1 .postinfo-box .title a:hover {
+    color: @colorPrimary;
+}
+.blog-pagenation li a:hover, .blog-pagenation li a.active {
+    background-color: @colorPrimary;
+    border: 1px solid @colorPrimary;
+}
+
+.slider-btn-9 .owl-theme .owl-controls .owl-buttons .owl-prev {
+    background-color: @colorPrimary;
+}
+.slider-btn-9 .owl-theme .owl-controls .owl-buttons .owl-next:hover {
+    background-color: @colorPrimary;
+}
+.slider-btn-9 .owl-theme .owl-controls .owl-buttons .owl-next {
+    background-color: @colorPrimary;
+}
+.slider-btn-9 .owl-theme .owl-controls .owl-buttons .owl-prev:hover {
+    background-color: @colorPrimary;
+}
+
+
+
+
+
+
+.ce-title-line.align-left {
+    background-color: @colorPrimary;
+}
+.ce-title-line {
+    background-color: @colorPrimary;
+}
+
+.tabstyle-13 .responsive-tabs li a:hover, .tabstyle-13 .responsive-tabs li.active, .tabstyle-13 .responsive-tabs li.active a {
+    color: @colorPrimary;
+}
+.ce-price-table-1 .inner-box .price-circle .price {
+    color: @colorPrimary;
+}
+.ce-price-table-1 .inner-box .price-circle span {
+    color: @colorPrimary;
+}
+.smk_accordion .accordion_in.style6.act-light.acc_active > .acc_head {
+    color: @colorPrimary;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// =========== shop ====================
+
+.sp-feature-box-3 .img-box .badge {
+    background-color: @colorPrimary;
+}
+.sp-sc-icons li a:hover, .sp-sc-icons li a.active {
+    border: 1px solid @colorPrimary;
+    color: @colorPrimary;
+}
+.sp-sb-links li a:hover, .sp-sb-links li a.active {
+    color: @colorPrimary;
+}
+.sp-feature-box-4 .submit-btn:hover {
+    background-color: @colorPrimary;
+    border: 1px solid @colorPrimary;
+}
+.stars span i {
+    color: @colorPrimary;
+}
+.tp-caption.fe-white-box-5 {
+    border: 3px solid @colorPrimary;
+}
+.tp-caption.fe-white-box-5 .inner-box {
+    background-color: @colorPrimary;
+}
+.sp-feature-box-2 {
+    background-color: @colorPrimary;
+}
+
+
+
+
+
+
+
+
+
+
+
+// Border roundness
+.btn when (@borderType = "rounded") {
+	border-radius: @bradius;
+}
+
+
+
+
+

@@ -1,0 +1,751 @@
+/*
+Template: Blak
+category: Shop
+Author: Codelayers
+Version: 1.0
+Design and Developed by: Codelayers
+*/
+
+
+/*
+======================================
+[ CSS TABLE CONTENT ]
+======================================
+
+    [Table of contents]
+
+	1.feature boxes
+	2.parallax sections
+	3.footer styles
+
+	
+======================================
+[ END CSS TABLE CONTENT ]
+======================================
+*/
+
+
+/*============ Feature boxes ============ */
+
+
+/* feature box 1
+ ------------------------------ */
+.sp-feature-box-1{
+	width:100%;
+	float:left;
+	padding:0;
+}
+
+.sp-top-banner-1{
+	position:relative;
+	width:100%;
+	float:left;
+	padding:0;
+	overflow: hidden;
+	transition: all 0.3s ease-out 0s;
+}
+.sp-top-banner-1 .img-box{
+	position: relative;
+	width:100%;
+	min-height:525px;
+	text-align:center;
+}
+.sp-top-banner-1 .img-box img {
+    width: 600px;
+    height: auto;
+    float: left;
+	transition: all 0.3s ease-out 0s;
+}
+.sp-top-banner-1 .img-box .overlay{
+	position: absolute;
+	width:100%;
+	float:left;
+	height:100%;
+	padding:150px 50px 50px 50px;
+	background-color:rgba(0, 0, 0, 0.2);
+}
+.sp-top-banner-1:hover .img-box img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+/*shop banner 2*/
+
+.sp-top-banner-2{
+	position:relative;
+	width:100%;
+	float:left;
+	padding:0;
+	overflow: hidden;
+	transition: all 0.3s ease-out 0s;
+}
+.sp-top-banner-2 .img-box{
+	position: relative;
+	width:100%;
+	min-height:525px;
+	text-align:center;
+	overflow: hidden;
+}
+.sp-top-banner-2 .img-box img {
+    width: 375px;
+    height: auto;
+    float: left;
+	transition: all 0.3s ease-out 0s;
+}
+.sp-top-banner-2 .img-box .overlay{
+	position: absolute;
+	width:100%;
+	float:left;
+	height:100%;
+	padding:150px 50px 50px 50px;
+	background-color:rgba(0, 0, 0, 0.2);
+}
+
+.sp-top-banner-2:hover .img-box img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+
+
+
+/* feature box 2
+ ------------------------------ */
+.sp-feature-box-2{
+	width:100%;
+	float:left;
+	padding:20px;
+	background-color:#f51e46;
+}
+
+/* feature box 3
+ ------------------------------ */
+.sp-feature-box-3{
+	width:100%;
+	float:left;
+}
+.sp-feature-box-3 .img-box{
+	position:relative;
+	width:100%;
+	float:left;
+	overflow:hidden;
+}
+.sp-feature-box-3 .img-box .badge{
+	position: absolute;
+	width:34px;
+	height:34px;
+	float:left;
+	color:#fff;
+	left:30px;
+	top:30px;
+	font-size:10px;
+	font-weight:normal;
+	line-height:30px;
+	border-radius:100%;
+	text-transform:uppercase;
+	background-color:#f51e46;
+}
+.sp-feature-box-3 .img-box a.view-btn{
+	position:absolute;
+	width:100%;
+	left:0px;
+	bottom:-60px;
+	color:#000;
+	text-align:center;
+	padding:15px 0;
+	background-color:#fff;
+	transition: all 0.3s ease-out 0s;
+}
+.sp-feature-box-3 .img-box a.view-btn:hover{
+	color:#fff;
+	background-color:#000;
+}
+.sp-feature-box-3 .btn.btn-border.light{
+	border:2px solid #f5f5f5;
+}
+.sp-feature-box-3:hover .img-box .view-btn, .sp-feature-box-3.active .img-box .view-btn{
+	bottom:0px;
+}
+.sp-feature-box-3:hover .btn.btn-border.light, .sp-feature-box-3.active .btn.btn-border.light{
+	color:#727272;
+	border:2px solid #101010;
+	background-color:#101010;
+}
+
+/* feature box 4
+ ------------------------------ */
+ 
+.sp-feature-box-4 input{
+	width:80%;
+	height:60px;
+	float:left;
+	padding:15px;
+	color:#000;
+	border:1px solid #ebebeb;
+	background-color:#fff;
+}
+.sp-feature-box-4 .submit-btn{
+	width:20%;
+	height:60px;
+	float:left;
+	padding:0px;
+	color:#727272;
+	text-transform:uppercase;
+	border:1px solid #101010;
+	background-color:#101010;
+	transition: all 0.3s ease-out 0s;
+}
+.sp-feature-box-4 .submit-btn:hover{
+	color:#fff;
+	border:1px solid #f51e46;
+	background-color:#f51e46;
+}
+
+
+/* feature box 5
+ ------------------------------ */
+ .sp-feature-box-5{
+	width:100%;
+	padding:0;
+	float:left;
+}
+ .sp-feature-box-5 .img-box{
+	position:relative;
+	width:100%;
+	padding:0;
+	float:left;
+	overflow:hidden;
+}
+ .sp-feature-box-5 .img-box .overlay{
+	position: absolute;
+	width:100%;
+	height:100%;
+	padding:100px 50px 50px 50px;
+	float:left;
+	text-align:center;
+	overflow:hidden;
+	background-color:rgba(0, 0, 0, 0.3);
+}
+
+ .sp-feature-box-5 .img-box .overlay a.btn{
+	position: absolute;
+	top:350px;
+	left:130px;
+	transition: all 0.3s ease-out 0s;
+}
+ .sp-feature-box-5:hover .img-box .overlay a.btn{
+	top:200px;
+}
+.sp-feature-box-5 .img-box img{
+	transition: all 0.3s ease-out 0s;
+}
+.sp-feature-box-5:hover .img-box img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+ .sp-feature-box-5 .img-box .overlay.trans-1{
+	background-color:rgba(0, 0, 0, 0.1);
+}
+
+
+/* feature box 6
+ ------------------------------ */
+.sp-feature-box-6{
+	width:100%;
+	float:left;
+}
+.sp-feature-box-6 .img-box{
+	width:100%;
+	float:left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========== footer paymen logos ============= */
+
+
+.sp-payment-logo-list li{
+	padding:0 15px 0 0;
+	margin:0px;
+	float:left;
+	}
+	
+/*============ social icons ============ */
+.sp-sc-icons{
+	width:100%;
+	float:right;
+	padding: 0px;
+	margin: 0px;
+}
+.sp-sc-icons li{
+	padding: 0px;
+	margin: 0px;
+	display:inline-block;
+}
+.sp-sc-icons li a{
+	float:left;
+	font-size:14px;
+	width:36px;
+	height:36px;
+	padding:0px;
+	margin: 0px;
+	color:#101010;
+	line-height:40px;
+	text-align:center;
+	background-color:#fff;
+	display:inline-block;
+	border:1px solid #e4e4e4;
+	transition: all 0.3s ease-out 0s;
+}
+.sp-sc-icons li a:hover, .sp-sc-icons li a.active{
+	color:#f51e46;
+	border:1px solid #f51e46;
+}
+	
+/*============ Section Titles ============ */
+/* title line
+ ------------------------------ */
+.sp-title-line-1 {
+	width: 70px;
+	height:2px;
+	margin:15px auto 10px auto;
+	background-color:#101010;
+}
+.sp-title-line-1.align-left {
+	width: 70px;
+	margin:8px auto 20px 0;
+}
+.sp-title-line-1.dark, .sp-title-line-1.dark {
+	border-bottom:1px solid rgba(255, 255, 255, 0.2);
+}
+.sp-title-line-1.white {
+	background-color:#fff;
+}
+
+.sp-title-top-text {
+	color:#c4c4c4;
+}
+
+/*============ Parallax Sections ============ */
+
+.parallax-56 {
+    background: rgba(0, 0, 0, 0) url("../images/parallax/sp-parallax1.jpg") no-repeat fixed 50% 0;
+}
+
+
+/*============ shop sidebar item ============ */
+
+/* sidebar item holder
+ ------------------------------ */
+.sidebar-item-holder{
+    float: left;
+    margin-bottom: 40px;
+    width: 100%;
+}
+.sp-sb-title {
+    margin-bottom: 25px;
+}
+
+/* sidebar search
+ ------------------------------ */
+.sp-news-letter {
+    border: 1px solid #f1f1f1;
+    float: left;
+    height: 45px;
+    padding: 10px;
+    width: 100%;
+}
+.sp-rightcol-links {
+    float: left;
+    padding: 0;
+    width: 100%;
+}
+
+/* sidebar links
+ ------------------------------ */
+ 
+.sp-sb-links {
+    float: left;
+	padding-left:0px;
+    width: 100%;
+}
+.sp-sb-links li {
+    border-bottom: 1px solid #ececec;
+    float: left;
+    width: 100%;
+}
+.sp-sb-links li a {
+    float: left;
+    padding: 10px 0;
+    width: 100%;
+	color:#101010;
+}
+.sp-sb-links li a:hover, .sp-sb-links li a.active {
+    color: #f51e46;
+}
+.sp-sb-links li:last-child {
+    border-bottom: medium none;
+}
+
+/* sidebar tags
+ ------------------------------ */
+ 
+.sp-tags {
+    margin: 0;
+    padding: 0;
+}
+.sp-tags li {
+    margin: 0;
+    padding: 0;
+}
+.sp-tags li a {
+    background-color: #fff;
+    border: 1px solid #e9e9e9;
+    color: #727272;
+    float: left;
+    margin: 0 10px 10px 0;
+    padding: 5px 15px;
+}
+.sp-tags li a:hover, .sp-tags li a.active {
+    background-color: #101010;
+    color: #727272;
+}
+.stars {
+	text-align:right;
+	padding-top:10px;
+}
+.stars.align-left {
+	text-align:left;
+}
+.stars span i {
+    color: #f51e46;
+}
+
+.pro-details {
+	width:100%;
+	float:left;
+}
+.pro-details span {
+	color:#101010;
+	font-size:14px;
+	float:left;
+	padding-right:10px;
+	padding-bottom:10px;
+}
+.blog-post-info span.text-dark {
+    color: #101010;
+	font-size:15px;
+}
+.blog-post-info.fs-more {
+	font-size:15px;
+}
+.blog-post-info.fs-more del {
+	font-size:15px;
+}
+
+/* shopping cart page
+ ------------------------------ */
+.sp-cart tr td.pro-img {
+	width:60%;
+	padding:10px 0;
+	float:left;
+}
+.sp-cart th {
+	color:#101010;
+	padding:10px 0;
+}
+.sp-cart td{
+	padding:0;
+	margin:0px;
+}
+.sp-cart tr:nth-child(2n) {
+	border-top:1px solid #f1f1f1;
+	border-bottom:1px solid #f1f1f1;
+}
+.sp-cart tr td:nth-child(2n) {
+	padding:10px 0;
+}
+
+.sp-cart .form-control {
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    box-shadow:none;
+    color: #555;
+    display: block;
+    font-size: 14px;
+    height: 34px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 70%;
+}
+
+/* cart sub total
+ ------------------------------ */
+ul.sp-cart-total {
+	width:100%;
+	padding-left:0px;
+}
+ul.sp-cart-total li {
+	width:100%;
+	float:left;
+	padding:10px 0;
+	border-bottom:1px solid #f1f1f1;
+}
+ul.sp-cart-total li:last-child {
+	border-bottom:none;
+}
+ul.sp-cart-total li .title {
+	font-size:16px;
+	color:#101010;
+}
+ul.sp-cart-total li .price {
+	font-size:16px;
+	color:#101010;
+}
+
+/* promotional code
+ ------------------------------ */
+.sp-pr-code{
+    background-color: #fff;
+    border: 1px solid #f1f1f1;
+    float: left;
+    height: 60px;
+    padding: 15px;
+    width: 70%;
+}
+.sp-pr-code-btn {
+    background-color: #101010;
+    border: 1px solid #101010;
+    color: #727272;
+    float: left;
+    height: 60px;
+    padding: 0;
+    text-transform: uppercase;
+    transition: all 0.3s ease-out 0s;
+    width: 30%;
+}
+.sp-pr-code-btn:hover {
+    background-color: #f51e46;
+    border: 1px solid #f51e46;
+    color: #fff;
+}
+
+/* input for billing address
+ ------------------------------ */
+.sp-binfo {
+    background-color: #fff;
+    border: 1px solid #ebebeb;
+    float: left;
+    height: 45px;
+	color:#101010;
+    padding: 8px;
+    width: 100%;
+	margin-bottom:15px;
+	transition: all 0.3s ease-out 0s;
+}
+.sp-binfo.cicons {
+	background:url(../images/sp-29.png) right 5px no-repeat;
+}
+.sp-binfo:focus {
+    outline: none !important;
+    border:1px solid #f51e46;
+	transition: all 0.3s ease-out 0s;
+}
+.sp-binfo.less-width {
+    width:90%;
+}
+.sp-binfo-select {
+    background-color: #fff;
+    border: 1px solid #ebebeb;
+    float: left;
+    height: 45px;
+	color:#101010;
+    padding: 5px;
+    width: 90%;
+	margin-bottom:15px;
+	transition: all 0.3s ease-out 0s;
+}
+.sp-binfo-select.full-width {
+    width:100%;
+}
+
+/* checkoutbox
+ ------------------------------ */
+.sp-order-summary{
+	width:100%;
+	float:left;
+	padding:40px;
+	border:1px solid #f1f1f1;
+}
+
+/*----------------------------RESPONSIVE STYLES------------------------------- */
+/* ---------- MAX 1024PX ---------- */
+@media screen and (max-width: 1024px) {
+
+
+
+
+
+
+}
+	
+@media only screen and (max-width: 1000px) {
+	
+
+
+}	
+
+	
+	
+/* ---------- MAX 991PX ---------- */
+@media only screen and (max-width: 991px) {
+.container{
+width:90%;
+	
+}
+.stars {
+    text-align: left;
+}
+
+
+
+
+}
+
+
+
+/* ---------- MAX 800PX ---------- */
+@media only screen and (max-width: 800px) {
+
+
+
+
+}
+
+
+
+/* ---------- MAX 768PX ---------- */
+@media only screen and (max-width: 768px) {
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+/* ---------- MAX 767PX ---------- */
+@media only screen and (max-width: 767px) {
+
+}
+
+
+@media screen and (max-width: 640px) {
+.sp-header-inner {
+    height: 297px;
+}
+.sp-header-inner .text {
+    padding: 120px 0 0;
+}
+.sp-cart tr td.pro-img {
+    padding: 20px 15px;
+    width: 100px;
+}
+
+
+
+
+
+}
+
+
+@media screen and (max-width: 480px) {
+.sp-header-inner {
+    height: 224px;
+}
+.sp-header-inner .text {
+    padding: 87px 0 0;
+}
+.sp-header-inner .text .title {
+    font-size: 24px;
+}
+.sp-header-inner .text .sub-title {
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+}
+
+/* ---------- MAX 360PX ---------- */
+@media screen and (max-width: 360px) {
+.sp-header-inner {
+    height: 169px;
+}
+.sp-header-inner .text {
+    padding: 65px 0 0;
+}
+
+
+
+
+
+}
+
+
+/* ---------- MAX 320PX ---------- */
+@media only screen and (max-width: 320px) {
+
+.sec-title-container .title{
+	font-size:24px;
+	}
+	
+.sp-feature-box-4 input {
+    width: 65%;
+}	
+.sp-feature-box-4 .submit-btn {
+    width: 34%;
+}	
+.sp-header-inner {
+    height: 150px;
+}	
+	
+	
+	
+	
+	
+	
+
+}

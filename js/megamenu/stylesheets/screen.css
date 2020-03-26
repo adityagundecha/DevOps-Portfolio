@@ -1,0 +1,2003 @@
+/* line 1, ../sass/screen.scss */
+*:focus, button:focus, input:focus, *, input, button, *:active, input:active, button:active, .bootstrap-select .btn:focus, option {
+  outline: none !important;
+  outline: 0px !important;
+}
+
+/* line 5, ../sass/screen.scss */
+.banner-section {
+  background: #000;
+  height: 1500px;
+  font-size: 14px;
+}
+/* line 14, ../sass/screen.scss */
+.header-section {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #020203;
+  padding-top: 5px;
+}
+
+/* line 22, ../sass/screen.scss */
+.header-section img {
+  max-width: 100%;
+}
+/* line 25, ../sass/screen.scss */
+.header-section .container {
+  max-width: 1200px;
+  width: auto;
+}
+
+/* =========== menu logo margins ============ */
+
+/* line 29, ../sass/screen.scss */
+.header-section .logo {
+  display: inline-block;
+  margin-top: 18px;
+}
+.header-section .logo.bg-prim {
+	background-color:#fccb06;
+	margin:0px;
+	padding:23px 80px;
+	
+}
+.header-section .logo.bg-dark {
+	background-color:#000;
+	margin:0px;
+	padding:23px 80px;
+	
+}
+
+
+.header-section .logo.top-mar-1 {
+  margin-top: 22px;
+}
+.header-section .logo.style-2 {
+  margin-top: 18px;
+}
+.header-section .logo.mar-1 {
+  margin-top: 10px;
+}
+.header-section .logo.mar-2 {
+  margin-top: 15px;
+}
+.header-section .logo.mar-3 {
+  margin-top: 20px;
+}
+.header-section .logo.mar-4 {
+  margin-top: 23px;
+}
+.header-section .logo.mar-5 {
+  margin-top: 25px;
+}
+.header-section .logo.mar-6 {
+  margin-top: 27px;
+}
+.header-section .logo.mar-7 {
+  margin-top: 30px;
+}
+.header-section .logo.im-mar {
+  margin-top: 18px;
+  margin-bottom:20px;
+}
+.header-section .logo.no-mar {
+  margin-top: 0;
+}
+
+.header-section .logo.bor-right {
+	padding:24px 20px;
+	margin-top: 0;
+	border-right:1px solid rgba(255, 255, 255, 0.2);
+}
+.header-section .logo.bor-left {
+	border-left:1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+/* line 33, ../sass/screen.scss */
+.header-section .row {
+  position: static;
+}
+/* line 35, ../sass/screen.scss */
+.header-section .row > * {
+  position: static;
+}
+/* line 39, ../sass/screen.scss */
+.header-section .mod-menu {
+  position: relative;
+  z-index: 999;
+}
+/* line 43, ../sass/screen.scss */
+.header-section ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0 0 0 10px;
+}
+.header-section ul.no-left-mar {
+  margin: 0 0 0 0;
+}
+/* line 47, ../sass/screen.scss */
+.header-section ul li {
+  text-transform: uppercase;
+  position: relative;
+}
+/* line 49, ../sass/screen.scss */
+.header-section ul li a {
+  color: #fff;
+  background: none !important;
+  padding: 30px 15px;
+  text-decoration: none !important;
+}
+.header-section ul li a.icon-center {
+	text-align:center;
+}
+.header-section ul li a.m-link {
+    color: #8a8a8a;
+}
+
+.header-section.style3 ul li a {
+  color: #fff;
+  background: none !important;
+  padding: 30px 15px;
+  text-decoration: none !important;
+}
+
+.header-section.white ul li a {
+  color: #101010;
+}
+.header-section.dark-dropdowns ul li a {
+  color: #727272;
+}
+.header-section.dark-dropdowns.mlinks-dark ul li a {
+  color: #101010;
+}
+
+/* line 56, ../sass/screen.scss */
+.header-section ul li.active > a {
+  color: #fccb06;
+}
+/* line 60, ../sass/screen.scss */
+.header-section ul li .number {
+  font-size: 0.71429em;
+  background: #fccb06;
+  width: 17px;
+  height: 17px;
+  line-height: 17px;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  right: -4px;
+  top: 19px;
+  border-radius: 100%;
+}
+.header-section ul li .number.mar2 {
+  top: 37px;
+}
+/* line 74, ../sass/screen.scss */
+.header-section ul li ul {
+  position: absolute;
+  top: 100%;
+  left: -20%;
+  margin-left: -115px;
+  background: #fff;
+  width: 230px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+/* line 85, ../sass/screen.scss */
+.header-section ul li ul li {
+  border-bottom: 1px solid #e6e6e6;
+  overflow: hidden;
+}
+.header-section.style3 ul li ul li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+.header-section.style1 ul li ul li {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+
+/* line 87, ../sass/screen.scss */
+.header-section ul li ul li a {
+  color: #242424;
+  padding: 12px 23px;
+  display: block;
+  text-transform: none;
+}
+.header-section.style1 ul li ul li a {
+  padding: 12px 23px;
+}
+.header-section.style1 ul li.align-left ul li a {
+	text-align:left;
+
+}
+.header-section.style4 ul li.align-left ul li a {
+	text-align:left;
+
+}
+.header-section.style4 ul li ul li a {
+  padding: 12px 23px;
+}
+.header-section ul li ul li a:hover {
+	margin-left:8px;
+}
+/* line 95, ../sass/screen.scss */
+.header-section ul li ul li ul {
+  left: 100%;
+  right: auto;
+  top: 0px;
+  margin-left: 0px;
+  width: 0px;
+  overflow: hidden;
+  display: block;
+}
+.header-section ul li ul.dm-align-2 {
+    left: 120px;
+}
+/* line 103, ../sass/screen.scss */
+.header-section ul li ul li ul li {
+  width: 230px;
+}
+/* line 120, ../sass/screen.scss */
+.header-section ul li.right ul li ul {
+  left: auto;
+  right: 100%;
+}
+/* line 134, ../sass/screen.scss */
+.header-section ul li.mega-menu {
+  position: static;
+}
+/* line 136, ../sass/screen.scss */
+.header-section ul li.mega-menu > ul {
+  width: 100%;
+  left: 0px;
+  float: none;
+  margin-left: 0px;
+  max-height: 0px;
+  display: block;
+  overflow: hidden;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  -webkit-transition-delay: .2s;
+  transition-delay: .2s;
+}
+/* line 149, ../sass/screen.scss */
+.header-section ul li.mega-menu > ul > li {
+  padding: 30px 0;
+  float: left;
+  border: none;
+  width: 25%;
+}
+.header-section ul li.mega-menu.align-left > ul > li {
+	text-align:left;
+}
+.header-section ul li.mega-menu.five-col > ul > li {
+  padding: 30px 0;
+  float: left;
+  border: none;
+  width: 20%;
+}
+.header-section ul li.mega-menu.six-col > ul > li {
+  padding: 30px 0;
+  float: left;
+  border: none;
+  width: 16%;
+}
+
+/* line 154, ../sass/screen.scss */
+.header-section ul li.mega-menu > ul > li > a {
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+/* line 160, ../sass/screen.scss */
+.header-section ul li.mega-menu > ul > li ul {
+  width: 100%;
+  position: relative;
+  right: auto;
+  top: auto;
+  left: auto;
+}
+/* line 166, ../sass/screen.scss */
+.header-section ul li.mega-menu > ul > li ul li {
+  border: none;
+}
+/* line 168, ../sass/screen.scss */
+.header-section ul li.mega-menu > ul > li ul li a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.header-section ul li.mega-menu > ul > li ul li a:hover {
+ color:#fccb06;
+ margin-left:8px;
+ transition: all 0.2s ease-out 0s;
+}
+
+.header-section.primary-dropdowns ul li.mega-menu > ul > li ul li a:hover {
+ color:#101010;
+ margin-left:8px;
+ transition: all 0.2s ease-out 0s;
+}
+/* line 183, ../sass/screen.scss */
+.header-section ul li.search-parent {
+  position: static;
+}
+/* line 192, ../sass/screen.scss */
+.header-section ul li.search-parent .search-box {
+  background: #fff;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  -webkit-transition-delay: .3s;
+  transition-delay: .3s;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  width: 100%;
+  max-height: 0px;
+  overflow: hidden;
+}
+
+/* line 201, ../sass/screen.scss */
+.header-section ul li.search-parent .search-box .content {
+  padding: 30px 95px 30px 30px;
+}
+/* line 207, ../sass/screen.scss */
+.header-section ul li.search-parent .search-box .form-control {
+  height: auto;
+  border: 1px solid #e6e6e6;
+  border-radius: 0px;
+  box-shadow: none;
+  padding-right: 45px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+/* line 215, ../sass/screen.scss */
+.header-section ul li.search-parent .search-box .form-control input {
+  background: none;
+  border: none;
+  width: 100%;
+  font-size: 1.42857em;
+  color: #727272;
+}
+/* line 222, ../sass/screen.scss */
+.header-section ul li.search-parent .search-box .form-control .search-btn {
+  font-size: 1.42857em;
+  position: absolute;
+  right: 96px;
+  top: 11px;
+  color: #070607;
+}
+.header-section.dark-dropdowns ul li.search-parent .search-box .form-control .search-btn {
+  color: #fff;
+}
+
+.header-section ul li.search-parent .search-box .form-control .search-btn.mar-1 {
+  top: -11px;
+}
+
+.header-section ul li.search-parent .search-box .form-control .search-btn.mar-2 {
+  top: 6px;
+}
+
+/* line 230, ../sass/screen.scss */
+.header-section ul li.search-parent .search-box .close-btn {
+  position: absolute;
+  top: 6px;
+  right: 20px;
+  color: #070607;
+  font-size: 1.85714em;
+  opacity: .5;
+}
+.header-section ul li.search-parent .search-box .close-btn.mar-1 {
+  top: -8px;
+}
+
+/* line 248, ../sass/screen.scss */
+.header-section ul li.cart-parent .cart-box {
+  background: #fff;
+  width: 370px;
+  position: absolute;
+  top: 100%;
+  right: -47%;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  -webkit-transition-delay: .2s;
+  transition-delay: .2s;
+  max-height: 0px;
+  overflow: hidden;
+}
+
+/* line 258, ../sass/screen.scss */
+.header-section ul li.cart-parent .cart-box .content {
+  padding: 30px;
+}
+/* line 263, ../sass/screen.scss */
+.header-section ul li.cart-parent .cart-box span {
+  color: #fccb06;
+}
+/* line 266, ../sass/screen.scss */
+.header-section ul li.cart-parent .cart-box ul {
+  display: block;
+  position: relative;
+  left: 0px;
+  margin: 0px;
+  width: 100%;
+  border-top: 1px solid #ededed;
+  margin-top: 25px;
+  max-height: none !important;
+  opacity: 1 !important;
+}
+
+
+/* line 277, ../sass/screen.scss */
+.header-section ul li.cart-parent .cart-box ul li {
+  position: relative;
+  padding: 30px 30px 30px 100px;
+  min-height: 141px;
+  font-size: 1.21429em;
+}
+/* line 282, ../sass/screen.scss */
+.header-section ul li.cart-parent .cart-box ul li .close-btn {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  padding: 0px;
+  right: 10px;
+  font-size: 1.05882em;
+  color: #070707;
+  opacity: .4;
+  font-weight: 300;
+}
+
+/* line 293, ../sass/screen.scss */
+.header-section ul li.cart-parent .cart-box ul li span {
+  display: block;
+  font-size: 1.05882em;
+  padding-top: 10px;
+}
+/* line 298, ../sass/screen.scss */
+.header-section ul li.cart-parent .cart-box ul li img {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+}
+/* line 305, ../sass/screen.scss */
+.header-section ul li.cart-parent .cart-box .row {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+/* line 308, ../sass/screen.scss */
+.header-section ul li.cart-parent .cart-box .row > * {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/* line 313, ../sass/screen.scss */
+.header-section ul li.cart-parent .cart-box .btn {
+  margin-top: 30px;
+  border-radius: 0px;
+  background: #070607 !important;
+  padding: 15px;
+  color: #a1a1a1;
+  font-size: 14px;
+  border: none;
+}
+/* line 324, ../sass/screen.scss */
+.header-section ul li.cart-parent .cart-box .btn.btn-primary {
+  background: #fccb06 !important;
+  color: #fff;
+}
+/* line 335, ../sass/screen.scss */
+.header-section #menu {
+  float: right;
+}
+/* line 339, ../sass/screen.scss */
+.header-section .main-nav .nav {
+  float: none;
+}
+.header-section .main-nav.border {
+	border-bottom:1px solid #f1f1f1;
+	border-top:1px solid #f1f1f1;
+}
+
+/* line 341, ../sass/screen.scss */
+.header-section .main-nav .nav.top-nav {
+  float: right;
+}
+/* line 343, ../sass/screen.scss */
+.header-section .main-nav .nav.top-nav > li {
+  float: left;
+}
+
+/* =========== menu style 1 ============ */
+
+.header-section.style1 {
+	position:relative;
+	background-color:transparent;
+	border-bottom:1px solid rgba(255, 255, 255, 0.2);
+}
+.header-section.style1.noborder {
+	border-bottom:none;
+}
+.header-section.style1.bor-top {
+	position:relative;
+	border-top:1px solid rgba(255, 255, 255, 0.2);
+	padding:0;
+}
+.header-section.style1 .container.cs-boder {
+	border-top:1px solid #1f1f1f;
+	border-bottom:1px solid #1f1f1f;
+}
+.header-section.style1 ul li a {
+  padding: 35px 15px;
+}
+.header-section.style1 ul li a.dark {
+	color:#101010;
+}
+.header-section.style1 ul li a.padd-more {
+  padding: 25px 20px;
+  border-right:1px solid #f0f0f0;
+}
+.header-section.style1 ul li.search-parent .search-box .close-btn.mar-1 {
+  top:8px;
+}
+.header-section.style1 ul li.search-parent .search-box .form-control .search-btn.mar-1 {
+  top: 5px;
+}
+
+.btn-top-1 {
+	position: relative;
+	color:#fff;
+	float:right;
+	right: -343px;
+	top: -25px;
+	margin-top: 17px;
+  padding: 10px 35px;
+  border-radius:30px;
+  z-index:5;
+  background-color:#fccb06;
+  transition: all 0.3s ease-out 0s;
+}
+.btn-top-1:hover {
+	color:#fff;
+  background-color:#101010;
+}
+.btn-top-2 {
+	position: relative;
+	color:#fff;
+	float:right;
+	right:0px;
+	top: -25px;
+	margin-top: 17px;
+  padding: 10px 35px;
+  border-radius:30px;
+  z-index:5;
+  background-color:#fccb06;
+  transition: all 0.3s ease-out 0s;
+}
+.btn-top-2:hover {
+	color:#fff;
+  background-color:#101010;
+}
+/* =========== menu style 1 ============ */
+
+.header-section.dark-dropdowns.style1 ul li ul li a {
+    color: #727272;
+}
+.header-section.dark-dropdowns.style1 ul li.mega-menu > ul > li ul li a:hover {
+    color: #fccb06;
+}
+
+.header-section.style2{
+	height:92px;
+}
+
+.header-section.style2 ul li a {
+  padding: 30px 15px;
+}
+.header-section.style2 ul li ul li a {
+    padding: 12px 23px;
+}
+.header-section.style2 ul li ul li {
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.header-section.style2.white-bg{
+	background-color:#fff;
+}
+.header-section.style2.boder-b{
+	 border-bottom: 1px solid #f1f1f1;
+}
+.header-section.style2 ul li a {
+    color: #101010;
+}
+.header-section.dark-dropdowns.style2 ul li.mega-menu > ul > li ul li a {
+    color: #727272;
+}
+.header-section.dark-dropdowns.style2 ul li ul li a {
+    color: #fff;
+}
+.header-section.dark-dropdowns.style2 ul li.mega-menu > ul > li ul li a:hover {
+    color: #fccb06;
+}
+.header-section.dark-dropdowns.style2 ul li.mega-menu > ul > li ul li.active a {
+    color: #fccb06;
+}
+.header-section.dark-dropdowns.style2 ul li:hover > a, .header-section.dark-dropdowns.style2 ul li.active > a {
+    color: #fccb06;
+}
+.header-section.dark-dropdowns.style2 ul li ul li a {
+    color: #727272;
+}
+.header-section.dark-dropdowns.style2 ul li:hover > a {
+    color: #fccb06;
+}
+.header-section.dark-dropdowns.style2 ul li.active > a .active-strip {
+    background-color:#fccb06;
+}
+.active-strip {
+	width:100%;
+	height:3px;
+	float:left;
+	margin-top:8px;
+	background-color: transparent;
+}
+/* =========== menu style 3 ============ */
+/* line 19, ../sass/screen.scss */
+.header-section.style3 {
+  background: #fff;
+}
+
+/* =========== menu style 4 ============ */
+.header-section.style4 ul li a {
+  color: #fff;
+  background: none !important;
+  padding: 35px 15px;
+  text-decoration: none !important;
+}
+.header-section.style4.less-padd ul li a {
+  padding: 30px 15px;
+}
+.header-section.white {
+  background-color: #fff;
+}
+.header-section.light {
+  background-color: #f5f5f5;
+}
+
+/* =========== dark color dropdowns with style4 ============ */
+/*.header-section.dark-dropdowns.style4 ul li a {
+  color: #727272;
+}*/
+
+.header-section.dark-dropdowns.style4 ul li ul li a {
+    color: #727272;
+}
+.header-section.dark-dropdowns.style4 ul li ul {
+	background-color:#101010;
+}
+.header-section.dark-dropdowns.style4 ul li.mega-menu > ul > li ul li a:hover {
+ color:#fccb06;
+}
+.header-section.style4 ul li.mega-menu > ul > li ul li a:hover {
+ color:#101010;
+ margin-left:8px;
+ transition: all 0.2s ease-out 0s;
+}
+.header-section.dark-dropdowns.style4 ul li.search-parent .search-box .form-control .search-btn {
+  color: #fff;
+}
+.header-section.dark-dropdowns.style4 ul li.search-parent .search-box .close-btn {
+  color: #727272;
+}
+.header-section.dark-dropdowns.style4 ul li.search-parent .search-box .form-control {
+	background-color:#101010;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.header-section.dark-dropdowns.style4 ul li.cart-parent .cart-box ul {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.header-section.dark-dropdowns.style4 ul li.cart-parent .cart-box ul li .close-btn {
+  color: #727272;
+}
+/* =========== dark color dropdowns ============ */
+.header-section.dark-dropdowns ul li.search-parent .search-box {
+  background: #101010;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  -webkit-transition-delay: .3s;
+  transition-delay: .3s;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  width: 100%;
+  max-height: 0px;
+  overflow: hidden;
+}
+.header-section.dark-dropdowns ul li.search-parent .search-box {
+  background: #101010;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  -webkit-transition-delay: .3s;
+  transition-delay: .3s;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  width: 100%;
+  max-height: 0px;
+  overflow: hidden;
+}
+.header-section.dark-dropdowns ul li.search-parent .search-box .close-btn {
+  color: #727272;
+}
+.header-section.dark-dropdowns ul li.cart-parent .cart-box {
+  background: #101010;
+}
+.header-section.dark-dropdowns.style4 ul li.cart-parent .cart-box {
+  background: #101010;
+}
+.header-section.dark-dropdowns ul li.cart-parent .cart-box ul li .close-btn {
+  color: #727272;
+}
+.header-section.dark-dropdowns ul li.search-parent .search-box .form-control {
+	background-color:#101010;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.header-section.dark-dropdowns ul li.cart-parent .cart-box ul {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.header-section.dark-dropdowns ul li ul {
+	background-color:#101010;
+}
+
+@media only screen and (min-width: 1001px) {
+  /* line 352, ../sass/screen.scss */
+  .header-section {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 999;
+	padding-top:0px;
+	padding-bottom:0px;
+  }
+
+  /* line 359, ../sass/screen.scss */
+  .header-section.absotule {
+    position: absolute;
+  }
+  
+  /* =================== pin style ==================== */ 
+  
+  /* line 364, ../sass/screen.scss */
+  .header-section.pin-style.pin-start {
+    position: fixed;
+  }
+  /* line 371, ../sass/screen.scss */
+  .header-section.pin-style.pin {
+    background: rgba(2, 2, 3, 0.8);
+    -webkit-transition: all .6s;
+    transition: all .6s;
+  }
+  .header-section.white.pin-style.pin {
+    background:#fff;
+  }
+  /* line 390, ../sass/screen.scss */
+  .header-section.pin-style.before {
+    -webkit-transition: all .6s;
+    transition: all .6s;
+  }
+  /* line 394, ../sass/screen.scss */
+  .header-section.pin-style .mod-menu {
+    border: none !important;
+  }
+  /* line 598, ../sass/screen.scss */
+  .header-section ul li:hover > a, .header-section ul li.active > a {
+    color: #fccb06;
+  }
+.header-section ul li ul li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.header-section.white ul li ul li {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+  /* line 603, ../sass/screen.scss */
+  .header-section ul li ul {
+    opacity: 0;
+    max-height: 0px;
+    overflow: hidden;
+  }
+  /* line 609, ../sass/screen.scss */
+  .header-section ul li ul li ul {
+    max-height: none;
+    opacity: 1;
+  }
+  /* line 614, ../sass/screen.scss */
+  .header-section ul li ul li:hover > ul {
+    width: 230px;
+  }
+  /* line 623, ../sass/screen.scss */
+  .header-section ul li:hover > ul {
+    opacity: 1;
+    max-height: 2000px;
+    overflow: visible;
+  }
+  /* line 627, ../sass/screen.scss */
+  .header-section ul li:hover > ul li {
+    overflow: visible;
+  }
+  /* line 629, ../sass/screen.scss */
+  .header-section ul li:hover > ul li ul {
+    overflow: hidden;
+    opacity: 1;
+  }
+  /* line 637, ../sass/screen.scss */
+  .header-section ul li.mega-menu > ul {
+    opacity: 0;
+  }
+  /* line 642, ../sass/screen.scss */
+  .header-section ul li.mega-menu:hover > ul {
+    opacity: 1;
+    max-height: 2000px;
+  }
+  /* line 648, ../sass/screen.scss */
+  .header-section ul li.search-parent {
+    position: static;
+  }
+  .header-section ul li.search-parent a.m-link {
+    color: #fccb06;
+}
+
+  .header-section ul li.cart-parent a.m-link {
+    color: #fccb06;
+}
+
+
+  /* line 650, ../sass/screen.scss */
+  .header-section ul li.search-parent .search-box {
+    opacity: 0;
+  }
+  /* line 654, ../sass/screen.scss */
+  .header-section ul li.search-parent.active .search-box {
+    opacity: 1;
+    max-height: 2000px;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+  /* line 663, ../sass/screen.scss */
+  .header-section ul li.cart-parent .cart-box {
+    opacity: 0;
+  }
+  /* line 667, ../sass/screen.scss */
+  .header-section ul li.cart-parent.active .cart-box {
+    opacity: 1;
+    max-height: 2000px;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+  /* line 679, ../sass/screen.scss */
+  .header-section ul li.cart-parent .cart-box .btn:hover {
+    opacity: .8;
+  }
+  
+  
+ 
+
+/* =========== menu style 1 ============ */
+
+.header-section.pin-style.pin.style1 {
+	-webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0,0, 0.2);
+       -moz-box-shadow: 0px 0px 8px 1px rgba(0, 0,0, 0.2);
+            box-shadow: 0px 0px 8px 1px rgba(0, 0,0, 0.2);
+			
+  }
+.header-section.pin-style.pin.style1.no-shadow {
+	-webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+			
+  }  
+  
+ .header-section.style1.links-dark ul li a {
+    color: #101010;
+  }
+  .header-section.dark-dropdowns.style1 ul li:hover > a, .header-section.dark-dropdowns.style1 ul li.active > a {
+    color: #fccb06;
+  }
+/* =========== menu style 2 ============ */
+
+/* line 401, ../sass/screen.scss */
+  .header-section.style2 .col-sm-2 {
+    float: right;
+    text-align: right;
+  }
+  
+ /* line 405, ../sass/screen.scss */
+  .header-section.style2 .col-sm-10 {
+    float: left;
+    text-align: left;
+    width: auto;
+  }
+  
+   /* line 410, ../sass/screen.scss */
+  .header-section.style2 .logo {
+    display: block;
+  }
+  
+   .header-section.style2 ul li ul li a span.sub-arrow {
+    float:right;
+	font-size:14px;
+	color:#fff;
+  }
+  .header-section.style2 ul li ul li a span.sub-arrow.dark {
+	color:#101010;
+  }
+.header-section.style2.pin-style.pin {
+    background:#fff;
+	-webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0,0, 0.2);
+       -moz-box-shadow: 0px 0px 8px 1px rgba(0, 0,0, 0.2);
+            box-shadow: 0px 0px 8px 1px rgba(0, 0,0, 0.2);
+  }
+ .header-section.dark-dropdowns.style2 ul li ul li a span.sub-arrow.dark {
+    color: #727272;
+} 
+  
+  
+  
+/* =========== menu style 3 ============ */ 
+  
+    /* line 415, ../sass/screen.scss */
+  .header-section.style3 {
+    padding-top:0px;
+    background: #fff;
+    border: none;
+  }
+   .header-section.style3 .container {
+	  border-top:1px solid #f1f1f1;
+	  border-bottom:none;
+	  margin-bottom:35px;
+  }
+   /* line 419, ../sass/screen.scss */
+  .header-section.style3.pin {
+    background: #fff;
+	-webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0,0, 0.2);
+       -moz-box-shadow: 0px 0px 8px 1px rgba(0, 0,0, 0.2);
+            box-shadow: 0px 0px 8px 1px rgba(0, 0,0, 0.2);
+  }
+  
+   /* line 422, ../sass/screen.scss */
+  .header-section.style3 .logo {
+    position: absolute;
+    left: 47%;
+    margin-left: -65px;
+    top: -50px;
+    margin-top: 0px;
+}
+  /* line 429, ../sass/screen.scss */
+  .header-section.style3 ul li.search-parent .search-box {
+    background: #101010;
+  }
+  /* line 431, ../sass/screen.scss */
+  .header-section.style3 ul li.search-parent .search-box .form-control {
+    background: #282828;
+    border: none;
+  }
+  /* line 434, ../sass/screen.scss */
+  .header-section.style3 ul li.search-parent .search-box .form-control .search-btn {
+    color: #fff;
+  }
+  /* line 438, ../sass/screen.scss */
+  .header-section.style3 ul li.search-parent .search-box .close-btn {
+    color: #fff;
+  }
+  /* line 442, ../sass/screen.scss */
+  .header-section.style3 ul li.cart-parent .cart-box {
+    background: #070607;
+    color: #fff;
+  }
+  /* line 444, ../sass/screen.scss */
+  .header-section.style3 ul li.cart-parent .cart-box ul {
+    border-top: 1px solid #070607;
+    background: none;
+  }
+  /* line 448, ../sass/screen.scss */
+  .header-section.style3 ul li.cart-parent .cart-box ul li {
+    color: #fff;
+  }
+  /* line 450, ../sass/screen.scss */
+  .header-section.style3 ul li.cart-parent .cart-box ul li .close-btn {
+    color: #fff;
+  }
+  /* line 457, ../sass/screen.scss */
+  .header-section.style3 .mod-menu {
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+  }
+  /* line 464, ../sass/screen.scss */
+  .header-section.style3 ul li a {
+    color: #101010;
+  }
+  /* line 469, ../sass/screen.scss */
+  .header-section.style3 .col-sm-10 {
+    width: 100%;
+    float: none;
+  }
+  /* line 473, ../sass/screen.scss */
+  .header-section.style3 .col-sm-2 {
+    float: none;
+  }
+  /* line 476, ../sass/screen.scss */
+  .header-section.style3 #menu {
+    float: left;
+    width: 90%;
+  }
+  /* line 480, ../sass/screen.scss */
+  .header-section.style3 #menu ul:first-child {
+    float: left;
+  }
+  /* line 483, ../sass/screen.scss */
+  .header-section.style3 #menu ul:last-child {
+    float: right;
+  }
+  /* line 487, ../sass/screen.scss */
+  .header-section.style3 #menu ul li ul {
+    background: #101010;
+    float: none !important;
+  }
+  
+  /* line 490, ../sass/screen.scss */
+  .header-section.style3 #menu ul li ul li {
+    border-color: #282828;
+  }
+  /* line 491, ../sass/screen.scss */
+  .header-section.style3 #menu ul li ul li a {
+    color: #727272;
+	padding:12px 23px;
+  }
+  
+  /* line 497, ../sass/screen.scss */
+  .header-section.style3 #menu ul li ul li:hover > a, .header-section.style3 #menu ul li ul li.active > a {
+    color: #fccb06;
+  }
+  .header-section.style3 #menu ul li ul li:hover a span.sub-arrow, header-section.style3 #menu ul li ul li.active a span.sub-arrow {
+    color: #fccb06;
+  }
+
+
+  /* line 507, ../sass/screen.scss */
+  .header-section.style3 #menu ul li.mega-menu li ul li a {
+    color: #727272;
+  }
+  /* line 511, ../sass/screen.scss */
+  .header-section.style3 #menu ul li.mega-menu li ul li:hover a, .header-section.style3 #menu ul li.mega-menu li ul li.active a {
+    color: #fccb06;
+  }
+  .header-section.style3 ul li ul li a span.sub-arrow {
+    float:right;
+	font-size:14px;
+	color:#fff;
+  }
+  
+   /* line 376, ../sass/screen.scss */
+  .header-section.pin-style.pin.style3 {
+    padding: 0px;
+  }
+  /* line 378, ../sass/screen.scss */
+  .header-section.pin-style.pin.style3 .logo {
+    top: 0px;
+  }
+  
+  
+/* =========== menu style 4 ============ */  
+  
+   /* line 367, ../sass/screen.scss */
+  .header-section.pin-style.style4 {
+    border: none;
+	margin-top: 50px;
+  }
+  /* line 367, ../sass/screen.scss */
+  .header-section.pin-style.style4 {
+    border: none;
+	margin-top: 50px;
+  }
+  /* line 367, ../sass/screen.scss */
+  .header-section.pin-style.style4.no-mar {
+	margin-top:0px;
+  }
+  .header-section.pin-style.style4.fn-mar {
+	margin-top: 15px;
+  }
+  .header-section.pin-style.style4.top-mar-1 {
+	margin-top: -50px;
+  }
+  
+   /* line 382, ../sass/screen.scss */
+ .header-section.pin-style.pin.style4 {
+    padding-top: 0px;
+    background: #fff;
+	margin-top:0px;
+	-webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0,0, 0.1);
+       -moz-box-shadow: 0px 0px 8px 1px rgba(0, 0,0, 0.1);
+            box-shadow: 0px 0px 8px 1px rgba(0, 0,0, 0.1);
+  }
+   /* line 385, ../sass/screen.scss */
+  .header-section.pin-style.pin.style4 .mod-menu {
+    background: none;
+  }
+  
+   /* line 524, ../sass/screen.scss */
+  .header-section.style4 {
+    background: none;
+    padding-top:0px;
+  }
+  /* line 527, ../sass/screen.scss */
+  .header-section.style4.pin {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  /* line 530, ../sass/screen.scss */
+  .header-section.style4 .mod-menu {
+    background: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+    .header-section.style4.no-lmar .mod-menu {
+    padding-left: 0;
+  }
+  
+    /* line 530, ../sass/screen.scss */
+  .header-section.style4.no-bg .mod-menu {
+    background: none;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .header-section.style4 .mod-menu.pad-more {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  /* line 537, ../sass/screen.scss */
+  .header-section.style4 ul li a {
+    color: #101010;
+  }
+
+  /* line 542, ../sass/screen.scss */
+  .header-section.style4 ul li ul {
+    background: #fccb06;
+  }
+  /* line 544, ../sass/screen.scss */
+  .header-section.style4 ul li ul li {
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+  .header-section.style4 ul li ul li a {
+    color: #fff;
+  }
+  .header-section.style4 ul li ul li a span.sub-arrow {
+    float:right;
+	font-size:14px;
+	color:#fff;
+  }
+  .header-section.style4 ul li ul li a:hover {
+    color: #101010;
+    margin-left: 8px;
+}
+.header-section.style4 ul li ul li:hover > a, .header-section.style4 ul li ul li.active > a {
+    color: #101010;
+}
+/* line 551, ../sass/screen.scss */
+  .header-section.style4 ul li.search-parent .search-box {
+    background: #fccb06;
+  }
+  /* line 553, ../sass/screen.scss */
+  .header-section.style4 ul li.search-parent .search-box .form-control {
+    background: #fccb06;
+    border: 1px solid #f0be64;
+  }
+  /* line 555, ../sass/screen.scss */
+  .header-section.style4 ul li.search-parent .search-box .form-control input {
+    color: #fff;
+  }
+  /* line 559, ../sass/screen.scss */
+  .header-section.style4 ul li.search-parent .search-box .form-control .search-btn {
+    color: #fff;
+  }
+  /* line 563, ../sass/screen.scss */
+  .header-section.style4 ul li.search-parent .search-box .close-btn {
+    color: #fff;
+  }
+  /* line 567, ../sass/screen.scss */
+  .header-section.style4 ul li.cart-parent .cart-box {
+    background: #fccb06;
+    color: #fff;
+  }
+  /* line 569, ../sass/screen.scss */
+  .header-section.style4 ul li.cart-parent .cart-box span {
+    color: #fff;
+  }
+  /* line 572, ../sass/screen.scss */
+  .header-section.style4 ul li.cart-parent .cart-box ul {
+    border-top: 1px solid #f0be64;
+    background: none;
+  }
+  /* line 576, ../sass/screen.scss */
+  .header-section.style4 ul li.cart-parent .cart-box ul li {
+    color: #fff;
+  }
+  /* line 578, ../sass/screen.scss */
+  .header-section.style4 ul li.cart-parent .cart-box ul li .close-btn {
+    color: #fff;
+  }
+  /* line 584, ../sass/screen.scss */
+  .header-section.style4 ul li.cart-parent .cart-box .btn.btn-primary {
+    background: #fff !important;
+    color: #070607;
+  }
+  
+  
+/* =========== menu style 5 ============ */  
+  
+    .header-section.style5 {
+	  height:100px;
+  }
+  
+  .header-section.style5.dark #menu ul li ul li:hover > a, .header-section.style5.dark #menu ul li ul li.active > a {
+    color: #fccb06;
+  }
+.header-section.style5.dark #menu ul li ul li a {
+    color: #727272;
+  }
+.header-section.style5.dark #menu ul li ul {
+    background: #101010;
+    float: none !important;
+  }
+.header-section.style5 {
+  background: #fff;
+}
+.header-section.style5 .container {
+    border-top: 1px solid #f1f1f1;
+    border-bottom: 2px solid #101010;
+    margin-bottom: 35px;
+}
+.header-section.style5 .container.no-border {
+    border-top: 1px solid #f1f1f1;
+    border-bottom: none;
+    margin-bottom: 35px;
+}
+.header-section.style5 ul li a {
+  color: #101010;
+  background: none !important;
+  padding: 35px 15px;
+  text-decoration: none !important;
+}
+.header-section.style5.dark ul li ul li a {
+  padding: 12px 23px;
+}
+.header-section.style5.pin-style.pin {
+    background: #fff;
+    -webkit-transition: all .6s;
+    transition: all .6s;
+  }
+  
+/* =========== primary color dropdowns ============ */ 
+
+.header-section.primary-dropdowns ul li ul {
+    background: #fccb06;
+  }
+  /* line 546, ../sass/screen.scss */
+  .header-section.primary-dropdowns ul li ul li a {
+    color: #fff;
+  }
+  .header-section.primary-dropdowns ul li ul li a:hover {
+    color: #101010;
+    margin-left: 8px;
+}
+  .header-section.primary-dropdowns ul li:hover > a, .header-section.dark-dropdowns ul li.active > a {
+    color: #fccb06;
+  }
+ .header-section.primary-dropdowns.style4 ul li:hover > a, .header-section.dark-dropdowns.style4 ul li.active > a {
+    color: #fccb06;
+  }
+  
+  .header-section.primary-dropdowns ul li ul li a:hover {
+    color: #101010;
+    margin-left: 8px;
+}
+.header-section.primary-dropdowns ul li.cart-parent .cart-box {
+    background: #fccb06;
+}
+  
+.header-section.primary-dropdowns.mcol-title ul li.mega-menu > ul > li a {
+    color: #fff;
+}
+
+.header-section.primary-dropdowns.mcol-title ul li ul li:hover a{
+    color: #fff !important;
+}
+
+ /* =========== active style 1 ============ */ 
+ 
+ .header-section.act-style-1 ul li.active > a {
+    color: #fff !important;
+	background-color:#fccb06 !important;
+  } 
+  
+ /* =========== dark color dropdowns ============ */ 
+  .header-section.dark-dropdowns ul li:hover > a, .header-section.dark-dropdowns ul li.active > a {
+    color: #fccb06;
+  }
+ .header-section.dark-dropdowns ul li ul li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.header-section.dark-dropdowns.style4 ul li:hover > a, .header-section.dark-dropdowns.style4 ul li.active > a {
+    color: #fccb06;
+  }
+.header-section.dark-dropdowns.style4 #menu ul li ul li:hover a span.sub-arrow, header-section.dark-dropdowns.style4 #menu ul li ul li.active a span.sub-arrow {
+    color: #fccb06;
+  }
+.header-section.dark-dropdowns.style4 ul li.search-parent .search-box {
+    background: #101010;
+}  
+ .header-section.primary-dropdowns.style4 ul li ul li a:hover {
+    color: #fff;
+}
+  /* =========== menu center align ============ */ 
+  
+   
+   /* line 620, ../sass/screen.scss */
+  .header-section .mod-menu.center-style {
+    text-align: center;
+  }
+  /* line 624, ../sass/screen.scss */
+  .header-section .mod-menu.center-style .main-nav > ul > li {
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+  }
+  /* line 630, ../sass/screen.scss */
+  .header-section .mod-menu.center-style .main-nav .nav.top-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+  /* line 637, ../sass/screen.scss */
+  .header-section .mod-menu.center-style #menu {
+    float: none;
+    display: inline-block;
+  }
+ 
+ /* =========== for boxed versions ============ */ 
+/*if you want to use boxed version please remove below comment for your menu styles*/
+	
+/*  .header-section.pin-style.pin.style4 {
+   width:100%;
+   padding-top: 0px;
+   background: none;
+   margin-top:0px;
+   margin:auto;
+
+ }
+ .header-section.pin-style.pin.style4 .container{
+  max-width:1240px;
+  background: #fff;
+    -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0,0, 0.2);
+   -moz-box-shadow: 0px 0px 8px 1px rgba(0, 0,0, 0.2);
+   box-shadow: 0px 0px 8px 1px rgba(0, 0,0, 0.2);
+}*/
+
+/*  .header-section.pin-style.pin.style1 {
+   width:100%;
+   padding-top: 0px;
+   background: none;
+   margin-top:0px;
+   margin:auto;
+    -webkit-box-shadow: none;
+   -moz-box-shadow: none;
+   box-shadow: none;
+
+ }
+ .header-section.pin-style.pin.style1 .container{
+  max-width:1240px;
+  background: #fff;
+    -webkit-box-shadow: none;
+   -moz-box-shadow: none;
+   box-shadow: none;
+}*/
+  
+  /*.header-section.pin-style.pin.style2 {
+   width:100%;
+   padding-top: 0px;
+   background: none;
+   margin-top:0px;
+   margin:auto;
+
+ }
+ .header-section.pin-style.pin.style2 .container{
+  max-width:1240px;
+}*/ 
+  
+  
+
+  
+}
+
+@media only screen and (max-width: 1000px) {
+  /* line 720, ../sass/screen.scss */
+  .header-section ul li.cart-parent .cart-box {
+    -webkit-transition: all 0s;
+    transition: all 0s;
+  }
+
+  /* line 724, ../sass/screen.scss */
+  .header-section ul li.menu-icon {
+    font-size: 1.71429em;
+    padding: 19px 0 0 30px;
+  }
+  /* line 727, ../sass/screen.scss */
+  .header-section ul li.menu-icon a {
+    margin: 0px;
+    border: none;
+    padding: 10px;
+  }
+
+  /* line 733, ../sass/screen.scss */
+  .header-section {
+    padding-bottom: 20px;
+    border: none;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+  }
+  /* line 741, ../sass/screen.scss */
+  .header-section.pin-start {
+    position: absolute;
+  }
+
+  /* line 747, ../sass/screen.scss */
+  .header-section.off {
+    position: fixed;
+  }
+  /* line 750, ../sass/screen.scss */
+  .header-section .logo {
+    position: relative;
+    z-index: 9999;
+  }
+  /* line 755, ../sass/screen.scss */
+  .header-section .main-nav .nav {
+    float: none;
+  }
+  /* line 757, ../sass/screen.scss */
+  .header-section .main-nav .nav.top-nav {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+    text-align: right;
+  }
+  /* line 765, ../sass/screen.scss */
+  .header-section .main-nav .nav.top-nav li {
+    display: inline-block !important;
+    vertical-align: top;
+    float: none;
+  }
+  /* line 773, ../sass/screen.scss */
+  .header-section .logo {
+    padding-left: 10px;
+  }
+  /* line 776, ../sass/screen.scss */
+  .header-section #menu {
+    float: none;
+    border: none;
+    box-shadow: none;
+    margin: 0 -15px;
+    padding: 35px 0 0;
+    z-index: 99;
+  }
+  /* line 783, ../sass/screen.scss */
+  .header-section #menu > ul {
+    background: #fff;
+    margin: 0px;
+  }
+
+  /* line 786, ../sass/screen.scss */
+  .header-section #menu > ul li {
+    position: relative;
+    border-bottom: 1px solid #ececec;
+  }
+  /* line 787, ../sass/screen.scss */
+  .header-section #menu > ul li a {
+    color: #242424;
+    padding: 15px 25px;
+    text-transform: none;
+  }
+  /* line 793, ../sass/screen.scss */
+.header-section #menu > ul li .arrow {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    cursor: pointer;
+    z-index: 999;
+}
+  /* line 802, ../sass/screen.scss */
+  .header-section #menu > ul li .arrow:before {
+    content: "";
+    background: #242424;
+    position: absolute;
+    top: 17px;
+	left: 11px;
+    width: 15px;
+    height: 3px;
+  }
+  /* line 811, ../sass/screen.scss */
+  .header-section #menu > ul li .arrow:after {
+    content: "";
+    background: #242424;
+    position: absolute;
+    top: 10px;
+	left: 17px;
+    height: 15px;
+    width: 3px;
+  }
+  /* line 824, ../sass/screen.scss */
+  .header-section #menu > ul li.hover > a, .header-section #menu > ul li.active > a {
+    color: #fccb06;
+  }
+  /* line 831, ../sass/screen.scss */
+  .header-section #menu > ul li.hover > .arrow:after {
+    display: none;
+  }
+  /* line 836, ../sass/screen.scss */
+  .header-section #menu > ul li.hover > ul {
+    display: block;
+  }
+  /* line 841, ../sass/screen.scss */
+  .header-section #menu > ul li ul {
+    display: none;
+    max-height: none;
+    position: relative;
+    width: 100%;
+    left: auto;
+    margin: 0px;
+    top: auto;
+    border-top: 1px solid #ececec;
+  }
+  /* line 850, ../sass/screen.scss */
+  .header-section #menu > ul li ul li {
+    float: none;
+    width: 100%;
+    padding: 0px;
+    border: none;
+  }
+  /* line 856, ../sass/screen.scss */
+  .header-section #menu > ul li ul li a {
+    text-transform: none;
+    font-weight: 400;
+    padding-left: 45px;
+  }
+  /* line 861, ../sass/screen.scss */
+  .header-section #menu > ul li ul li ul {
+    right: 0px;
+  }
+  /* line 863, ../sass/screen.scss */
+  .header-section #menu > ul li ul li ul li a {
+    padding-left: 65px;
+  }
+  /* line 876, ../sass/screen.scss */
+  .header-section ul li.search-parent.active > a {
+    color: #fccb06;
+  }
+  /* line 879, ../sass/screen.scss */
+  .header-section ul li.search-parent.active .search-box {
+    max-height: none;
+  }
+  /* line 885, ../sass/screen.scss */
+  .header-section ul li.cart-parent {
+    position: static;
+  }
+  /* line 888, ../sass/screen.scss */
+  .header-section ul li.cart-parent.active > a {
+    color: #fccb06;
+  }
+  /* line 891, ../sass/screen.scss */
+  .header-section ul li.cart-parent.active .cart-box {
+    width: 100%;
+    max-height: 2000px;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+  /* line 897, ../sass/screen.scss */
+  .header-section ul li.cart-parent.active .cart-box ul li {
+    display: block !important;
+    text-align: left;
+  }
+  /* line 902, ../sass/screen.scss */
+  .header-section ul li.cart-parent.active .cart-box .col-xs-8 {
+    text-align: left;
+  }
+
+/* =========== menu style 3 ============ */
+
+  /* line 744, ../sass/screen.scss */
+  .header-section.style3 {
+    padding-bottom: 0px;
+  }
+   /* line 909, ../sass/screen.scss */
+  .header-section.style3 .logo {
+    margin-top: 5px;
+  }
+  
+   /* line 912, ../sass/screen.scss */
+  .header-section.style3 .main-nav .nav.top-nav {
+    top: 32px;
+  }
+   /* line 917, ../sass/screen.scss */
+  .header-section.style3 ul li a {
+    color: #000;
+  }
+  /* line 922, ../sass/screen.scss */
+  .header-section.style3 .main-nav {
+    padding-top: 10px;
+  }
+  /* line 925, ../sass/screen.scss */
+  .header-section.style3 #menu {
+    background: #101010;
+  }
+  /* line 927, ../sass/screen.scss */
+  .header-section.style3 #menu ul {
+    background: none;
+  }
+  /* line 929, ../sass/screen.scss */
+  .header-section.style3 #menu ul li {
+    border-color: #262626;
+  }
+  /* line 931, ../sass/screen.scss */
+  .header-section.style3 #menu ul li a {
+    color: #ffffff;
+  }
+  /* line 936, ../sass/screen.scss */
+  .header-section.style3 #menu ul li .arrow:before, .header-section.style3 #menu ul li .arrow:after {
+    background: #fff;
+  }
+  /* line 942, ../sass/screen.scss */
+  .header-section.style3 #menu ul li.active > a, .header-section.style3 #menu ul li.hover > a {
+    color: #fccb06;
+  }
+  /* line 946, ../sass/screen.scss */
+  .header-section.style3 #menu ul li ul {
+    border-color: #262626;
+  }
+  /* line 949, ../sass/screen.scss */
+  .header-section.style3 #menu ul li ul li a {
+    color: #727272;
+  }
+  
+ /* =========== menu style 4 ============ */
+ 
+   /* line 958, ../sass/screen.scss */
+  .header-section.style4 {
+    background: #fff;
+    padding-bottom: 0px;
+  }
+  /* line 961, ../sass/screen.scss */
+  .header-section.style4 .logo {
+    margin-bottom: 20px;
+  }
+  /* line 966, ../sass/screen.scss */
+  .header-section.style4 ul li a {
+    color: #050505;
+  }
+  /* line 971, ../sass/screen.scss */
+  .header-section.style4 #menu {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  /* line 974, ../sass/screen.scss */
+  .header-section.style4 #menu ul {
+    background: #fccb06;
+  }
+  /* line 976, ../sass/screen.scss */
+  .header-section.style4 #menu ul li {
+    border-color: #f0be64;
+  }
+  
+  /* line 979, ../sass/screen.scss */
+  .header-section.style4 #menu ul li a {
+    color: #fff;
+  }
+  /* line 984, ../sass/screen.scss */
+  .header-section.style4 #menu ul li .arrow:before, .header-section.style4 #menu ul li .arrow:after {
+    background: #fff;
+  }
+  /* line 989, ../sass/screen.scss */
+  .header-section.style4 #menu ul li ul {
+    border-color: #f0be64;
+  }
+  /* line 991, ../sass/screen.scss */
+  .header-section.style4 #menu ul li ul li {
+    border-color: #f0be64;
+  }
+  
+   .header-section.dark-dropdowns.style4 #menu ul {
+    background: #101010;
+}
+ /* =========== menu style 5 ============ */
+  .header-section.style5 #menu > ul {
+    background: #fff;
+    margin:78px 0 0 0;
+  }
+
+
+  
+}
+
+@media only screen and (max-width: 360px) {
+  /* line 1004, ../sass/screen.scss */
+  .header-section .logo {
+    width: 85px;
+  }
+
+  /* line 1007, ../sass/screen.scss */
+  .header-section .main-nav .nav.top-nav {
+    top: -7px;
+  }
+
+  /* line 1010, ../sass/screen.scss */
+  .header-section ul li.menu-icon {
+    padding-left: 5px;
+  }
+
+  /* line 1013, ../sass/screen.scss */
+  .header-section.style3 .main-nav .nav.top-nav {
+    top: 7px;
+  }
+}
+@media only screen and (min-width: 1001px) {
+  /* line 1018, ../sass/screen.scss */
+  #menu {
+    display: block;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  /* line 1024, ../sass/screen.scss */
+  .header-section .col-sm-10, .header-section .col-sm-2 {
+    width: auto;
+    float: none;
+  }
+  .header-section .col-sm-9{
+    width: 100%;
+    float: left;
+  }
+  /* line 1034, ../sass/screen.scss */
+  .nopadding {
+    position: static;
+  }
+
+  /* line 1038, ../sass/screen.scss */
+  .navbar-nav > li {
+    float: none;
+  }
+.header-section ul li.cart-parent .cart-box {
+  right: 0%;
+}
+/*========== menu style 1 =============*/
+
+.header-section.style1 {
+    background-color: #101010;
+    border-bottom: none;
+}
+.header-section.style1.white {
+    background-color: #fff;
+}
+.header-section.style1.light {
+    background-color: #f5f5f5;
+}
+.header-section.dark-dropdowns ul li ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/*========== menu style 4 =============*/
+
+  .header-section.style4 ul li.search-parent .search-box {
+    top: 90px;
+	}
+	.header-section.style4 ul li.cart-parent .cart-box {
+    top: 90px;
+	}  
+  .header-section.style4 #menu > ul li.hover > a, .header-section.style4 #menu > ul li.active > a {
+    color: #101010;
+}
+/*========== menu style 5 =============*/
+
+.header-section.style5 {
+	height:80px;
+  }
+.header-section.style5 .col-sm-9 {
+    width: 100%;
+}
+
+/*========== menu dark dropdown style =============*/
+
+.header-section.dark-dropdowns #menu > ul {
+    background: #101010;
+}
+.header-section.dark-dropdowns #menu > ul li a {
+    color: #727272;
+}
+.header-section.dark-dropdowns #menu > ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.header-section.dark-dropdowns #menu > ul li .arrow::before {
+    background: #fff;
+}
+.header-section.dark-dropdowns #menu > ul li .arrow::after {
+    background: #fff;
+}
+.header-section.dark-dropdowns #menu > ul li.hover > a, .header-section.dark-dropdowns #menu > ul li.active > a {
+    color: #fccb06;
+}
+.header-section.dark-dropdowns #menu > ul li ul {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/*========== menu dark dropdown in style4 =============*/
+
+.header-section.dark-dropdowns.style4 #menu > ul {
+    background: #101010;
+}
+.header-section.dark-dropdowns.style4 #menu > ul li a {
+    color: #727272;
+}
+.header-section.dark-dropdowns.style4 #menu > ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.header-section.dark-dropdowns.style4 #menu > ul li .arrow::before {
+    background: #fff;
+}
+.header-section.dark-dropdowns.style4 #menu > ul li .arrow::after {
+    background: #fff;
+}
+.header-section.dark-dropdowns.style4 #menu > ul li.hover > a, .header-section.dark-dropdowns.style4 #menu > ul li.active > a {
+    color: #fccb06;
+}
+.header-section.dark-dropdowns.style4 #menu > ul li ul {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.header-section.dark-dropdowns.style4 ul li.search-parent .search-box {
+    background: #101010;
+}
+/*========== menu primary color dropdown style =============*/
+
+.header-section.primary-dropdowns #menu > ul {
+    background: #fccb06;
+}
+.header-section.primary-dropdowns #menu > ul li a {
+    color: #fff;
+}
+.header-section.primary-dropdowns #menu > ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.header-section.primary-dropdowns #menu > ul li .arrow::before {
+    background: #fff;
+}
+.header-section.primary-dropdowns #menu > ul li .arrow::after {
+    background: #fff;
+}
+.header-section.primary-dropdowns #menu > ul li.hover > a, .header-section.primary-dropdowns #menu > ul li.active > a {
+    color: #101010;
+}
+.header-section.primary-dropdowns #menu > ul li ul {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.header-section.primary-dropdowns ul li ul {
+    background: #fccb06;
+}
+.btn-top-1 {
+	right:0px;
+	top: 0px;
+	margin:10px 0;
+}
+.header-section.dark-dropdowns.style2.active-style-1 ul li.active > a {
+	border-bottom:none;
+}
+.header-section.dark-dropdowns.style2 #menu {
+    padding: 70px 0 0;
+}
+ .header-section ul li.search-parent a.m-link {
+    color: #fccb06;
+}
+
+  .header-section ul li.cart-parent a.m-link {
+    color: #fccb06;
+}
+.btn-top-1 {
+    left:0px;
+	text-align:left;
+	float:left;
+	margin-top:20px;
+}
+
+
+
+
+}
+/* ---------- MAX 1024PX ---------- */
+@media screen and (max-width: 1024px) {
+	
+.btn-top-1 {
+    right: -176px;
+}
+	
+	
+}
+
+/* ---------- MAX 360PX ---------- */
+@media screen and (max-width: 768px) {
+
+
+
+}
+/* ---------- MAX 360PX ---------- */
+@media screen and (max-width: 640px) {
+.header-section.style5 #menu > ul {
+    background: #fff;
+    margin: 40px 0 0 0;
+}
+
+
+}
+/* ---------- MAX 360PX ---------- */
+@media screen and (max-width: 480px) {
+.header-section.style5 #menu > ul {
+    background: #fff;
+    margin: 40px 0 0 0;
+}
+.header-section .logo.bg-prim {
+    padding: 23px 23px;
+}
+.header-section .logo.bg-prim {
+    padding: 7px 0;
+}
+.header-section .logo.bg-dark {
+    padding: 23px 23px;
+}
+.header-section .logo.bg-dark {
+    padding: 7px 0;
+}
+
+
+}
+/* ---------- MAX 360PX ---------- */
+@media screen and (max-width: 360px) {
+
+.header-section.style4 ul li.search-parent .search-box {
+    top: 74px;
+}
+.header-section.style4 ul li.cart-parent .cart-box {
+    top:74px;
+}
+
+}
+
+
+/* line 1046, ../sass/screen.scss */
+.box-option .header-section {
+  background: none !important;
+}
+/* line 1048, ../sass/screen.scss */
+.box-option .header-section .container {
+  background: #fff;
+}
+/* line 1052, ../sass/screen.scss */
+.box-option .header-section.pin .container {
+  max-width: 1240px;
+}
+
+.logo-middle{
+	width:150px;
+	height:45px;
+	margin:30px auto;
+}
+
+
+

@@ -1,0 +1,634 @@
+/* 
+ * 	Core Owl Carousel CSS File
+ *	v1.3.3
+ */
+
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+/* display none until init */
+.owl-carousel {
+	display: none;
+	position: relative;
+	width: 100%;
+	-ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper {
+	display: none;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight {
+	-webkit-transition: height 500ms ease-in-out;
+	-moz-transition: height 500ms ease-in-out;
+	-ms-transition: height 500ms ease-in-out;
+	-o-transition: height 500ms ease-in-out;
+	transition: height 500ms ease-in-out;
+}
+.owl-carousel .owl-item {
+	width: 60%;
+	float: left;
+	padding:20px 0;
+}
+.owl-carousel.more-padd .owl-item{
+	padding:20px 20px;
+}
+.owl-carousel.more-padd-2 .owl-item{
+	padding:20px 20px 50px 20px;
+}
+.owl-carousel.no-padd .owl-item{
+	padding:0 0;
+}
+
+.owl-controls .owl-page, .owl-controls .owl-buttons div {
+	cursor: pointer;
+}
+.owl-controls {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* mouse grab icon */
+.grabbing {
+	cursor: url(grabbing.png) 8 8, move;
+}
+/* fix */
+.owl-carousel .owl-wrapper, .owl-carousel .owl-item {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+}
+#owl-demo5 .item {
+	margin: 3px;
+}
+#owl-demo5 .item img {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin-bottom: 40px;
+}
+#owl-demo6 .owl-item div {
+	padding: 5px;
+}
+#owl-demo6 .owl-item img {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin-bottom: 40px;
+}
+#owl-demo7 .item img {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin-bottom: 40px;
+}
+#owl-demo8 .item {
+	display: block;
+	padding: 0px;
+	margin: 5px;
+	color: #FFF;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-align: center;
+}
+#owl-demo8 .item img {
+	width: 100%;
+}
+#owl-demo9 .item img {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+#owl-demo10 .item img {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+.owl-theme .owl-controls .owl-buttons div {
+	background-color: #F00;
+	padding: 5px 9px;
+}
+.owl-theme .owl-buttons i {
+	margin-top: 2px;
+	background-color: #F00;
+}
+#sync1 .item {
+	padding: 0 0px;
+	margin: 0 0 30px 0;
+	color: #FFF;
+}
+#sync2 {
+	width: 100%;
+	margin: 0 auto;
+}
+#sync2 .item {
+	padding: 0;
+	margin: 0px 10px 0px 0px;
+	color: #FFF;
+	border:1px solid #101010;
+	cursor: pointer;
+}
+.carousel_holder {
+	width: 100%;
+	padding: 0px;
+	margin: 0 0 0 0;
+	float: left;
+}
+#sync1 .item img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+
+
+/*btn style 1*/
+
+.owl-btn-style-1 .owl-theme .owl-controls .owl-buttons .owl-prev {
+	background-color: #fc4242;
+	border-radius: 0;
+	opacity:1;
+}
+
+
+
+
+ @media only screen and (max-width:480px) {
+}
+ @media only screen and (max-width:320px) {
+#sync2 {
+	width: 100%;
+	margin: 0;
+}
+}
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.3.3
+*/
+
+.owl-theme .owl-controls {
+	margin-top: 10px;
+	text-align: center;
+}
+/* Styling Next and Prev buttons */
+
+.owl-theme .owl-controls .owl-buttons div {
+	color: #FFF;
+	display: inline-block;
+	zoom: 1;
+ *display: inline;/*IE7 life-saver */
+	margin: 5px;
+	padding: 3px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	background: #869791;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover {
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+	text-decoration: none;
+}
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page {
+	display: inline-block;
+	zoom: 1;
+ *display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span {
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 5px 7px;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: #869791;
+}
+.owl-theme .owl-controls .owl-buttons div {
+	color: #FFF;
+	display: inline-block;
+	zoom: 1;
+ *display: inline;/*IE7 life-saver */
+	margin: 5px;
+	padding: 3px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	background: #869791;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+}
+/*Slider next prev buttons colors*/
+
+.slide-nextprev-but-1 .owl-theme .owl-controls .owl-buttons div {
+	background: #ecae3d;
+	opacity: 1;
+	transition: all 0.3s ease-out 0s;
+}
+.owl-theme .owl-controls.clickable .owl-buttons div:hover {
+	background-color: #242424;
+}
+
+.slider-btn-1 .owl-theme .owl-controls.clickable .owl-buttons div:hover {
+	color:#fff;
+	background-color: #242424;
+}
+
+
+/*control colors*/
+.slide-controls-color-1 .owl-theme .owl-controls .owl-page span {
+	background: #e9ee42;
+}
+.slide-controls-color-2 .owl-theme .owl-controls .owl-page span {
+	background: #f51f6f;
+}
+.slide-controls-color-3 .owl-theme .owl-controls .owl-page span {
+	background: #ff971c;
+}
+.slide-controls-color-4 .owl-theme .owl-controls .owl-page span {
+	background: #a5d549;
+}
+.slide-controls-color-5 .owl-theme .owl-controls .owl-page span {
+	background: #c3a254;
+}
+.slide-controls-color-6 .owl-theme .owl-controls .owl-page span {
+	background: #e93e21;
+}
+.slide-controls-color-7 .owl-theme .owl-controls .owl-page span {
+	background: #42d1aa;
+}
+.slide-controls-color-8 .owl-theme .owl-controls .owl-page span {
+	background: #ce0a6c;
+}
+.slide-controls-color-9 .owl-theme .owl-controls .owl-page span {
+	background: #e9b444;
+}
+.slide-controls-color-10 .owl-theme .owl-controls .owl-page span {
+	background: #1fbef0;
+}
+.slide-controls-color-11 .owl-theme .owl-controls .owl-page span {
+	background: #fff;
+}
+.slide-controls-color-12 .owl-theme .owl-controls .owl-page span {
+	background: #8ac700;
+}
+.line-style .owl-theme .owl-controls .owl-page span {
+	width: 50px;
+	height: 3px;
+	border-radius: 0;
+}
+.opacity-9 .owl-theme .owl-controls .owl-page span {
+	opacity: 0.9;
+}
+.opacity-8 .owl-theme .owl-controls .owl-page span {
+	opacity: 0.8;
+}
+.opacity-7 .owl-theme .owl-controls .owl-page span {
+	opacity: 0.7;
+}
+.opacity-6 .owl-theme .owl-controls .owl-page span {
+	opacity: 0.6;
+}
+.opacity-5 .owl-theme .owl-controls .owl-page span {
+	opacity: 0.5;
+}
+.opacity-4 .owl-theme .owl-controls .owl-page span {
+	opacity: 0.4;
+}
+.opacity-3 .owl-theme .owl-controls .owl-page span {
+	opacity: 0.3;
+}
+.opacity-2 .owl-theme .owl-controls .owl-page span {
+	opacity: 0.2;
+}
+.opacity-1 .owl-theme .owl-controls .owl-page span {
+	opacity: 0.1;
+}
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+}
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers {
+	height: auto;
+	width: auto;
+	color: #FFF;
+	padding: 2px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+/* preloading images */
+.owl-item.loading {
+	min-height: 150px;
+	background: url(AjaxLoader.gif) no-repeat center center
+}
+/* 
+ *  Owl Carousel CSS3 Transitions 
+ *  v1.3.2
+ */
+
+.owl-origin {
+	-webkit-perspective: 1200px;
+	-webkit-perspective-origin-x : 50%;
+	-webkit-perspective-origin-y : 50%;
+	-moz-perspective : 1200px;
+	-moz-perspective-origin-x : 50%;
+	-moz-perspective-origin-y : 50%;
+	perspective : 1200px;
+}
+/* fade */
+.owl-fade-out {
+	z-index: 10;
+	-webkit-animation: fadeOut .7s both ease;
+	-moz-animation: fadeOut .7s both ease;
+	animation: fadeOut .7s both ease;
+}
+.owl-fade-in {
+	-webkit-animation: fadeIn .7s both ease;
+	-moz-animation: fadeIn .7s both ease;
+	animation: fadeIn .7s both ease;
+}
+/* backSlide */
+.owl-backSlide-out {
+	-webkit-animation: backSlideOut 1s both ease;
+	-moz-animation: backSlideOut 1s both ease;
+	animation: backSlideOut 1s both ease;
+}
+.owl-backSlide-in {
+	-webkit-animation: backSlideIn 1s both ease;
+	-moz-animation: backSlideIn 1s both ease;
+	animation: backSlideIn 1s both ease;
+}
+/* goDown */
+.owl-goDown-out {
+	-webkit-animation: scaleToFade .7s ease both;
+	-moz-animation: scaleToFade .7s ease both;
+	animation: scaleToFade .7s ease both;
+}
+.owl-goDown-in {
+	-webkit-animation: goDown .6s ease both;
+	-moz-animation: goDown .6s ease both;
+	animation: goDown .6s ease both;
+}
+/* scaleUp */
+.owl-fadeUp-in {
+	-webkit-animation: scaleUpFrom .5s ease both;
+	-moz-animation: scaleUpFrom .5s ease both;
+	animation: scaleUpFrom .5s ease both;
+}
+.owl-fadeUp-out {
+	-webkit-animation: scaleUpTo .5s ease both;
+	-moz-animation: scaleUpTo .5s ease both;
+	animation: scaleUpTo .5s ease both;
+}
+/* Keyframes */
+/*empty*/
+@-webkit-keyframes empty {
+ 0% {
+opacity: 1
+}
+}
+@-moz-keyframes empty {
+ 0% {
+opacity: 1
+}
+}
+@keyframes empty {
+ 0% {
+opacity: 1
+}
+}
+@-webkit-keyframes fadeIn {
+ 0% {
+opacity:0;
+}
+ 100% {
+opacity:1;
+}
+}
+@-moz-keyframes fadeIn {
+ 0% {
+opacity:0;
+}
+ 100% {
+opacity:1;
+}
+}
+@keyframes fadeIn {
+ 0% {
+opacity:0;
+}
+ 100% {
+opacity:1;
+}
+}
+@-webkit-keyframes fadeOut {
+ 0% {
+opacity:1;
+}
+ 100% {
+opacity:0;
+}
+}
+@-moz-keyframes fadeOut {
+ 0% {
+opacity:1;
+}
+ 100% {
+opacity:0;
+}
+}
+@keyframes fadeOut {
+ 0% {
+opacity:1;
+}
+ 100% {
+opacity:0;
+}
+}
+@-webkit-keyframes backSlideOut {
+ 25% {
+opacity: .5;
+-webkit-transform: translateZ(-500px);
+}
+ 75% {
+opacity: .5;
+-webkit-transform: translateZ(-500px) translateX(-200%);
+}
+ 100% {
+opacity: .5;
+-webkit-transform: translateZ(-500px) translateX(-200%);
+}
+}
+@-moz-keyframes backSlideOut {
+ 25% {
+opacity: .5;
+-moz-transform: translateZ(-500px);
+}
+ 75% {
+opacity: .5;
+-moz-transform: translateZ(-500px) translateX(-200%);
+}
+ 100% {
+opacity: .5;
+-moz-transform: translateZ(-500px) translateX(-200%);
+}
+}
+@keyframes backSlideOut {
+ 25% {
+opacity: .5;
+transform: translateZ(-500px);
+}
+ 75% {
+opacity: .5;
+transform: translateZ(-500px) translateX(-200%);
+}
+ 100% {
+opacity: .5;
+transform: translateZ(-500px) translateX(-200%);
+}
+}
+@-webkit-keyframes backSlideIn {
+ 0%, 25% {
+opacity: .5;
+-webkit-transform: translateZ(-500px) translateX(200%);
+}
+ 75% {
+opacity: .5;
+-webkit-transform: translateZ(-500px);
+}
+ 100% {
+opacity: 1;
+-webkit-transform: translateZ(0) translateX(0);
+}
+}
+@-moz-keyframes backSlideIn {
+ 0%, 25% {
+opacity: .5;
+-moz-transform: translateZ(-500px) translateX(200%);
+}
+ 75% {
+opacity: .5;
+-moz-transform: translateZ(-500px);
+}
+ 100% {
+opacity: 1;
+-moz-transform: translateZ(0) translateX(0);
+}
+}
+@keyframes backSlideIn {
+ 0%, 25% {
+opacity: .5;
+transform: translateZ(-500px) translateX(200%);
+}
+ 75% {
+opacity: .5;
+transform: translateZ(-500px);
+}
+ 100% {
+opacity: 1;
+transform: translateZ(0) translateX(0);
+}
+}
+@-webkit-keyframes scaleToFade {
+ to {
+opacity: 0;
+-webkit-transform: scale(.8);
+}
+}
+@-moz-keyframes scaleToFade {
+ to {
+opacity: 0;
+-moz-transform: scale(.8);
+}
+}
+@keyframes scaleToFade {
+ to {
+opacity: 0;
+transform: scale(.8);
+}
+}
+@-webkit-keyframes goDown {
+ from {
+-webkit-transform: translateY(-100%);
+}
+}
+@-moz-keyframes goDown {
+ from {
+-moz-transform: translateY(-100%);
+}
+}
+@keyframes goDown {
+ from {
+transform: translateY(-100%);
+}
+}
+ @-webkit-keyframes scaleUpFrom {
+ from {
+opacity: 0;
+-webkit-transform: scale(1.5);
+}
+}
+@-moz-keyframes scaleUpFrom {
+ from {
+opacity: 0;
+-moz-transform: scale(1.5);
+}
+}
+@keyframes scaleUpFrom {
+ from {
+opacity: 0;
+transform: scale(1.5);
+}
+}
+ @-webkit-keyframes scaleUpTo {
+ to {
+opacity: 0;
+-webkit-transform: scale(1.5);
+}
+}
+@-moz-keyframes scaleUpTo {
+ to {
+opacity: 0;
+-moz-transform: scale(1.5);
+}
+}
+@keyframes scaleUpTo {
+ to {
+opacity: 0;
+transform: scale(1.5);
+}
+}

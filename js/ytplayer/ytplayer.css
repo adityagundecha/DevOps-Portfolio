@@ -1,0 +1,467 @@
+#wrapper {
+		width:100%;
+		position: relative;
+		
+	}
+	
+	.console {
+		margin-top: 70px;
+		text-align: center;
+	}
+	
+	#debug {
+		position: absolute;
+		width: 450px;
+		padding: 5px;
+		height: 100%;
+		top: 0;
+		right: 0;
+		background: rgba(0, 0, 0, .8);
+		overflow: auto;
+		color: #fff;
+		font-size: 13px;
+		z-index: 10000;
+	}
+	
+	.dida {
+		color: #fff;
+		font-size: 20px;
+		margin-top: 20px;
+	}
+	
+	.vbutton,
+	.vbutton2 {
+		transition: all .4s;
+		display: inline-block;
+		padding: 0px 10px;
+		font-size: 12px;
+		text-transform: uppercase;
+		cursor: pointer;
+		background-color: rgba(248, 248, 248, 0.4);
+		color: #000;
+		border: 1px solid transparent;
+		text-decoration: none;
+		line-height: 30px;
+		margin: 3px;
+		border-radius: 10px;
+	}
+	
+	vbutton:hover,
+	.vbutton2:hover {
+		background-color: rgba(253, 96, 44, 0.6);
+		color: #FFF;
+	}
+	
+	#togglePlay {
+		margin-top: 20px;
+		font-size: 14px;
+		width: 70px;
+		height: 70px;
+		line-height: 70px;
+		border-radius: 100%;
+	}
+	
+	#togglePlay.pause {
+		background-color: rgba(245, 30, 70, 0.8);
+		color: #fff;
+	}
+	
+	#togglePlay.pause:hover {
+		background-color: rgba(255, 255, 255, 0.6);
+		color: #fff;
+	}
+	
+	#togglePlay.play {
+		background-color: rgba(245, 30, 70, 0.8);
+		color: #fff;
+	}
+	
+	#togglePlay.play:hover {
+		background-color: rgba(255, 255, 255, 0.6);
+		color: #fff;
+	}
+	
+	.goto {
+		position: absolute;
+		left: 0;
+		top: 360px;
+		right: 0;
+		margin: auto;
+		text-align: center;
+		width: 100%;
+		height: 50px;
+	}
+	
+	.goto .vbutton {
+		font-size: 30px;
+		font-family: 'Lobster', cursive;
+		padding: 10px;
+		text-transform: none;
+	}
+	
+	#filtersControl {
+		position: absolute;
+		top: 0;
+		left: 10px;
+		width: 350px;
+		margin: 30px auto;
+		z-index: 1000;
+	}
+	
+	#filterScript {
+		margin-top: 20px;
+		padding: 10px;
+		background-color: rgba(25, 34, 37, 0.35);
+		color: #fff;
+		border-radius: 10px;
+	}
+	
+.slider {
+		position: relative;
+		width: 100%;
+		height: auto;
+		border: 0 solid transparent;
+		background-color: rgba(168, 168, 168, 0.20);
+		border-radius: 4px;
+		margin-top: 10px;
+		overflow: hidden;
+	}
+	
+	.slider .level {
+		background-color: #3c6784;
+		height: 100%;
+	}
+	
+	.slider .desc {
+		position: absolute;
+		right: 0;
+		top: 0;
+		padding: 5px;
+		font-size: 12px;
+		line-height: 18px;
+		color: #fff;
+	}
+	
+	.slider span {
+		font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+		position: absolute;
+		top: 0;
+		font-size: 12px;
+		line-height: 18px;
+		color: #fff;
+		padding: 4px;
+		text-align: left;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	
+	#changeVideo {
+		position: absolute;
+		top: 0;
+		right: 10px;
+		width: 350px;
+		margin: 30px auto;
+		z-index: 100;
+		padding: 10px;
+		/*background-color: rgba(25, 34, 37, 0.35);*/
+		border-radius: 10px;
+		color: #FFFFFF;
+		box-sizing: border-box;
+	}
+	
+	#changeVideo label {
+		padding: 10px;
+		display: block;
+	}
+	
+	#changeVideo input {
+		padding: 10px;
+		display: block;
+		width: 250px;
+		border-radius: 10px;
+		border: none;
+		font-size: 20px;
+		color: #fff;
+		font-weight: 700;
+		background-color: rgba(168, 168, 168, 0.20);
+	}
+	
+	#changeVideo input[type=number] {
+		display: inline-block;
+		width: 100px;
+	}
+	
+	#changeVideo input[type=checkbox] {
+		display: inline-block;
+		width: 20px;
+	}
+	
+	#loadBox {
+		background-color: rgba(168, 168, 168, 0.20);
+		border-radius: 10px;
+		padding: 20px;
+	}
+	
+	.videobgholder{
+		width:100%;
+		height:auto;
+		float:left;
+		padding:0px;
+		margin:0px;
+		float:left;
+		}
+	
+#customElement {
+            width: 100%;
+            height: 100%;
+            background: rgba(81, 150, 191, 0.60);
+            position: relative;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            background: url(../../images/poster2.jpg) no-repeat center center;
+            background-size: cover;
+        }		
+#customElement2 {
+            width: 100%;
+            height: 100%;
+            background: rgba(81, 150, 191, 0.60);
+            position: relative;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            background: url(../../images/poster1.jpg) no-repeat center center;
+            background-size: cover;
+        }	
+
+.mb_YTPBar, .mb_YTPBar span.mb_YTPUrl a {
+	color: #fff
+}
+
+
+.mb_YTPlayer:focus {
+	outline: 0
+}
+.mbYTP_wrapper {
+	display: block;
+	transform: translateZ(0)translate3d(0, 0, 0);
+	transform-style: preserve-3d;
+	perspective: 1000;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	box-sizing: border-box
+}
+.mb_YTPlayer .loading {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 12px;
+	color: #fff;
+	background: rgba(0,0,0,.51);
+	text-align: center;
+	padding: 2px 4px;
+	border-radius: 5px;
+	font-family: "Droid Sans", sans-serif;
+	-webkit-animation: fade .1s infinite alternate;
+	animation: fade .1s infinite alternate
+}
+@-webkit-keyframes fade {
+0% {
+opacity:.5
+}
+100% {
+opacity:1
+}
+}
+@keyframes fade {
+0% {
+opacity:.5
+}
+100% {
+opacity:1
+}
+}
+.fullscreen {
+	display: block!important;
+	position: fixed!important;
+	width: 100%!important;
+	height: 100%!important;
+	top: 0!important;
+	left: 0!important;
+	margin: 0!important;
+	border: none!important;
+	opacity: 1!important
+}
+.mbYTP_wrapper iframe {
+	max-width: 4000px!important
+}
+.inline_YTPlayer {
+	margin-bottom: 20px;
+	vertical-align: top;
+	position: relative;
+	left: 0;
+	overflow: hidden;
+	border-radius: 4px;
+	box-shadow: 0 0 5px rgba(0,0,0,.7);
+	background: rgba(0,0,0,.5)
+}
+.inline_YTPlayer img {
+	border: none!important;
+	margin: 0!important;
+	padding: 0!important;
+	transform: none!important
+}
+.mb_YTPBar, .mb_YTPBar .buttonBar {
+	box-sizing: border-box;
+	left: 0;
+	padding: 5px;
+	width: 100%
+}
+.mb_YTPBar .ytpicon {
+	font-size: 20px;
+	font-family: ytpregular
+}
+.mb_YTPBar .mb_YTPUrl.ytpicon {
+	font-size: 30px
+}
+.mb_YTPBar {
+	transition: opacity .5s;
+	display: block;
+	height: 10px;
+	background: #333;
+	position: fixed;
+	bottom: 0;
+	text-align: left;
+	z-index: 2;
+	font: 14px/16px sans-serif;
+	opacity: .1
+}
+.mb_YTPBar.visible, .mb_YTPBar:hover {
+	opacity: 1
+}
+.mb_YTPBar .buttonBar {
+	transition: all .5s;
+	background: 0 0;
+	font: 12px/14px Calibri;
+	position: absolute;
+	top: -30px;
+}
+.mb_YTPBar:hover .buttonBar {
+	background: rgba(0,0,0,.4)
+}
+.mb_YTPBar span {
+	display: inline-block;
+	font: 16px/20px Calibri, sans-serif;
+	position: relative;
+	width: 30px;
+	height: 25px;
+	vertical-align: middle
+}
+.mb_YTPBar span.mb_YTPTime {
+	width: 130px
+}
+.mb_YTPBar span.mb_OnlyYT, .mb_YTPBar span.mb_YTPUrl {
+	position: absolute;
+	width: auto;
+	display: block;
+	top: 6px;
+	right: 10px;
+	cursor: pointer
+}
+.mb_YTPBar span.mb_YTPUrl img {
+	width: 60px
+}
+.mb_YTPBar span.mb_OnlyYT {
+	left: 300px;
+	right: auto
+}
+.mb_YTPBar span.mb_OnlyYT img {
+	width: 25px
+}
+.mb_YTPBar .mb_YTPMuteUnmute, .mb_YTPBar .mb_YTPPlaypause, .mb_YTPlayer .mb_YTPBar .mb_YTPPlaypause img {
+	cursor: pointer
+}
+.mb_YTPBar .mb_YTPProgress {
+	height: 10px;
+	width: 100%;
+	background: #222;
+	bottom: 0;
+	left: 0
+}
+.mb_YTPBar .mb_YTPLoaded {
+	height: 10px;
+	width: 0;
+	background: #444;
+	left: 0
+}
+.mb_YTPBar .mb_YTPseekbar {
+	height: 10px;
+	width: 0;
+	background: #000;
+	bottom: 0;
+	left: 0;
+	box-shadow: rgba(82,82,82,.47)1px 1px 3px
+}
+.mb_YTPBar .YTPOverlay {
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform-style: "flat";
+	box-sizing: border-box
+}
+/*.YTPOverlay.raster {
+	background: url(images/raster.png)
+}
+.YTPOverlay.raster.retina {
+	background: url(images/raster@2x.png)
+}
+.YTPOverlay.raster-dot {
+	background: url(images/raster_dot.png)
+}
+.YTPOverlay.raster-dot.retina {
+	background: url(images/raster_dot@2x.png)
+}*/
+.mb_YTPBar .simpleSlider {
+	position: relative;
+	width: 100px;
+	height: 10px;
+	border: 1px solid #fff;
+	overflow: hidden;
+	box-sizing: border-box;
+	margin-right: 10px;
+	cursor: pointer!important;
+	border-radius: 3px
+}
+.mb_YTPBar.compact .simpleSlider {
+	width: 40px
+}
+.mb_YTPBar .simpleSlider.muted {
+	opacity: .3
+}
+.mb_YTPBar .level {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: #fff;
+	box-sizing: border-box
+}
+.mb_YTPBar .level.horizontal {
+	height: 100%;
+	width: 0
+}
+.mb_YTPBar .level.vertical {
+	height: auto;
+	width: 100%
+}
+
+@media only screen and (max-width: 479px){
+	
+	#video{ width:100%;}
+
+		
+	}
+	
+	.videobgholder{ 
+	width:100%;
+	}
+	
+	}

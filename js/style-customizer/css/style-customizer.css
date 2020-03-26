@@ -1,0 +1,276 @@
+.radio-group-vertical > input[type=radio], .radio-group > input[type=radio] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.radio-group::before, .radio-group-vertical::before, .radio-group::after, .radio-group-vertical::after {
+  content: " ";
+  display: table;
+}
+.radio-group::after, .radio-group-vertical::after {
+  clear: both;
+}
+
+.sc-btn {
+  padding:10px 45px;
+  background-color: #101010;
+  /*background-image: linear-gradient(to bottom, #4b4b4b, #252525);*/
+  border: 1px solid #101010;
+  color: #fff;
+  cursor: pointer;
+}
+.sc-btn:hover, .sc-btn:focus {
+  background-color: #424242;
+ /* background-image: linear-gradient(to bottom, #555555, #2f2f2f);*/
+  border-color: #575757;
+}
+.sc-btn:active {
+  background-color: #2e2e2e;
+  border-color: #424242;
+  color: #c2c2c2;
+}
+
+.radio-group-vertical > label, .radio-group > label,
+.radio-group-vertical > button,
+.radio-group > button,
+.radio-group-vertical > input[type=button],
+.radio-group > input[type=button] {
+  float: left;
+  margin: 0;
+  padding:10px 45px;
+  /*background-image: linear-gradient(to bottom, #4b4b4b, #252525);*/
+  border: 1px solid #4d4d4d;
+  color: #e0e0e0;
+  cursor: pointer;
+  background-color:#404040;
+}
+.radio-group-vertical > label:hover, .radio-group > label:hover,
+.radio-group-vertical > button:hover,
+.radio-group > button:hover,
+.radio-group-vertical > input[type=button]:hover,
+.radio-group > input[type=button]:hover {
+  background-color: #646363;
+  /*background-image: linear-gradient(to bottom, #555555, #2f2f2f);*/
+  color: #d6d6d6;
+}
+
+.radio-group-vertical > label:first-of-type, .radio-group > label:first-of-type,
+.radio-group-vertical > button:first-of-type,
+.radio-group > button:first-of-type,
+.radio-group-vertical > input[type=button]:first-of-type,
+.radio-group > input[type=button]:first-of-type {
+  border-radius: 0 0 0 0;
+}
+.radio-group-vertical > label:last-of-type, .radio-group > label:last-of-type,
+.radio-group-vertical > button:last-of-type,
+.radio-group > button:last-of-type,
+.radio-group-vertical > input[type=button]:last-of-type,
+.radio-group > input[type=button]:last-of-type {
+  border-radius: 0 0 0 0;
+  padding:10px 45px;
+  background-color:#101010;
+}
+.radio-group-vertical > :focus + label, .radio-group > :focus + label,
+.radio-group-vertical > :focus + button,
+.radio-group > :focus + button,
+.radio-group-vertical > :focus + input[type=button],
+.radio-group > :focus + input[type=button] {
+  outline: 1px solid #3082cf;
+}
+.radio-group-vertical > :checked + label, .radio-group > :checked + label,
+.radio-group-vertical > :checked + button,
+.radio-group > :checked + button,
+.radio-group-vertical > :checked + input[type=button],
+.radio-group > :checked + input[type=button] {
+  background: #101010;
+  border-color: #727272;
+  color: #fff;
+  padding:10px 45px;
+  border-radius:0px;
+}
+
+.radio-group-vertical {
+  display: inline-block;
+}
+.radio-group-vertical > label,
+.radio-group-vertical > button,
+.radio-group-vertical > input[type=button] {
+  display: block;
+  float: none;
+}
+.radio-group-vertical > label:first-of-type,
+.radio-group-vertical > button:first-of-type,
+.radio-group-vertical > input[type=button]:first-of-type {
+  border-radius: 4px 4px 0 0;
+}
+.radio-group-vertical > label:last-of-type,
+.radio-group-vertical > button:last-of-type,
+.radio-group-vertical > input[type=button]:last-of-type {
+  border-radius: 0 0 4px 4px;
+}
+
+#style-customizer {
+  position: fixed;
+  z-index: 99999;
+  left: 0;
+  top: 0;
+  -webkit-transform: translate(-100%);
+  transform: translate(-100%);
+  width: 380px;
+  height: 100%;
+  padding:30px;
+  background: #fff;
+  border-right:1px solid #f0f0f0;
+  color: #101010;
+  transition: transform 0.25s;
+}
+#style-customizer.expanded {
+  -webkit-transform: none;
+  transform: none;
+  /*box-shadow: 0 0 25px 13px rgba(0, 0, 0, 0.6);*/
+}
+#style-customizer h1, #style-customizer h2, #style-customizer h3, #style-customizer h4, #style-customizer h5, #style-customizer h6 {
+  color: inherit;
+}
+#style-customizer select {
+  color: #9c9999;
+  padding: 10px 10px;
+  background-color:#101010;
+  border:1px solid #101010;
+}
+#style-customizer input[type=color] {
+  height:30px;
+  border:none;
+  padding:0px;
+}
+
+.style-customizer-wrap {
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 8px;
+}
+
+#sc-toggle {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  padding: 15px;
+  -webkit-transform: translate(100%);
+  transform: translate(100%);
+  background: #fff;
+  border: none;
+  color: inherit;
+  font-size: 23px;
+}
+#sc-toggle i {
+	color:#101010;
+}
+.sc-header {
+  text-align: center;
+  margin-bottom: 22px;
+  padding:0 0 20px 0;
+  border-bottom:1px solid #ededed;
+}
+
+#outer-bg-section,
+#sc-bg-outer-image-wrap {
+  display: none;
+}
+
+.preloader-small-icon-wrap > svg {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  -webkit-animation: none !important;
+  animation: none !important;
+}
+.preloader-small-icon-wrap > svg > * {
+  fill: #a5a2a2;
+}
+.preloader-small-icon-wrap > svg .loader-anim-item {
+  -webkit-animation: none !important;
+  animation: none !important;
+}
+
+.sc-preloaders label {
+  box-sizing: content-box;
+  width: 26px;
+  height: 26px;
+  padding:7px 7px;
+  text-align: center;
+}
+
+
+/*color option text*/
+
+.color-text{
+	color:#101010;
+	text-align:left !important;
+	font-weight:normal;
+	}
+.customizer-style-tytle-padd{
+	padding-top:8px;
+	}
+.style-form-group {
+    margin-bottom: 5px !important;
+	margin-top: 5px !important;
+}
+.style-bpadd {
+	padding-bottom:5px;
+}
+.style-tpadd {
+	padding-top:5px;
+}
+.style-divider-line {
+	width:100%;
+	height:1px;
+	background-color:#ededed;
+}
+
+.style-fweight-normal {
+	font-weight:normal;
+}
+
+.sty-demo-btn{
+	width:100%;
+	padding:15px 20px;
+	margin:0 0 30px 0;
+	float:left;
+	font-size:16px;
+	color:#fff;
+	text-align:center;
+	background-color:#101010;
+	text-transform:uppercase;
+	}
+.sty-demo-btn:hover{
+	color:#fff;
+	background-color:#242424;
+	}
+	
+/*# sourceMappingURL=style-customizer.css.map */
+
+
+/*loading buttons*/
+
+.lbtn-1{
+	width:36px;
+	height:36px;
+	float:left;
+	color:#101010;
+	text-align:center;
+	line-height:40px;
+	font-size:14px;
+	padding:0px;
+	margin:0 6px 6px 0;
+	background-color:#fff;
+	}
+.lbtn-1:hover{
+	color:#fff;
+	background-color:#404040;
+	}
