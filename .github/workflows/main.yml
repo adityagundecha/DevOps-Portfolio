@@ -30,4 +30,4 @@ jobs:
     - name: Run a multi-line script
       run: |
         echo Deploying to Netlify
-        curl -X POST -d {} $netlify_webhook
+        curl -X POST -d {} ${{secrets.netlify_webhook}}
