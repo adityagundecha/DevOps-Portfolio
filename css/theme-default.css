@@ -1989,7 +1989,7 @@ a.read-more.primary:hover {
   font-size: 16px;
   line-height: 23px;
 }
-.iconlist li i {
+.iconlist li a {
   color: #fccb06;
   padding: 0 15px 0 0;
 }
