@@ -1989,7 +1989,7 @@ a.read-more.primary:hover {
   font-size: 16px;
   line-height: 23px;
 }
-.iconlist li i {
+.iconlist li a {
   color: #fccb06;
   padding: 0 15px 0 0;
 }
@@ -4591,6 +4591,19 @@ div#clock div.space {
   width: 30px;
 }
 
+.icon:hover {
+  animation-duration: 1.2s;
+  animation-name: iconanimate;
+}
+
+@keyframes iconanimate{
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.5);
+  }
+}
 /*----------------------------RESPONSIVE STYLES------------------------------- */
 
 /* ---------- MAX 320PX ---------- */
