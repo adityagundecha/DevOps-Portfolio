@@ -115,7 +115,7 @@ a {
   text-transform: uppercase;
 }
 
-/* Headungs
+/* Headings
  ------------------------------ */
 
 h1,
@@ -138,7 +138,7 @@ h6 a {
   color: inherit;
 }
 h1 {
-  font-size: 40px;
+  font-size: 25px;
   line-height: 40px;
   margin-bottom: 20px;
   font-style: normal;
