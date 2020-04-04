@@ -5143,6 +5143,7 @@ div#clock div.space {
   .sec-title-container.less-padding-6 {
     padding-bottom: 30px;
   }
+
 }
 
 @media screen and (max-width: 640px) {
@@ -5296,6 +5297,7 @@ div#clock div.space {
   .sec-padding-4 {
     padding: 0 0 0 0;
   }
+
 }
 
 @media screen and (max-width: 480px) {
