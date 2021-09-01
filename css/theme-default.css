@@ -285,7 +285,9 @@ ul {
   color: #acacac;
 }
 .text-primary {
-  color: #fccb06;
+  color: #ffcc00;
+  font-size: medium;
+  font-weight: 400;
 }
 .text-gray {
   color: #727272;
@@ -2915,7 +2917,6 @@ a.topbar-btn.active {
   padding: 0 35px 20px 0;
   margin: 0;
   color: #727272;
-  float: left;
   display: inline-block;
 }
 .footer-quick-links-2 li a:hover {
@@ -3681,7 +3682,6 @@ ul.footer-flickr {
   display: inline-block;
 }
 .fo-copyright-holder .sc-icons li a {
-  float: left;
   font-size: 15px;
   padding: 15px 10px;
   margin: 0px;

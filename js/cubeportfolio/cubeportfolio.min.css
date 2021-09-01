@@ -302,7 +302,7 @@ opacity:0
 	padding: 0 6px
 }
 .cbp-l-caption-buttonLeft, .cbp-l-caption-buttonRight {
-	background-color: #f51e46;
+	background-color: #ffcc00;
 	color: #FFFFFF;
 	display: inline-block;
 	font: 400 12px/30px "Open Sans", sans-serif;
@@ -759,8 +759,8 @@ opacity:0
 }
 .cbp-l-filters-alignRight .cbp-filter-item.cbp-filter-item-active {
 	color: #FFFFFF;
-	background-color: #f51e46;
-	border-color: #f51e46;
+	background-color: #ffcc00;
+	border-color: #ffcc00;
 	cursor: default
 }
 .cbp-l-filters-alignRight .cbp-filter-item:first-child {
@@ -770,10 +770,10 @@ opacity:0
 	margin-right: 0
 }
 .cbp-l-filters-alignRight .cbp-filter-counter {
-	background-color: #f51e46
+	background-color: #ffcc00
 }
 .cbp-l-filters-alignRight .cbp-filter-counter:after {
-	border-top: 4px solid #f51e46
+	border-top: 4px solid #ffcc00
 }
 @media only screen and (max-width: 480px) {
 .cbp-l-filters-alignRight {
@@ -798,11 +798,11 @@ opacity:0
 	transition: color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out
 }
 .cbp-l-filters-button .cbp-filter-item:hover {
-	color: #f51e46;
+	color: #ffcc00;
 	border-color: #DADADA
 }
 .cbp-l-filters-button .cbp-filter-item.cbp-filter-item-active {
-	background-color: #f51e46;
+	background-color: #ffcc00;
 	color: #fff;
 	border-color: #fccb06;
 	cursor: default
@@ -814,10 +814,10 @@ opacity:0
 	margin-right: 0
 }
 .cbp-l-filters-button .cbp-filter-counter {
-	background-color: #f51e46
+	background-color: #ffcc00
 }
 .cbp-l-filters-button .cbp-filter-counter:after {
-	border-top: 4px solid #f51e46
+	border-top: 4px solid #ffcc00
 }
 @media only screen and (max-width: 480px) {
 .cbp-l-filters-button {
@@ -851,8 +851,8 @@ opacity:0
 }
 .cbp-l-filters-buttonCenter .cbp-filter-item.cbp-filter-item-active {
 	color: #fff;
-	background-color: #f51e46;
-	border: 1px solid #f51e46;
+	background-color: #ffcc00;
+	border: 1px solid #ffcc00;
 	cursor: default
 }
 .cbp-l-filters-buttonCenter .cbp-filter-item:first-child {
@@ -862,10 +862,10 @@ opacity:0
 	margin-right: 0
 }
 .cbp-l-filters-buttonCenter .cbp-filter-counter {
-	background-color: #f51e46
+	background-color: #ffcc00
 }
 .cbp-l-filters-buttonCenter .cbp-filter-counter:after {
-	border-top: 4px solid #f51e46
+	border-top: 4px solid #ffcc00
 }
 .cbp-l-filters-dropdown {
 	margin-bottom: 40px;
@@ -3328,7 +3328,7 @@ transform:translateY(0)
 	position: relative;
 	width: 36px;
 	height: 36px;
-	background: #f51e46
+	background: #ffcc00
 }
 .cbp-slider-next {
 	margin-left: 1px
@@ -3564,11 +3564,11 @@ transform:translateY(0)
 }
 }
 .cbp-l-grid-mosaic-projects .cbp-caption-activeWrap {
-	background-color: #f51e46;
+	background-color: #ffcc00;
 	background-color: rgba(242,76,52,0.9)
 }
 .cbp-l-grid-mosaic .cbp-caption-activeWrap {
-	background-color: #f51e46;
+	background-color: #ffcc00;
 	background-color: rgba(242,76,52,0.9)
 }
 .cbp-l-grid-mosaic .cbp-l-caption-title {
