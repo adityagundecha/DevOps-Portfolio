@@ -65,25 +65,25 @@
 // $( ".icon-plain-small" ).on( "mouseenter", function() {
 //   aniPos = findCenter($(this));
 //   timeline.replay();
-  
+
 // }
 
 
 
-$( document ).ready(function() {
-  var myTimeline = new mojs.Timeline();
+$(document).ready(function () {
+	var myTimeline = new mojs.Timeline();
 	var scaleCurve = mojs.easing.path('M0,100 L25,99.9999983 C26.2328835,75.0708847 19.7847843,0 100,0');
 
 	var myAnimation1 = new mojs.Burst({
 		duration: 1500,
-		shape : 'circle',
-		fill : [ '#e67e22', '#DE8AA0', '#8AAEDE', '#8ADEAD', '#DEC58A', '#8AD1DE' ],
-    top: 0,
-    left: 0,
+		shape: 'circle',
+		fill: ['#e67e22', '#DE8AA0', '#8AAEDE', '#8ADEAD', '#DEC58A', '#8AD1DE'],
+		top: 0,
+		left: 0,
 		opacity: 0.8,
-		childOptions: { radius: {200:0} },
-		radius: {40:120},
-		angle: {0: 180},
+		childOptions: { radius: { 200: 0 } },
+		radius: { 40: 120 },
+		angle: { 0: 180 },
 		count: 8,
 		isSwirl: true,
 		isRunLess: true,
@@ -93,103 +93,103 @@ $( document ).ready(function() {
 	var myAnimation2 = new mojs.Transit({
 		duration: 750,
 		type: 'circle',
-		radius: {0: 50},
+		radius: { 0: 50 },
 		fill: 'transparent',
-    top: 0,
-    left: 0,
-    stroke: '#fccb06',
-		strokeWidth: {15:0},
+		top: 0,
+		left: 0,
+		stroke: '#a277ff',
+		strokeWidth: { 15: 0 },
 		opacity: 0.6,
 		isRunLess: true,
 		easing: mojs.easing.bezier(0, 1, 0.5, 1)
 	});
 
-myTimeline.add(myAnimation1, myAnimation2);
+	myTimeline.add(myAnimation1, myAnimation2);
 
-$( ".animate-burst" ).on( "mouseenter", function() {
-  elSpan = this.querySelector('span')
-  aniPos = findCenter($(this));
-  myAnimation1.tune({ top: aniPos.y, left: aniPos.x });
-  myAnimation2.tune({ top: aniPos.y, left: aniPos.x });
-  myTimeline.replay();
+	$(".animate-burst").on("mouseenter", function () {
+		elSpan = this.querySelector('span')
+		aniPos = findCenter($(this));
+		myAnimation1.tune({ top: aniPos.y, left: aniPos.x });
+		myAnimation2.tune({ top: aniPos.y, left: aniPos.x });
+		myTimeline.replay();
 
-  new mojs.Tween({
-		duration : 900,
-		onUpdate: function(progress) {
-			if(progress > 0.3) {
-				var scaleProgress = scaleCurve(progress);
-				elSpan.style.WebkitTransform = elSpan.style.transform = 'scale3d(' + scaleProgress + ',' + scaleProgress + ',1)';
-				elSpan.style.WebkitTransform = elSpan.style.color = '#fccb06';
-			} else {
-				elSpan.style.WebkitTransform = elSpan.style.transform = 'scale3d(0,0,1)';
-				elSpan.style.WebkitTransform = elSpan.style.color = 'rgba(0,0,0,0.3)';
+		new mojs.Tween({
+			duration: 900,
+			onUpdate: function (progress) {
+				if (progress > 0.3) {
+					var scaleProgress = scaleCurve(progress);
+					elSpan.style.WebkitTransform = elSpan.style.transform = 'scale3d(' + scaleProgress + ',' + scaleProgress + ',1)';
+					elSpan.style.WebkitTransform = elSpan.style.color = '#a277ff';
+				} else {
+					elSpan.style.WebkitTransform = elSpan.style.transform = 'scale3d(0,0,1)';
+					elSpan.style.WebkitTransform = elSpan.style.color = 'rgba(0,0,0,0.3)';
+				}
 			}
-		}
-	}).play();
+		}).play();
 
-});
+	});
 
-$( ".animate-burst" ).on( "touchstart", function() {
-  elSpan = this.querySelector('span')
-  aniPos = findCenter($(this));
-  myAnimation1.tune({ top: aniPos.y, left: aniPos.x });
-  myAnimation2.tune({ top: aniPos.y, left: aniPos.x });
-  myTimeline.replay();
+	$(".animate-burst").on("touchstart", function () {
+		elSpan = this.querySelector('span')
+		aniPos = findCenter($(this));
+		myAnimation1.tune({ top: aniPos.y, left: aniPos.x });
+		myAnimation2.tune({ top: aniPos.y, left: aniPos.x });
+		myTimeline.replay();
 
-  new mojs.Tween({
-		duration : 900,
-		onUpdate: function(progress) {
-			if(progress > 0.3) {
-				var scaleProgress = scaleCurve(progress);
-				elSpan.style.WebkitTransform = elSpan.style.transform = 'scale3d(' + scaleProgress + ',' + scaleProgress + ',1)';
-				elSpan.style.WebkitTransform = elSpan.style.color = '#fccb06';
-			} else {
-				elSpan.style.WebkitTransform = elSpan.style.transform = 'scale3d(0,0,1)';
-				elSpan.style.WebkitTransform = elSpan.style.color = 'rgba(0,0,0,0.3)';
+		new mojs.Tween({
+			duration: 900,
+			onUpdate: function (progress) {
+				if (progress > 0.3) {
+					var scaleProgress = scaleCurve(progress);
+					elSpan.style.WebkitTransform = elSpan.style.transform = 'scale3d(' + scaleProgress + ',' + scaleProgress + ',1)';
+					elSpan.style.WebkitTransform = elSpan.style.color = '#a277ff';
+				} else {
+					elSpan.style.WebkitTransform = elSpan.style.transform = 'scale3d(0,0,1)';
+					elSpan.style.WebkitTransform = elSpan.style.color = 'rgba(0,0,0,0.3)';
+				}
 			}
-		}
-	}).play();
+		}).play();
 
-});
+	});
 
-$( ".animate-burst" ).on( "mouseout", function() {
-  elSpan = this.querySelector('span')
-  aniPos = findCenter($(this));
-  myTimeline.replay();
+	$(".animate-burst").on("mouseout", function () {
+		elSpan = this.querySelector('span')
+		aniPos = findCenter($(this));
+		myTimeline.replay();
 
 
-  new mojs.Tween({
-		duration : 900,
-		onUpdate: function() {
+		new mojs.Tween({
+			duration: 900,
+			onUpdate: function () {
 				elSpan.style.WebkitTransform = elSpan.style.color = '#000';
-		}
-	}).play();
+			}
+		}).play();
 
-});
+	});
 
-$( ".animate-burst" ).on( "touchend", function() {
-  elSpan = this.querySelector('span')
-  aniPos = findCenter($(this));
-  myTimeline.replay();
+	$(".animate-burst").on("touchend", function () {
+		elSpan = this.querySelector('span')
+		aniPos = findCenter($(this));
+		myTimeline.replay();
 
 
-  new mojs.Tween({
-		duration : 900,
-		onUpdate: function() {
+		new mojs.Tween({
+			duration: 900,
+			onUpdate: function () {
 				elSpan.style.WebkitTransform = elSpan.style.color = '#000';
-		}
-	}).play();
+			}
+		}).play();
 
-});
+	});
 
-function findCenter ($this) {
-  var offset = $this.offset();
-  var width = $this.width();
-  var height = $this.height();
-   Pos = {
-    x: offset.left + (width / 2),
-    y: offset.top + (height / 2)
-  };
-  return Pos;
-}
+	function findCenter($this) {
+		var offset = $this.offset();
+		var width = $this.width();
+		var height = $this.height();
+		Pos = {
+			x: offset.left + (width / 2),
+			y: offset.top + (height / 2)
+		};
+		return Pos;
+	}
 });
