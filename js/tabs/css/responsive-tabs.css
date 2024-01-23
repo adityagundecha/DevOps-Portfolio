@@ -10,7 +10,7 @@
 /*	#Reset
 //	================================================== */
 
-	/* Standard */
+/* Standard */
 .responsive-tabs {
 	width: 100%;
 	margin: 0;
@@ -20,6 +20,7 @@
 	position: relative;
 	background-color: #fc4242;
 }
+
 .responsive-tabs li {
 	width: 125px;
 	margin: 0;
@@ -29,6 +30,7 @@
 	padding: 0;
 	background-color: #242424;
 }
+
 .responsive-tabs li a {
 	display: block;
 	padding: 0px;
@@ -36,73 +38,93 @@
 	line-height: 23px;
 	text-decoration: none;
 }
+
 .responsive-tabs li.active {
 	font-weight: bold;
 	background-color: #fff;
 }
+
 .responsive-tabs-content {
 	margin-bottom: 10px;
 }
+
 .responsive-tabs-content.bm-remove {
 	margin-bottom: 0;
 }
+
 .responsive-tabs-content.bm-smaller {
 	margin-bottom: 5px;
 }
+
 .responsive-tabs-content.bm-small {
 	margin-bottom: 10px;
 }
+
 .responsive-tabs-content.bm-medium {
 	margin-bottom: 20px;
 }
+
 .responsive-tabs-content.bm-large {
 	margin-bottom: 30px;
 }
+
 .responsive-tabs-content.bm-larger {
 	margin-bottom: 40px;
 }
+
 .responsive-tabs-content .responsive-tabs-panel {
 	padding: 0px 0 0 0;
 }
+
 .responsive-tabs-content .responsive-tabs-panel .responsive-tab-title {
 	display: none;
 }
+
 /* Tabs Left */
 .responsive-tabs.responsive-tabs-left {
 	width: 150px;
 	float: left;
 }
+
 .responsive-tabs.responsive-tabs-left li {
 	text-align: left;
 	float: none;
 }
+
 .responsive-tabs-content.responsive-tabs-left {
 	overflow: hidden;
 }
+
 /* Tabs Right */
 .responsive-tabs.responsive-tabs-right {
 	width: 150px;
 	float: right;
 }
+
 .responsive-tabs.responsive-tabs-right li {
 	text-align: right;
 	float: none;
 }
+
 .responsive-tabs-content.responsive-tabs-right {
 	overflow: hidden;
 }
- @media only screen and (max-width: 767px) {
-.responsive-tabs li {
-	display: none;
+
+@media only screen and (max-width: 767px) {
+	.responsive-tabs li {
+		display: none;
+	}
+
+	.responsive-tabs-content .responsive-tabs-panel,
+	.responsive-tabs-content .responsive-tabs-panel .responsive-tab-title {
+		display: block;
+	}
 }
-.responsive-tabs-content .responsive-tabs-panel,  .responsive-tabs-content .responsive-tabs-panel .responsive-tab-title {
-	display: block;
-}
-}
+
 /*	#Themes
 //	================================================== */
 
-	/* Standard */
+/* Standard */
 .responsive-tabs-default .responsive-tabs li {
 	border: 1px solid #DDD;
 	border-right: 0;
@@ -111,13 +133,16 @@
 	position: relative;
 	z-index: 999999;
 }
+
 .responsive-tabs-default .responsive-tabs li:last-child {
 	border-right: 1px solid #DDD;
 }
+
 .responsive-tabs-default .responsive-tabs li.active {
 	border-bottom: 1px solid #FFF;
 	background: #FFF;
 }
+
 .responsive-tabs-default .responsive-tabs-content {
 	border: 1px solid #DDD;
 	background: #FFF;
@@ -125,32 +150,40 @@
 	top: -1px;
 	z-index: 999;
 }
+
 .responsive-tabs-default .responsive-tabs-content .responsive-tab-title {
 	color: #0B8593;
 }
+
 /* Tabs Left */
 .responsive-tabs-default .responsive-tabs.responsive-tabs-left {
 	left: 1px;
 }
+
 .responsive-tabs-default .responsive-tabs.responsive-tabs-left li {
 	width: 100%;
 	border-right: 1px solid #DDD;
 	border-bottom: 0;
 	line-height: 50px;
 }
+
 .responsive-tabs-default .responsive-tabs.responsive-tabs-left li:last-child {
 	border-bottom: 1px solid #DDD;
 }
+
 .responsive-tabs-default .responsive-tabs.responsive-tabs-left li.active {
 	border-right: 1px solid #FFF;
 }
+
 .responsive-tabs-default .responsive-tabs-content.responsive-tabs-left {
 	top: 0;
 }
+
 /* Tabs Right */
 .responsive-tabs-default .responsive-tabs.responsive-tabs-right {
 	right: 1px;
 }
+
 .responsive-tabs-default .responsive-tabs.responsive-tabs-right li {
 	width: 100%;
 	border-right: 1px solid #DDD;
@@ -158,12 +191,15 @@
 	border-left: 1px solid #DDD;
 	line-height: 50px;
 }
+
 .responsive-tabs-default .responsive-tabs.responsive-tabs-right li:last-child {
 	border-bottom: 1px solid #DDD;
 }
+
 .responsive-tabs-default .responsive-tabs.responsive-tabs-right li.active {
 	border-left: 1px solid #FFF;
 }
+
 .responsive-tabs-default .responsive-tabs-content.responsive-tabs-right {
 	top: 0;
 }
@@ -172,20 +208,24 @@
 .tab-navbar-main {
 	width: 100%;
 	display: inline-block;
-	text-align: center;/*background-color:#fc4242;*/
+	text-align: center;
+	/*background-color:#fc4242;*/
 }
+
 .tab-content-holder {
 	width: 100%;
 	float: left;
 	padding: 40px;
 	background-color: #fff;
 }
+
 .tab-navicon span {
 	font-size: 36px;
 	display: inline-block;
 	padding: 10px 0 0 0;
 	text-align: center;
 }
+
 .tabstyle-1 .responsive-tabs {
 	width: 100%;
 	margin: 0;
@@ -195,6 +235,7 @@
 	position: relative;
 	background-color: #fc4242;
 }
+
 .tabstyle-1 .responsive-tabs li {
 	width: 190px;
 	margin: 0;
@@ -202,24 +243,29 @@
 	line-height: 50px;
 	float: left;
 	padding: 0;
-	border-right:1px solid #ebebeb;
+	border-right: 1px solid #ebebeb;
 	background-color: #fff;
 }
+
 .tabstyle-1 .responsive-tabs li:last-child {
-	border-right:none;
+	border-right: none;
 }
+
 .tabstyle-1 .responsive-tabs li a {
 	display: block;
 	padding: 20px;
 	text-align: center;
 	line-height: 23px;
-	font-size:14px;
-	font-weight:normal;
-	text-transform:uppercase;
+	font-size: 14px;
+	font-weight: normal;
+	text-transform: uppercase;
 	text-decoration: none;
 	transition: all 0.3s ease-out 0s;
 }
-.tabstyle-1 .responsive-tabs li a:hover, .tabstyle-1 .responsive-tabs li.active, .tabstyle-1 .responsive-tabs li.active a {
+
+.tabstyle-1 .responsive-tabs li a:hover,
+.tabstyle-1 .responsive-tabs li.active,
+.tabstyle-1 .responsive-tabs li.active a {
 	color: #ccc;
 }
 
@@ -235,7 +281,7 @@
 	width: 100%;
 	display: inline-block;
 	text-align: center;
-	background-color:#242424;
+	background-color: #242424;
 }
 
 .tab-content-style-2 {
@@ -244,6 +290,7 @@
 	padding: 40px;
 	background-color: #fff;
 }
+
 .tabstyle-2 .responsive-tabs {
 	width: 100%;
 	margin: 0;
@@ -253,33 +300,39 @@
 	position: relative;
 	background-color: #fc4242;
 }
+
 .tabstyle-2 .responsive-tabs li {
-	width:auto;
+	width: auto;
 	margin: 0;
 	text-align: center;
 	line-height: 50px;
 	padding: 0;
-	float:left;
-	border-right:1px solid #727272;
+	float: left;
+	border-right: 1px solid #727272;
 	background-color: #242424;
 }
+
 .tabstyle-2 .responsive-tabs li:last-child {
-	border-right:none;
+	border-right: none;
 }
+
 .tabstyle-2 .responsive-tabs li a {
 	display: block;
 	padding: 15px;
 	text-align: center;
 	line-height: 23px;
-	font-size:14px;
-	font-weight:normal;
-	text-transform:uppercase;
+	font-size: 14px;
+	font-weight: normal;
+	text-transform: uppercase;
 	text-decoration: none;
 	transition: all 0.3s ease-out 0s;
 }
-.tabstyle-2 .responsive-tabs li a:hover, .tabstyle-2 .responsive-tabs li.active, .tabstyle-2 .responsive-tabs li.active a {
+
+.tabstyle-2 .responsive-tabs li a:hover,
+.tabstyle-2 .responsive-tabs li.active,
+.tabstyle-2 .responsive-tabs li.active a {
 	color: #fff;
-	border-right:1px solid #ccc;
+	border-right: 1px solid #ccc;
 	background-color: #ccc;
 }
 
@@ -295,17 +348,18 @@
 	width: 100%;
 	display: inline-block;
 	text-align: center;
-	border:1px solid #e4e4e4;
-	background-color:transparent;
+	border: 1px solid #e4e4e4;
+	background-color: transparent;
 }
 
 .tab-content-style-3 {
 	width: 100%;
 	float: left;
 	padding: 40px;
-	border:1px solid #e4e4e4;
+	border: 1px solid #e4e4e4;
 	background-color: transparent;
 }
+
 .tabstyle-3 .responsive-tabs {
 	width: 100%;
 	margin: 0;
@@ -315,31 +369,37 @@
 	position: relative;
 	background-color: transparent;
 }
+
 .tabstyle-3 .responsive-tabs li {
-	width:50%;
+	width: 50%;
 	margin: 0;
 	text-align: center;
 	line-height: 50px;
 	padding: 0;
-	float:left;
-	border-right:1px solid #e4e4e4;
+	float: left;
+	border-right: 1px solid #e4e4e4;
 	background-color: transparent;
 }
+
 .tabstyle-3 .responsive-tabs li:last-child {
-	border-right:none;
+	border-right: none;
 }
+
 .tabstyle-3 .responsive-tabs li a {
 	display: block;
 	padding: 15px;
 	text-align: center;
 	line-height: 23px;
-	font-size:14px;
-	font-weight:normal;
-	text-transform:uppercase;
+	font-size: 14px;
+	font-weight: normal;
+	text-transform: uppercase;
 	text-decoration: none;
 	transition: all 0.3s ease-out 0s;
 }
-.tabstyle-3 .responsive-tabs li a:hover, .tabstyle-3 .responsive-tabs li.active, .tabstyle-3 .responsive-tabs li.active a {
+
+.tabstyle-3 .responsive-tabs li a:hover,
+.tabstyle-3 .responsive-tabs li.active,
+.tabstyle-3 .responsive-tabs li.active a {
 	color: #ccc;
 }
 
@@ -354,7 +414,7 @@
 	width: 100%;
 	display: inline-block;
 	text-align: center;
-	background-color:#fff;
+	background-color: #fff;
 }
 
 .tab-content-style-4 {
@@ -363,6 +423,7 @@
 	padding: 40px 0 0 0;
 	background-color: #fff;
 }
+
 .tabstyle-4 .responsive-tabs {
 	width: 100%;
 	margin: 0;
@@ -372,14 +433,15 @@
 	position: relative;
 	background-color: #fc4242;
 }
+
 .tabstyle-4 .responsive-tabs li {
-	width:48%;
+	width: 48%;
 	text-align: center;
 	line-height: 50px;
 	padding: 0;
-	float:left;
-	margin-right:3px;
-	border:1px solid #e4e4e4;
+	float: left;
+	margin-right: 3px;
+	border: 1px solid #e4e4e4;
 	background-color: #fff;
 }
 
@@ -388,15 +450,18 @@
 	padding: 15px;
 	text-align: center;
 	line-height: 23px;
-	font-size:14px;
-	font-weight:normal;
-	text-transform:uppercase;
+	font-size: 14px;
+	font-weight: normal;
+	text-transform: uppercase;
 	text-decoration: none;
 	transition: all 0.3s ease-out 0s;
 }
-.tabstyle-4 .responsive-tabs li a:hover, .tabstyle-4 .responsive-tabs li.active, .tabstyle-4 .responsive-tabs li.active a {
+
+.tabstyle-4 .responsive-tabs li a:hover,
+.tabstyle-4 .responsive-tabs li.active,
+.tabstyle-4 .responsive-tabs li.active a {
 	color: #727272;
-	border-right:1px solid #101010;
+	border-right: 1px solid #101010;
 	background-color: #101010;
 }
 
@@ -416,36 +481,42 @@
 	list-style-type: none;
 	position: relative;
 }
+
 .tabstyle-5 .responsive-tabs li {
 	width: 150px;
 	margin: 0;
 	text-align: center;
 	line-height: 50px;
-	display:inline-block;
+	display: inline-block;
 	padding: 0;
-	border-right:1px solid #ebebeb;
-	border-top:1px solid #ebebeb;
-	border-bottom:1px solid #ebebeb;
-	
+	border-right: 1px solid #ebebeb;
+	border-top: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+
 	background-color: #fff;
 }
+
 .tabstyle-5 .responsive-tabs li:last-child {
-	border-right:1px solid #ebebeb;
+	border-right: 1px solid #ebebeb;
 }
+
 .tabstyle-5 .responsive-tabs li a {
 	display: block;
 	padding: 20px;
 	text-align: center;
 	line-height: 23px;
-	font-size:14px;
-	font-weight:normal;
-	text-transform:uppercase;
+	font-size: 14px;
+	font-weight: normal;
+	text-transform: uppercase;
 	text-decoration: none;
 	transition: all 0.3s ease-out 0s;
 }
-.tabstyle-5 .responsive-tabs li a:hover, .tabstyle-5 .responsive-tabs li.active, .tabstyle-5 .responsive-tabs li.active a {
+
+.tabstyle-5 .responsive-tabs li a:hover,
+.tabstyle-5 .responsive-tabs li.active,
+.tabstyle-5 .responsive-tabs li.active a {
 	color: #727272;
-	background-color:#101010;
+	background-color: #101010;
 }
 
 .tabstyle-5 .responsive-tabs-content {
@@ -453,47 +524,52 @@
 }
 
 .tabstyle-5-feature-box {
-	border:1px solid #f0f0f0;
-	float:left;
-	width:100%;
-}
-.tabstyle-5-feature-box-2 {
-	border:1px solid #f0f0f0;
-	float:left;
-	width:100%;
-	padding:45px 60px;
+	border: 1px solid #f0f0f0;
+	float: left;
+	width: 100%;
 }
 
-.ttitle strong{
-	font-size:24px;
-	color:#101010;
-	border-bottom:1px solid #101010;
-	}
-.ttitle.white strong{
-	font-size:24px;
-	color:#fff;
-	border-bottom:1px solid #fff;
-	}
-.ttitle.dark strong{
-	color:#101010;
-	border-bottom:1px solid #101010;
-	}
-.ttitle{
-	padding-top:20px;
-	margin:15px 0;
-	float:left;
-	}
-.ttitle span{
-	margin-bottom:15px;
-	}
-	
+.tabstyle-5-feature-box-2 {
+	border: 1px solid #f0f0f0;
+	float: left;
+	width: 100%;
+	padding: 45px 60px;
+}
+
+.ttitle strong {
+	font-size: 24px;
+	color: #101010;
+	border-bottom: 1px solid #101010;
+}
+
+.ttitle.white strong {
+	font-size: 24px;
+	color: #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.ttitle.dark strong {
+	color: #101010;
+	border-bottom: 1px solid #101010;
+}
+
+.ttitle {
+	padding-top: 20px;
+	margin: 15px 0;
+	float: left;
+}
+
+.ttitle span {
+	margin-bottom: 15px;
+}
+
 /* Tab atyle 6
  ------------------------------ */
 .tab-navbar-main-style-6 {
 	width: 100%;
 	display: inline-block;
 	text-align: center;
-	background-color:#fff;
+	background-color: #fff;
 }
 
 .tab-content-style-6 {
@@ -502,6 +578,7 @@
 	padding: 40px 0 0 0;
 	background-color: #fff;
 }
+
 .tabstyle-6 .responsive-tabs {
 	width: 100%;
 	margin: 0;
@@ -511,14 +588,15 @@
 	position: relative;
 	background-color: #fc4242;
 }
+
 .tabstyle-6 .responsive-tabs li {
-	width:31%;
+	width: 31%;
 	text-align: center;
 	line-height: 50px;
 	padding: 0;
-	float:left;
-	margin-right:5px;
-	border:1px solid #e4e4e4;
+	float: left;
+	margin-right: 5px;
+	border: 1px solid #e4e4e4;
 	background-color: #fff;
 }
 
@@ -527,50 +605,55 @@
 	padding: 15px 6px;
 	text-align: center;
 	line-height: 23px;
-	font-size:14px;
-	font-weight:normal;
-	text-transform:uppercase;
+	font-size: 14px;
+	font-weight: normal;
+	text-transform: uppercase;
 	text-decoration: none;
-	border-right:1px solid #fff;
+	border-right: 1px solid #fff;
 	transition: all 0.3s ease-out 0s;
 }
-.tabstyle-6 .responsive-tabs li a:hover, .tabstyle-6 .responsive-tabs li.active, .tabstyle-6 .responsive-tabs li.active a {
+
+.tabstyle-6 .responsive-tabs li a:hover,
+.tabstyle-6 .responsive-tabs li.active,
+.tabstyle-6 .responsive-tabs li.active a {
 	color: #727272;
-	border-right:1px solid #101010;
+	border-right: 1px solid #101010;
 	background-color: #101010;
 }
 
 .tabstyle-6 .responsive-tabs-content {
 	margin-bottom: 20px;
 }
-.tabstyle-6 .responsive-tab-title p strong{
-	font-size:24px;
-	color:#101010;
-	border-bottom:1px solid #101010;
-	}
 
-.tabstyle-6 .responsive-tab-title{
-	margin-bottom:50px;
-	}
-	
-	
-	
-	
-	
+.tabstyle-6 .responsive-tab-title p strong {
+	font-size: 24px;
+	color: #101010;
+	border-bottom: 1px solid #101010;
+}
+
+.tabstyle-6 .responsive-tab-title {
+	margin-bottom: 50px;
+}
+
+
+
+
+
 /* Tab atyle 7
  ------------------------------ */
 .tab-navbar-main-style-7 {
 	width: 100%;
 	display: inline-block;
 	text-align: center;
-	background-color:#f5f5f5;
+	background-color: #f5f5f5;
 }
 
 .tab-content-style-7 {
 	width: 100%;
 	float: left;
-	padding:0 0 0 0;
+	padding: 0 0 0 0;
 }
+
 .tabstyle-7 .responsive-tabs {
 	width: 100%;
 	margin: 0;
@@ -580,12 +663,13 @@
 	position: relative;
 	background-color: #fc4242;
 }
+
 .tabstyle-7 .responsive-tabs li {
-	width:33%;
+	width: 33%;
 	text-align: center;
 	line-height: 50px;
 	padding: 0;
-	float:left;
+	float: left;
 	background-color: transparent;
 }
 
@@ -594,36 +678,41 @@
 	padding: 15px 6px;
 	text-align: center;
 	line-height: 23px;
-	font-size:14px;
-	font-weight:normal;
-	text-transform:uppercase;
+	font-size: 14px;
+	font-weight: normal;
+	text-transform: uppercase;
 	text-decoration: none;
-	border-right:1px solid #e4e4e4;
+	border-right: 1px solid #e4e4e4;
 	transition: all 0.3s ease-out 0s;
 }
-.tabstyle-7 .responsive-tabs li a:hover, .tabstyle-7 .responsive-tabs li.active, .tabstyle-7 .responsive-tabs li.active a {
+
+.tabstyle-7 .responsive-tabs li a:hover,
+.tabstyle-7 .responsive-tabs li.active,
+.tabstyle-7 .responsive-tabs li.active a {
 	color: #fff;
-	border-right:1px solid #fccb06;
-	background-color: #fccb06;
+	border-right: 1px solid #a277ff;
+	background-color: #a277ff;
 }
 
 .tabstyle-7 .responsive-tabs-content {
 	margin-bottom: 20px;
 }
-.tabstyle-7 .responsive-tab-title p strong{
-	font-size:24px;
-	color:#101010;
-	border-bottom:1px solid #101010;
-	}
 
-.tabstyle-7 .responsive-tab-title{
-	margin-bottom:50px;
-	}	
+.tabstyle-7 .responsive-tab-title p strong {
+	font-size: 24px;
+	color: #101010;
+	border-bottom: 1px solid #101010;
+}
+
+.tabstyle-7 .responsive-tab-title {
+	margin-bottom: 50px;
+}
+
 .tabstyle-7 .responsive-tabs li a.no-border {
-	border-right:none;
-}	
-	
-	
+	border-right: none;
+}
+
+
 /* Tab atyle 8
  ------------------------------ */
 .tabstyle-8 .responsive-tabs {
@@ -635,12 +724,13 @@
 	list-style-type: none;
 	position: relative;
 }
+
 .tabstyle-8 .responsive-tabs li {
 	width: 150px;
 	margin: 0 10px 0 0;
 	text-align: center;
 	line-height: 50px;
-	display:inline-block;
+	display: inline-block;
 	padding: 0;
 	background-color: #fff;
 }
@@ -650,38 +740,48 @@
 	padding: 40px;
 	text-align: center;
 	line-height: 23px;
-	font-size:14px;
-	font-weight:normal;
+	font-size: 14px;
+	font-weight: normal;
 	color: #101010;
-	text-transform:uppercase;
+	text-transform: uppercase;
 	text-decoration: none;
 	transition: all 0.3s ease-out 0s;
 }
+
 .tabstyle-8 .responsive-tabs li a span {
-	font-size:36px;
+	font-size: 36px;
 	color: #101010;
 }
-.tabstyle-8 .responsive-tabs li a:hover, .tabstyle-8 .responsive-tabs li a:hover span, .tabstyle-8 .responsive-tabs li.active, .tabstyle-8 .responsive-tabs li.active a, .tabstyle-8 .responsive-tabs li.active a span {
+
+.tabstyle-8 .responsive-tabs li a:hover,
+.tabstyle-8 .responsive-tabs li a:hover span,
+.tabstyle-8 .responsive-tabs li.active,
+.tabstyle-8 .responsive-tabs li.active a,
+.tabstyle-8 .responsive-tabs li.active a span {
 	color: #fff;
-	background-color:#fccb06;
+	background-color: #a277ff;
 }
+
 .tabstyle-8 .responsive-tabs-content {
 	margin-bottom: 20px;
 }
 
 .tabstyle-8-feature-box {
-	float:left;
-	width:100%;
+	float: left;
+	width: 100%;
 }
+
 .tabstyle-8-feature-box-2 {
-	float:left;
-	width:100%;
-	padding:60px;
-	background-color:#fccb06;
+	float: left;
+	width: 100%;
+	padding: 60px;
+	background-color: #a277ff;
 }
+
 .responsive-tabs-content.more-mar-1 {
-    margin-bottom: 45px;
+	margin-bottom: 45px;
 }
+
 /*.tab-navbar-main.bborder {
     border-bottom: 1px solid #f0f0f0;
 }*/
@@ -689,14 +789,14 @@
 
 /* Tab atyle 9
  ------------------------------ */
- 
+
 .tab-content-holder-9 {
-    width: 100%;
-    float: left;
-    padding: 60px 50px 50px 50px;
-	margin-top:10px;
-	border:1px solid #f1f1f1;
-    background-color: #fff;
+	width: 100%;
+	float: left;
+	padding: 60px 50px 50px 50px;
+	margin-top: 10px;
+	border: 1px solid #f1f1f1;
+	background-color: #fff;
 }
 
 .tabstyle-9 .responsive-tabs {
@@ -707,41 +807,49 @@
 	list-style-type: none;
 	position: relative;
 }
+
 .tabstyle-9 .responsive-tabs li {
 	width: 190px;
 	margin: 0;
 	text-align: center;
 	line-height: 50px;
-	display:inline-block;
+	display: inline-block;
 	padding: 0;
-	border-right:1px solid #ebebeb;
-	border-top:1px solid #ebebeb;
-	border-bottom:1px solid #ebebeb;
+	border-right: 1px solid #ebebeb;
+	border-top: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
 	background-color: #fff;
 }
+
 .tabstyle-9 .responsive-tabs li:last-child {
-	border-right:1px solid #ebebeb;
+	border-right: 1px solid #ebebeb;
 }
+
 .tabstyle-9 .responsive-tabs li:first-child {
-	border-left:1px solid #ebebeb;
+	border-left: 1px solid #ebebeb;
 }
+
 .tabstyle-9 .responsive-tabs li a {
 	display: block;
 	padding: 26px 20px;
 	text-align: center;
 	line-height: 23px;
-	font-size:14px;
-	font-weight:normal;
-	text-transform:uppercase;
+	font-size: 14px;
+	font-weight: normal;
+	text-transform: uppercase;
 	text-decoration: none;
 	transition: all 0.3s ease-out 0s;
 }
+
 .tabstyle-9 .responsive-tabs li a span {
-	font-size:32px;
+	font-size: 32px;
 }
-.tabstyle-9 .responsive-tabs li a:hover, .tabstyle-9 .responsive-tabs li.active, .tabstyle-9 .responsive-tabs li.active a {
+
+.tabstyle-9 .responsive-tabs li a:hover,
+.tabstyle-9 .responsive-tabs li.active,
+.tabstyle-9 .responsive-tabs li.active a {
 	color: #727272;
-	background-color:#101010;
+	background-color: #101010;
 }
 
 .tabstyle-9 .responsive-tabs-content {
@@ -749,57 +857,59 @@
 }
 
 .tabstyle-9-feature-box {
-	float:left;
-	width:100%;
-	padding:0px;
+	float: left;
+	width: 100%;
+	padding: 0px;
 }
+
 .tabstyle-9-feature-box-2 {
-	float:left;
-	width:100%;
-	padding:0;
+	float: left;
+	width: 100%;
+	padding: 0;
 }
 
 
 /* Tab atyle 10
  ------------------------------ */
- 
+
 .tab-content-holder-10 {
-    width: 100%;
-    padding: 60px 50px 50px 50px;
-	margin-top:10px;
+	width: 100%;
+	padding: 60px 50px 50px 50px;
+	margin-top: 10px;
 
 }
 
 .tabstyle-10 .responsive-tabs {
 	width: 65%;
-	margin:0 0 0 25%;
+	margin: 0 0 0 25%;
 	padding: 0;
 	text-align: center;
 	list-style-type: none;
 	position: relative;
-	
+
 }
+
 .tabstyle-10 .responsive-tabs li {
 	width: 190px;
 	margin: 0;
 	text-align: center;
 	line-height: 50px;
-	display:inline-block;
+	display: inline-block;
 	padding: 0;
-	border-bottom:2px solid rgba(255, 255, 255, 0.5);
+	border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 	background: transparent;
 }
 
 .tabstyle-10 .responsive-tabs li .primary-circle {
 	position: relative;
 	width: 25px;
-	height:25px;
+	height: 25px;
 	margin: 0;
 	left: 82px;
 	bottom: -162px;
-	border:5px solid #727272;
-	background-color:#fff;
-	border-radius:100%;
+	border: 5px solid #727272;
+	background-color: #fff;
+	border-radius: 100%;
 }
 
 .tabstyle-10 .responsive-tabs li a {
@@ -807,24 +917,30 @@
 	padding: 40px 20px;
 	text-align: center;
 	line-height: 23px;
-	font-size:14px;
-	font-weight:normal;
+	font-size: 14px;
+	font-weight: normal;
 	color: #fff;
-	text-transform:uppercase;
+	text-transform: uppercase;
 	text-decoration: none;
 	transition: all 0.3s ease-out 0s;
 }
+
 .tabstyle-10 .responsive-tabs li a span {
-	font-size:32px;
-	padding-bottom:15px;
+	font-size: 32px;
+	padding-bottom: 15px;
 }
-.tabstyle-10 .responsive-tabs li a:hover, .tabstyle-10 .responsive-tabs li.active, .tabstyle-10 .responsive-tabs li.active a {
+
+.tabstyle-10 .responsive-tabs li a:hover,
+.tabstyle-10 .responsive-tabs li.active,
+.tabstyle-10 .responsive-tabs li.active a {
 	color: #fff;
 	background: transparent;
 }
-.tabstyle-10 .responsive-tabs li a:hover .primary-circle, .tabstyle-10 .responsive-tabs li.active .primary-circle {
-	border:5px solid #fccb06;
-	background-color:#fff;
+
+.tabstyle-10 .responsive-tabs li a:hover .primary-circle,
+.tabstyle-10 .responsive-tabs li.active .primary-circle {
+	border: 5px solid #a277ff;
+	background-color: #fff;
 }
 
 
@@ -833,61 +949,63 @@
 }
 
 .tabstyle-10-feature-box {
-	float:left;
-	width:100%;
-	padding:0px;
+	float: left;
+	width: 100%;
+	padding: 0px;
 }
+
 .tabstyle-10-feature-box-2 {
-	float:left;
-	width:100%;
-	padding:0;
+	float: left;
+	width: 100%;
+	padding: 0;
 }
 
 
 
 /* Tab atyle 11
  ------------------------------ */
- 
+
 .tab-content-holder-11 {
-    width: 100%;
-    padding: 0 0 0 0;
-	margin-top:0;
-	
+	width: 100%;
+	padding: 0 0 0 0;
+	margin-top: 0;
+
 
 }
 
 .tabstyle-11 .responsive-tabs {
 	width: 70%;
-	margin:0 0 0 18%;
+	margin: 0 0 0 18%;
 	padding: 0;
 	text-align: center;
 	list-style-type: none;
 	position: relative;
-	
-	
+
+
 }
+
 .tabstyle-11 .responsive-tabs li {
 	width: 190px;
 	margin: 0;
 	text-align: center;
 	line-height: 50px;
-	display:inline-block;
+	display: inline-block;
 	padding: 0;
 	color: #000;
-	border-right:1px solid #e5e5e5;
+	border-right: 1px solid #e5e5e5;
 	background: #fff;
 }
 
 .tabstyle-11 .responsive-tabs li .primary-circle {
 	position: relative;
 	width: 25px;
-	height:25px;
+	height: 25px;
 	margin: 0;
 	left: 82px;
 	bottom: -162px;
-	border:5px solid #727272;
-	background-color:#fff;
-	border-radius:100%;
+	border: 5px solid #727272;
+	background-color: #fff;
+	border-radius: 100%;
 }
 
 
@@ -896,81 +1014,91 @@
 	padding: 40px 20px;
 	text-align: center;
 	line-height: 23px;
-	font-size:16px;
-	font-weight:normal;
+	font-size: 16px;
+	font-weight: normal;
 	color: #000;
 	text-decoration: none;
 	transition: all 0.3s ease-out 0s;
 }
+
 .tabstyle-11 .responsive-tabs li a span {
-	font-size:32px;
-	padding-bottom:15px;
+	font-size: 32px;
+	padding-bottom: 15px;
 }
-.tabstyle-11 .responsive-tabs li a:hover, .tabstyle-11 .responsive-tabs li.active, .tabstyle-11 .responsive-tabs li.active a {
+
+.tabstyle-11 .responsive-tabs li a:hover,
+.tabstyle-11 .responsive-tabs li.active,
+.tabstyle-11 .responsive-tabs li.active a {
 	color: #f51e46;
 	background: #fff;
 }
+
 .tabstyle-11 .responsive-tabs-content {
 	margin-bottom: 20px;
 }
-.tabstyle-11 .responsive-tabs li a:hover span, .tabstyle-11 .responsive-tabs li.active a span {
+
+.tabstyle-11 .responsive-tabs li a:hover span,
+.tabstyle-11 .responsive-tabs li.active a span {
 	color: #f51e46;
 }
+
 .tabstyle-11-feature-box {
-	float:left;
-	width:100%;
-	padding:0px;
+	float: left;
+	width: 100%;
+	padding: 0px;
 }
+
 .tabstyle-11-feature-box-2 {
-	float:left;
-	width:100%;
-	padding:0;
+	float: left;
+	width: 100%;
+	padding: 0;
 }
 
 
 /* Tab atyle 12
  ------------------------------ */
- 
+
 .tab-content-holder-12 {
-    width: 100%;
-    padding: 0 0 0 0;
-	margin-top:0;
-	
+	width: 100%;
+	padding: 0 0 0 0;
+	margin-top: 0;
+
 
 }
 
 .tabstyle-12 .responsive-tabs {
 	width: 70%;
-	margin:0 0 0 18%;
+	margin: 0 0 0 18%;
 	padding: 0;
 	text-align: center;
 	list-style-type: none;
 	position: relative;
-	
-	
+
+
 }
+
 .tabstyle-12 .responsive-tabs li {
 	width: 190px;
 	margin: 0;
 	text-align: center;
 	line-height: 50px;
-	display:inline-block;
+	display: inline-block;
 	padding: 0;
 	color: #000;
-	border-right:1px solid #e5e5e5;
+	border-right: 1px solid #e5e5e5;
 	background: #fff;
 }
 
 .tabstyle-12 .responsive-tabs li .primary-circle {
 	position: relative;
 	width: 25px;
-	height:25px;
+	height: 25px;
 	margin: 0;
 	left: 82px;
 	bottom: -162px;
-	border:5px solid #727272;
-	background-color:#fff;
-	border-radius:100%;
+	border: 5px solid #727272;
+	background-color: #fff;
+	border-radius: 100%;
 }
 
 
@@ -979,89 +1107,100 @@
 	padding: 40px 20px;
 	text-align: center;
 	line-height: 23px;
-	font-size:16px;
-	font-weight:normal;
+	font-size: 16px;
+	font-weight: normal;
 	color: #000;
 	text-decoration: none;
 	transition: all 0.3s ease-out 0s;
 }
+
 .tabstyle-12 .responsive-tabs li a span {
-	font-size:32px;
-	padding-bottom:15px;
+	font-size: 32px;
+	padding-bottom: 15px;
 }
-.tabstyle-12 .responsive-tabs li a:hover, .tabstyle-12 .responsive-tabs li.active, .tabstyle-12 .responsive-tabs li.active a {
+
+.tabstyle-12 .responsive-tabs li a:hover,
+.tabstyle-12 .responsive-tabs li.active,
+.tabstyle-12 .responsive-tabs li.active a {
 	color: #fff;
-	background: #ff971c;
+	background: #f694ff;
 }
+
 .tabstyle-12 .responsive-tabs-content {
 	margin-bottom: 20px;
 }
-.tabstyle-12 .responsive-tabs li a:hover span, .tabstyle-12 .responsive-tabs li.active a span {
+
+.tabstyle-12 .responsive-tabs li a:hover span,
+.tabstyle-12 .responsive-tabs li.active a span {
 	color: #fff;
 }
 
 
 .tabstyle-12-feature-box {
-	float:left;
-	width:100%;
-	padding:0px;
+	float: left;
+	width: 100%;
+	padding: 0px;
 }
+
 .tabstyle-12-feature-box-2 {
-	float:left;
-	width:100%;
-	padding:0;
+	float: left;
+	width: 100%;
+	padding: 0;
 }
 
 
 /* Tab atyle 13
  ------------------------------ */
- 
+
 .tab-content-holder-13 {
-    width: 100%;
-    padding: 0 0 0 0;
-	margin-top:0;
+	width: 100%;
+	padding: 0 0 0 0;
+	margin-top: 0;
 }
 
 .tabstyle-13 .responsive-tabs {
 	width: 70%;
-	margin:0 0 0 26%;
+	margin: 0 0 0 26%;
 	padding: 0;
 	text-align: center;
 	list-style-type: none;
 	position: relative;
-	
-	
+
+
 }
+
 .tabstyle-13 .responsive-tabs li {
 	width: 300px;
 	margin: 0;
 	text-align: center;
 	line-height: 50px;
-	display:inline-block;
+	display: inline-block;
 	padding: 0;
 	color: #000;
 	background-color: #fff;
-	border-right:1px solid #e4e4e4;
+	border-right: 1px solid #e4e4e4;
 	border-top-left-radius: 50px;
 	border-bottom-left-radius: 50px;
 }
+
 .tabstyle-13 .responsive-tabs li:last-child {
 	border-top-right-radius: 50px;
 	border-bottom-right-radius: 50px;
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
-	border-right:none;
+	border-right: none;
 }
+
 .tabstyle-13 .responsive-tabs li .primary-circle {
 	position: relative;
 	width: 25px;
-	height:25px;
+	height: 25px;
 	margin: 0;
 	left: 82px;
 	bottom: -162px;
-	border:5px solid #727272;
-	background-color:#fff;
-	border-radius:100%;
+	border: 5px solid #727272;
+	background-color: #fff;
+	border-radius: 100%;
 }
 
 
@@ -1070,36 +1209,44 @@
 	padding: 25px 20px;
 	text-align: center;
 	line-height: 23px;
-	font-size:16px;
+	font-size: 16px;
 	font-weight: 600;
 	color: #000;
 	text-decoration: none;
 	transition: all 0.3s ease-out 0s;
 }
+
 .tabstyle-13 .responsive-tabs li a span {
-	font-size:32px;
-	padding-bottom:15px;
+	font-size: 32px;
+	padding-bottom: 15px;
 }
-.tabstyle-13 .responsive-tabs li a:hover, .tabstyle-13 .responsive-tabs li.active, .tabstyle-13 .responsive-tabs li.active a {
-	color: #ff971c;	
+
+.tabstyle-13 .responsive-tabs li a:hover,
+.tabstyle-13 .responsive-tabs li.active,
+.tabstyle-13 .responsive-tabs li.active a {
+	color: #f694ff;
 }
+
 .tabstyle-13 .responsive-tabs-content {
 	margin-bottom: 20px;
 }
-.tabstyle-13 .responsive-tabs li a:hover span, .tabstyle-13 .responsive-tabs li.active a span {
+
+.tabstyle-13 .responsive-tabs li a:hover span,
+.tabstyle-13 .responsive-tabs li.active a span {
 	color: #fff;
 }
 
 
 .tabstyle-13-feature-box {
-	float:left;
-	width:100%;
-	padding:0px;
+	float: left;
+	width: 100%;
+	padding: 0px;
 }
+
 .tabstyle-13-feature-box-2 {
-	float:left;
-	width:100%;
-	padding:0;
+	float: left;
+	width: 100%;
+	padding: 0;
 }
 
 
@@ -1107,31 +1254,32 @@
 
 /* Tab atyle 14
  ------------------------------ */
- 
+
 .tab-content-holder-14 {
-    width: 100%;
-    padding: 0 0 0 0;
-	margin-top:0;
-	
+	width: 100%;
+	padding: 0 0 0 0;
+	margin-top: 0;
+
 
 }
 
 .tabstyle-14 .responsive-tabs {
 	width: 70%;
-	margin:0 0 0 18%;
+	margin: 0 0 0 18%;
 	padding: 0;
 	text-align: center;
 	list-style-type: none;
 	position: relative;
-	
-	
+
+
 }
+
 .tabstyle-14 .responsive-tabs li {
 	width: 220px;
 	margin: 10px;
 	text-align: center;
 	line-height: 50px;
-	display:inline-block;
+	display: inline-block;
 	padding: 0;
 	color: #000;
 	background: #fff;
@@ -1140,12 +1288,12 @@
 .tabstyle-14 .responsive-tabs li .primary-circle {
 	position: relative;
 	width: 25px;
-	height:25px;
+	height: 25px;
 	margin: 0;
 	left: 82px;
 	bottom: -162px;
-	background-color:#fff;
-	border-radius:100%;
+	background-color: #fff;
+	border-radius: 100%;
 }
 
 
@@ -1154,38 +1302,46 @@
 	padding: 65px 20px;
 	text-align: center;
 	line-height: 23px;
-	font-size:16px;
-	font-weight:normal;
+	font-size: 16px;
+	font-weight: normal;
 	color: #000;
 	text-decoration: none;
-/*	border:10px solid #fff;*/
+	/*	border:10px solid #fff;*/
 	transition: all 0.3s ease-out 0s;
 }
+
 .tabstyle-14 .responsive-tabs li a span {
-	font-size:32px;
-	padding-bottom:15px;
+	font-size: 32px;
+	padding-bottom: 15px;
 }
-.tabstyle-14 .responsive-tabs li a:hover, .tabstyle-14 .responsive-tabs li.active, .tabstyle-14 .responsive-tabs li.active a {
+
+.tabstyle-14 .responsive-tabs li a:hover,
+.tabstyle-14 .responsive-tabs li.active,
+.tabstyle-14 .responsive-tabs li.active a {
 	color: #fff;
-	background-color:#ff971c;
+	background-color: #f694ff;
 }
+
 .tabstyle-14 .responsive-tabs-content {
 	margin-bottom: 20px;
 }
-.tabstyle-14 .responsive-tabs li a:hover span, .tabstyle-14 .responsive-tabs li.active a span {
+
+.tabstyle-14 .responsive-tabs li a:hover span,
+.tabstyle-14 .responsive-tabs li.active a span {
 	color: #fff;
 }
 
 
 .tabstyle-14-feature-box {
-	float:left;
-	width:100%;
-	padding:0px;
+	float: left;
+	width: 100%;
+	padding: 0px;
 }
+
 .tabstyle-14-feature-box-2 {
-	float:left;
-	width:100%;
-	padding:0;
+	float: left;
+	width: 100%;
+	padding: 0;
 }
 
 
@@ -1196,16 +1352,16 @@
 	width: 100%;
 	display: inline-block;
 	text-align: center;
-	background-color:#f5f5f5;
+	background-color: #f5f5f5;
 }
 
 .tab-content-style-15 {
 	width: 100%;
 	float: left;
-	padding:70px;
-	border-left:1px solid #e5e5e5;
-	border-right:1px solid #e5e5e5;
-	border-bottom:1px solid #e5e5e5;
+	padding: 70px;
+	border-left: 1px solid #e5e5e5;
+	border-right: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
 	background-color: #fff;
 }
 
@@ -1217,20 +1373,21 @@
 	list-style-type: none;
 	position: relative;
 }
+
 .tabstyle-15 .responsive-tabs li {
-	width:33.3%;
+	width: 33.3%;
 	text-align: center;
 	line-height: 50px;
 	padding: 0;
-	float:left;
+	float: left;
 	background-color: #fff;
-	border-top:1px solid #e5e5e5;
-	border-left:1px solid #e5e5e5;
-	border-bottom:1px solid #e5e5e5;
+	border-top: 1px solid #e5e5e5;
+	border-left: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
 }
 
 .tabstyle-15 .responsive-tabs li:last-child {
-	border-right:1px solid #ebebeb;
+	border-right: 1px solid #ebebeb;
 }
 
 .tabstyle-15 .responsive-tabs li a {
@@ -1238,33 +1395,38 @@
 	padding: 15px 6px;
 	text-align: center;
 	line-height: 23px;
-	font-size:16px;
-	color:#000;
-	font-weight:600;
+	font-size: 16px;
+	color: #000;
+	font-weight: 600;
 	text-decoration: none;
 	transition: all 0.3s ease-out 0s;
 }
-.tabstyle-15 .responsive-tabs li a:hover, .tabstyle-15 .responsive-tabs li.active, .tabstyle-15 .responsive-tabs li.active a {
-	color: #fccb06;
+
+.tabstyle-15 .responsive-tabs li a:hover,
+.tabstyle-15 .responsive-tabs li.active,
+.tabstyle-15 .responsive-tabs li.active a {
+	color: #a277ff;
 	background-color: #fff;
 }
 
 .tabstyle-15 .responsive-tabs-content {
-	margin-bottom:0px;
-	border:1px solid #000;
-	padding-right:60px;
+	margin-bottom: 0px;
+	border: 1px solid #000;
+	padding-right: 60px;
 }
-.tabstyle-15 .responsive-tab-title p strong{
-	font-size:24px;
-	color:#101010;
-	border-bottom:1px solid #101010;
-	}
 
-.tabstyle-15 .responsive-tab-title{
-	margin-bottom:50px;
-	}	
+.tabstyle-15 .responsive-tab-title p strong {
+	font-size: 24px;
+	color: #101010;
+	border-bottom: 1px solid #101010;
+}
+
+.tabstyle-15 .responsive-tab-title {
+	margin-bottom: 50px;
+}
+
 .tabstyle-15 .responsive-tabs li a.no-border {
-	border-right:none;
+	border-right: none;
 }
 
 
@@ -1284,168 +1446,186 @@
 
 .tabs-left1-holder {
 	width: 100%;
-	padding:0px;
-	float:left;
+	padding: 0px;
+	float: left;
 }
+
 .tabs-left1-holder .responsive-tabs {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    list-style-type: none;
-    position: relative;
-    background-color: #fff;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	list-style-type: none;
+	position: relative;
+	background-color: #fff;
 }
+
 .tabs-left1-holder .responsive-tabs li {
-    width: 190px;
-    margin:0 0 5px 0;
-    text-align: center;
-    line-height: 50px;
-    float: left;
-    padding: 0;
-    background-color: #fff;
-	
+	width: 190px;
+	margin: 0 0 5px 0;
+	text-align: center;
+	line-height: 50px;
+	float: left;
+	padding: 0;
+	background-color: #fff;
+
 }
+
 .tabs-left1-holder .responsive-tabs li a {
 	display: block;
 	padding: 35px 20px;
 	text-align: center;
 	line-height: 23px;
 	font-size: 14px;
-	color:#101010;
+	color: #101010;
 	font-weight: normal;
 	text-transform: uppercase;
 	text-decoration: none;
 	transition: all 0.3s ease-out 0s;
 	background-color: #fff;
-	border:1px solid #f0f0f0;
+	border: 1px solid #f0f0f0;
 }
+
 .tabs-left1-holder .responsive-tabs li a span {
-	font-size:34px;
+	font-size: 34px;
 }
-.tabs-left1-holder .responsive-tabs li a:hover, .tabs-left1-holder .responsive-tabs li.active, .tabs-left1-holder .responsive-tabs li.active a {
-    color: #727272;
-    background-color: #101010;
+
+.tabs-left1-holder .responsive-tabs li a:hover,
+.tabs-left1-holder .responsive-tabs li.active,
+.tabs-left1-holder .responsive-tabs li.active a {
+	color: #727272;
+	background-color: #101010;
 }
 
 
 .tabs-left1-holder .responsive-tabs.responsive-tabs-left {
-    width: 225px;
-    float: left;
+	width: 225px;
+	float: left;
 }
 
 .tabs-left1-holder .feature-box {
-    border:6px solid #f5f5f5;
-    float: left;
-    width: 100%;
-    padding: 45px 60px;
+	border: 6px solid #f5f5f5;
+	float: left;
+	width: 100%;
+	padding: 45px 60px;
 }
 
-.tabs-left1-holder .responsive-tab-title p strong{
-	font-size:24px;
-	color:#101010;
-	border-bottom:1px solid #101010;
-	}
+.tabs-left1-holder .responsive-tab-title p strong {
+	font-size: 24px;
+	color: #101010;
+	border-bottom: 1px solid #101010;
+}
 
-.tabs-left1-holder .responsive-tab-title{
-	margin-bottom:50px;
-	}
+.tabs-left1-holder .responsive-tab-title {
+	margin-bottom: 50px;
+}
 
 /* =========== left Tab style 2 ==========  */
 
 .tabs-left2-holder {
 	width: 100%;
-	padding:0px;
-	float:left;
+	padding: 0px;
+	float: left;
 }
+
 .tabs-left2-holder .responsive-tabs {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    list-style-type: none;
-    position: relative;
-    background-color: transparent;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	list-style-type: none;
+	position: relative;
+	background-color: transparent;
 }
+
 .tabs-left2-holder .responsive-tabs-content {
-    background-color: #fff;
-	padding:65px 80px;
+	background-color: #fff;
+	padding: 65px 80px;
 }
 
 .tabs-left2-holder .responsive-tabs li {
-    width: 190px;
-    margin:0 0 5px 0;
-    text-align: center;
-    line-height: 50px;
-    float: left;
-    padding: 0;
-    background-color: #fff;
-	
+	width: 190px;
+	margin: 0 0 5px 0;
+	text-align: center;
+	line-height: 50px;
+	float: left;
+	padding: 0;
+	background-color: #fff;
+
 }
+
 .tabs-left2-holder .responsive-tabs li a {
 	display: block;
 	padding: 35px 20px;
 	text-align: center;
 	line-height: 23px;
 	font-size: 14px;
-	color:#101010;
+	color: #101010;
 	font-weight: normal;
 	text-transform: uppercase;
 	text-decoration: none;
 	transition: all 0.3s ease-out 0s;
 	background-color: #fff;
-	border:1px solid #fff;
+	border: 1px solid #fff;
 }
+
 .tabs-left2-holder .responsive-tabs li a span {
-	font-size:34px;
+	font-size: 34px;
 }
-.tabs-left2-holder .responsive-tabs li a:hover, .tabs-left2-holder .responsive-tabs li.active, .tabs-left2-holder .responsive-tabs li.active a {
-    color: #fccb06;
-    background-color: #fff;
+
+.tabs-left2-holder .responsive-tabs li a:hover,
+.tabs-left2-holder .responsive-tabs li.active,
+.tabs-left2-holder .responsive-tabs li.active a {
+	color: #a277ff;
+	background-color: #fff;
 }
 
 
 .tabs-left2-holder .responsive-tabs.responsive-tabs-left {
-    width: 225px;
-    float: left;
+	width: 225px;
+	float: left;
 }
 
 .tabs-left2-holder .feature-box {
-    border:6px solid #f5f5f5;
-    float: left;
-    width: 100%;
-    padding: 45px 60px;
+	border: 6px solid #f5f5f5;
+	float: left;
+	width: 100%;
+	padding: 45px 60px;
 }
+
 .tabs-left2-holder .responsive-tabs li a {
 	position: relative;
 }
+
 .tabs-left2-holder .responsive-tabs li a .arrow-right {
-	position:absolute;
+	position: absolute;
 	width: 0;
 	height: 0;
 	right: -17px;
 	top: 42px;
-	opacity:0;
+	opacity: 0;
 	border-top: 20px solid transparent;
 	border-bottom: 20px solid transparent;
 	border-left: 20px solid #fff;
 }
-.tabs-left2-holder .responsive-tabs li.active a .arrow-right {
-	opacity:1;
-}
-.tabs-left2-holder .responsive-tab-title p strong{
-	font-size:24px;
-	color:#101010;
-	border-bottom:1px solid #101010;
-	}
 
-.tabs-left2-holder .responsive-tab-title{
-	margin-bottom:50px;
-	}
+.tabs-left2-holder .responsive-tabs li.active a .arrow-right {
+	opacity: 1;
+}
+
+.tabs-left2-holder .responsive-tab-title p strong {
+	font-size: 24px;
+	color: #101010;
+	border-bottom: 1px solid #101010;
+}
+
+.tabs-left2-holder .responsive-tab-title {
+	margin-bottom: 50px;
+}
 
 @media screen and (max-width: 1366px) {
 
-.tabstyle-14 .responsive-tabs li {
-    width: 219px;
-}
+	.tabstyle-14 .responsive-tabs li {
+		width: 219px;
+	}
 
 
 
@@ -1459,13 +1639,14 @@
 
 
 @media only screen and (max-width: 1024px) {
-.tabstyle-5 .responsive-tabs {
-    left: 10%;
-	width: 96%;
-}
-.tabstyle-8 .responsive-tabs {
-    left: 0;
-}
+	.tabstyle-5 .responsive-tabs {
+		left: 10%;
+		width: 96%;
+	}
+
+	.tabstyle-8 .responsive-tabs {
+		left: 0;
+	}
 
 
 
@@ -1474,20 +1655,21 @@
 
 @media only screen and (max-width: 991px) {
 
-.tabstyle-13 .responsive-tabs li {
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-	 border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-	margin-bottom:20px;
-}
-.tabstyle-13 .responsive-tabs li:last-child {
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-	 border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
+	.tabstyle-13 .responsive-tabs li {
+		border-top-left-radius: 50px;
+		border-bottom-left-radius: 50px;
+		border-top-right-radius: 50px;
+		border-bottom-right-radius: 50px;
+		margin-bottom: 20px;
+	}
 
-}
+	.tabstyle-13 .responsive-tabs li:last-child {
+		border-top-left-radius: 50px;
+		border-bottom-left-radius: 50px;
+		border-top-right-radius: 50px;
+		border-bottom-right-radius: 50px;
+
+	}
 
 
 }
@@ -1495,44 +1677,47 @@
 
 
 @media only screen and (max-width: 640px) {
-.tabs-left2-holder .responsive-tabs li a .arrow-right {
-    position: absolute;
-    width: 0;
-    height: 0;
-    right: -17px;
-    top: 42px;
-    opacity: 0;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    border-left: 20px solid #fff;
-}
+	.tabs-left2-holder .responsive-tabs li a .arrow-right {
+		position: absolute;
+		width: 0;
+		height: 0;
+		right: -17px;
+		top: 42px;
+		opacity: 0;
+		border-top: 20px solid transparent;
+		border-bottom: 20px solid transparent;
+		border-left: 20px solid #fff;
+	}
 
 
 }
 
 @media only screen and (max-width: 480px) {
-.tabs-left2-holder .responsive-tabs-content {
-    padding: 60px 50px;
-}
-.ttitle strong {
-    font-size: 20px;
-}
-.tabstyle-13 .responsive-tabs li {
-    width: 100%;
+	.tabs-left2-holder .responsive-tabs-content {
+		padding: 60px 50px;
+	}
 
-}
-.tabstyle-13 .responsive-tabs {
-    width: 70%;
-    margin:0 auto;
-}
+	.ttitle strong {
+		font-size: 20px;
+	}
 
-.tab-content-style-15 {
-    padding: 45px;
-	    border-left: none;
-    border-right: none;
-    border-bottom: none;
-    background-color: none;
-}
+	.tabstyle-13 .responsive-tabs li {
+		width: 100%;
+
+	}
+
+	.tabstyle-13 .responsive-tabs {
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	.tab-content-style-15 {
+		padding: 45px;
+		border-left: none;
+		border-right: none;
+		border-bottom: none;
+		background-color: none;
+	}
 
 
 
@@ -1547,31 +1732,38 @@
 
 @media only screen and (max-width: 360px) {
 
-.tab-content-holder {
-    padding:0px;
+	.tab-content-holder {
+		padding: 0px;
 
-}
-.tabstyle-5 .responsive-tabs li {
-    border-left: 1px solid #ebebeb;
-}
-.tabstyle-5-feature-box-2 {
-    padding: 35px;
-}
-.tabs-left1-holder .feature-box {
-    padding: 35px 40px;
-}
-.tabs-left2-holder .responsive-tabs-content {
-    padding: 30px 30px;
-}
-.ce4-feature-box-14 .inner-box .img-main {
-    top: 199px;
-}
-.tab-content-holder-9 {
-    padding: 0px 30px 30px 30px;
-}
-.tab-content-style-15 {
-    padding: 35px;
-}
+	}
+
+	.tabstyle-5 .responsive-tabs li {
+		border-left: 1px solid #ebebeb;
+	}
+
+	.tabstyle-5-feature-box-2 {
+		padding: 35px;
+	}
+
+	.tabs-left1-holder .feature-box {
+		padding: 35px 40px;
+	}
+
+	.tabs-left2-holder .responsive-tabs-content {
+		padding: 30px 30px;
+	}
+
+	.ce4-feature-box-14 .inner-box .img-main {
+		top: 199px;
+	}
+
+	.tab-content-holder-9 {
+		padding: 0px 30px 30px 30px;
+	}
+
+	.tab-content-style-15 {
+		padding: 35px;
+	}
 
 
 
@@ -1590,11 +1782,10 @@
 
 
 @media only screen and (max-width: 320px) {
-.tab-content-style-4 {
-    padding: 0 0 0 0;
-}
+	.tab-content-style-4 {
+		padding: 0 0 0 0;
+	}
 
 
 
 }
-
