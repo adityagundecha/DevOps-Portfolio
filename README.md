@@ -4,7 +4,7 @@
 |---|---|
 | **Deploy status**  |  [![Netlify Status](https://api.netlify.com/api/v1/badges/d0268492-3c13-4c56-aa3d-6c40adadfd0f/deploy-status)](https://app.netlify.com/sites/adityagundecha/deploys) |
 
-The personal portfolio site for **Aditya Gundecha**, Lead Senior DevOps Engineer. A fast, minimalist single-page site built with [Astro](https://astro.build/).
+The personal portfolio site for **Aditya Gundecha**. A fast, minimalist single-page site built with [Astro](https://astro.build/).
 
 ## Tech
 
