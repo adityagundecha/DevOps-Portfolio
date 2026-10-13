@@ -1,12 +1,8 @@
 ---
-import '@fontsource/space-grotesk/400.css';
-import '@fontsource/space-grotesk/500.css';
-import '@fontsource/space-grotesk/600.css';
-import '@fontsource/space-grotesk/700.css';
+import '@fontsource-variable/lora';
 import '@fontsource/inter/400.css';
 import '@fontsource/inter/500.css';
 import '@fontsource/inter/600.css';
-import '@fontsource-variable/jetbrains-mono';
 import '../styles/global.css';
 import { site } from '../data/site';
 
@@ -29,8 +25,10 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <meta name="description" content={description} />
     <meta name="author" content={site.name} />
     <link rel="canonical" href={canonical} />
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="alternate icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
@@ -45,11 +43,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
       (function () {
         try {
           var stored = localStorage.getItem('theme');
-          var theme =
-            stored ||
-            (window.matchMedia('(prefers-color-scheme: light)').matches
-              ? 'light'
-              : 'dark');
+          var theme = stored || 'dark';
           document.documentElement.setAttribute('data-theme', theme);
         } catch (e) {
           document.documentElement.setAttribute('data-theme', 'dark');

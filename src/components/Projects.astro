@@ -63,8 +63,8 @@ import { projects } from '../data/projects';
     flex-direction: column;
     background-color: var(--bg-elev);
     border: 1px solid var(--border);
-    border-radius: 18px;
-    padding: 1.75rem;
+    border-radius: 3px;
+    padding: 2rem;
     transition: transform 0.25s ease, border-color 0.25s ease,
       box-shadow 0.25s ease;
   }
@@ -76,16 +76,18 @@ import { projects } from '../data/projects';
   }
 
   .card-title {
-    font-size: 1.2rem;
+    font-size: 1.35rem;
   }
 
   .card-meta {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    margin-top: 0.35rem;
-    font-family: var(--font-mono);
+    margin-top: 0.45rem;
+    font-family: var(--font-body);
     font-size: 0.76rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
     color: var(--text-faint);
   }
 
@@ -94,19 +96,20 @@ import { projects } from '../data/projects';
   }
 
   .card-body {
-    margin-top: 1.25rem;
+    margin-top: 1.5rem;
     display: grid;
-    gap: 0.9rem;
+    gap: 1rem;
     flex: 1;
   }
 
   .card-body dt {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
+    font-weight: 600;
     font-size: 0.68rem;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--text-faint);
-    margin-bottom: 0.2rem;
+    color: var(--accent);
+    margin-bottom: 0.3rem;
   }
 
   .card-body dd {

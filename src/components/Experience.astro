@@ -90,10 +90,12 @@ import { experience } from '../data/experience';
   }
 
   .role-period {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
+    font-weight: 500;
     font-size: 0.78rem;
+    text-transform: uppercase;
     color: var(--text-faint);
-    letter-spacing: 0.02em;
+    letter-spacing: 0.08em;
   }
 
   .role-company {
@@ -108,24 +110,27 @@ import { experience } from '../data/experience';
   }
 
   .role-achievements {
-    margin-top: 0.9rem;
+    margin-top: 1rem;
     padding-left: 0;
     list-style: none;
     display: grid;
-    gap: 0.55rem;
+    gap: 0.6rem;
   }
 
   .role-achievements li {
     position: relative;
-    padding-left: 1.3rem;
+    padding-left: 1.4rem;
     color: var(--text-muted);
     font-size: 0.97rem;
   }
 
   .role-achievements li::before {
-    content: '▹';
+    content: '';
     position: absolute;
     left: 0;
-    color: var(--accent);
+    top: 0.65em;
+    width: 0.7rem;
+    height: 1px;
+    background-color: var(--accent);
   }
 </style>

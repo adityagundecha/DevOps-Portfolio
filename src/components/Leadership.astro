@@ -47,11 +47,11 @@ import { principles, impact } from '../data/leadership';
   .impact-tile {
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
-    padding: 1.5rem;
+    gap: 0.5rem;
+    padding: 1.75rem;
     background-color: var(--bg-elev);
     border: 1px solid var(--border);
-    border-radius: 16px;
+    border-radius: 3px;
     transition: border-color 0.25s ease, transform 0.25s ease;
   }
 
@@ -62,10 +62,10 @@ import { principles, impact } from '../data/leadership';
 
   .impact-value {
     font-family: var(--font-display);
-    font-weight: 700;
-    font-size: clamp(1.3rem, 2.6vw, 1.9rem);
-    letter-spacing: -0.02em;
-    color: var(--accent);
+    font-weight: 500;
+    font-size: clamp(1.4rem, 2.6vw, 2rem);
+    letter-spacing: -0.01em;
+    color: var(--text);
     line-height: 1.1;
   }
 
@@ -77,24 +77,24 @@ import { principles, impact } from '../data/leadership';
   .principles {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.75rem 2.5rem;
+    gap: 2rem 2.75rem;
   }
 
   .principle {
     display: flex;
-    gap: 1rem;
+    gap: 1.1rem;
   }
 
   .principle-num {
-    font-family: var(--font-mono);
-    font-size: 0.85rem;
+    font-family: var(--font-display);
+    font-size: 1rem;
     color: var(--accent);
-    padding-top: 0.25rem;
+    padding-top: 0.15rem;
   }
 
   .principle-title {
-    font-size: 1.15rem;
-    margin-bottom: 0.45rem;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
   }
 
   .principle-body {
