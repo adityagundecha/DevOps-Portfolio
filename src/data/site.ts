@@ -1,20 +1,20 @@
 export const site = {
   name: 'Aditya Gundecha',
-  title: 'Lead Senior DevOps Engineer',
+  title: 'Engineering Leader — Platform & DevOps',
   tagline:
-    '12 years helping organisations ship faster, safer and more reliably — Azure, Kubernetes, and a security-first mindset.',
+    'I help organisations treat their platform as a product — setting the technical direction and growing the teams that deliver it.',
   email: 'adityagundecha@hotmail.com',
   linkedin: 'https://www.linkedin.com/in/adityagundecha/',
   cv: '/aditya-gundecha-cv.pdf',
   photo: '/images/adityagundecha.jpg',
   location: 'United Kingdom',
   about: [
-    'I am a Lead Senior DevOps Engineer with over a decade of experience increasing velocity, reliability and quality for engineering organisations — always with a high focus on security.',
-    'My deep experience spans Azure, Docker, Kubernetes and observability, and I thrive on instilling a modern DevOps culture: shift-left quality, automation over toil, and delivery pipelines that let teams release on demand.',
-    'Across New Look, Equal Experts and Siemens I have led software-delivery transformations, migrated large microservice estates to the cloud, and mentored engineers to raise the bar on cloud-native practice.',
+    'I am an engineering leader in the platform and DevOps space with over a decade of experience turning software delivery into a strategic advantage — and raising the teams that sustain it.',
+    'I treat the platform as a product: I set technical direction, shape delivery strategy, and build the engineering culture — shift-left quality, automation over toil, security by default — that lets organisations ship faster and at scale.',
+    'Today I lead a platform team of around 20 engineers. Across New Look, Equal Experts and Siemens I have led transformations, re-platformed large microservice estates, and mentored close to 80 engineers into stronger practice.',
   ],
   metaDescription:
-    'Aditya Gundecha — Lead Senior DevOps Engineer with 12 years of experience in Azure, Kubernetes, CI/CD and observability. DevOps transformation, cloud migration and platform engineering.',
+    'Aditya Gundecha — Engineering Leader in Platform & DevOps. 12+ years leading teams and transformations across Azure, Kubernetes and cloud. Open to Engineering Manager, Head of Platform and Director of Engineering roles.',
 };
 
 export type Site = typeof site;

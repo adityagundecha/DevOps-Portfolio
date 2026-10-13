@@ -12,13 +12,13 @@ export const experience: Role[] = [
     title: 'Lead Senior DevOps Engineer',
     period: '2022 — Present',
     summary:
-      'Leading software-delivery transformation across New Look’s e-commerce platforms.',
+      'Lead a platform team of ~20 engineers, owning delivery strategy and engineering culture across New Look’s e-commerce platforms.',
     achievements: [
-      'Led the transformation of software delivery for the Fabric project, moving from monthly releases to on-demand delivery and meeting a critical business metric for rapid feature deployment and competitive advantage.',
-      'Pioneered a shift-left approach for releases, embedding quality assurance earlier in the lifecycle — resulting in faster release cycles and fewer post-production defects.',
-      'Championed DevOps culture across the Fabric project and the wider organisation, streamlining dev–ops collaboration and increasing deployment frequency and system reliability.',
-      'Drove continuous-improvement initiatives, building automation pipelines that minimised manual intervention and significantly reduced deployment times and improved uptime.',
-      'Mentored engineering teams in CI/CD and cloud-automation best practices, scaling DevOps capability and productivity across multiple departments.',
+      'Set the delivery strategy for the Fabric programme, moving the organisation from monthly releases to on-demand delivery — meeting a board-level business metric for rapid feature deployment and competitive advantage.',
+      'Made shift-left, quality-first delivery the default, embedding QA earlier in the lifecycle and shifting the team’s operating model away from late-stage firefighting toward faster, lower-defect release cycles.',
+      'Championed DevOps culture across the Fabric programme and the wider organisation, aligning development and operations around shared ownership and measurably increasing deployment frequency and reliability.',
+      'Directed the automation roadmap that removed manual release toil, significantly reducing deployment times and improving uptime across e-commerce platforms.',
+      'Grew the capability of the team and partner departments through mentoring and coaching in CI/CD and cloud automation, raising productivity and engineering standards across multiple departments.',
     ],
   },
   {
@@ -26,13 +26,13 @@ export const experience: Role[] = [
     title: 'Senior DevOps Consultant',
     period: '2021 — 2022',
     summary:
-      'Consulting on cloud infrastructure for high-profile clients including John Lewis, Waitrose and O2.',
+      'Led cross-functional delivery and advised client leadership on cloud strategy for John Lewis, Waitrose and O2.',
     achievements: [
-      'Led cross-functional teams managing cloud infrastructure for clients such as John Lewis, Waitrose and O2, ensuring seamless operations across Azure and AWS.',
-      'Developed and implemented cloud-governance frameworks, guiding client teams to scalable, secure and cost-effective cloud solutions with lasting knowledge transfer.',
-      'Oversaw the migration of critical services to Azure and AWS for O2, coordinating internal client teams and external partners.',
-      'Facilitated leadership workshops, equipping team leads at John Lewis and Waitrose with advanced DevOps and cloud-native skills to accelerate their transformation journeys.',
-      'Mentored junior engineers across client projects, fostering continuous learning and best practice in cloud management, security and automation.',
+      'Led cross-functional teams delivering cloud infrastructure for John Lewis, Waitrose and O2, ensuring seamless operations across Azure and AWS.',
+      'Authored cloud-governance frameworks that guided client teams toward scalable, secure and cost-effective cloud — with knowledge transfer that left the capability in-house.',
+      'Owned the migration strategy for critical O2 services across Azure and AWS, coordinating internal client teams and external partners through delivery.',
+      'Ran leadership workshops that equipped team leads at John Lewis and Waitrose with advanced DevOps and cloud-native practice, accelerating their transformation journeys.',
+      'Mentored engineers across client engagements, building a culture of continuous learning in cloud management, security and automation.',
     ],
   },
   {
@@ -40,13 +40,13 @@ export const experience: Role[] = [
     title: 'Senior DevOps Engineer',
     period: '2018 — 2021',
     summary:
-      'MindSphere — an industry leader in IIoT and Digital Twin — moving teams to cloud-native delivery.',
+      'Led the platform modernisation of MindSphere — an industry-leading IIoT and Digital Twin platform — toward cloud-native delivery.',
     achievements: [
-      'Guided teams in moving from Application Service Environment to Azure Kubernetes Service (AKS).',
-      'Established CI/CD pipelines from scratch for a multi-cloud environment.',
-      'Orchestrated an observability stack using both Azure-native tooling and a Grafana–Prometheus stack.',
-      'Delivered a cost-optimisation project that saved up to $1.5M per year on Azure infrastructure.',
-      'Delivered 50+ services on Azure DevOps and worked with development teams to re-home around 80 microservices.',
+      'Led teams through the move from Application Service Environment to Azure Kubernetes Service (AKS), setting the target architecture and migration approach.',
+      'Established multi-cloud CI/CD pipelines from scratch, giving teams a repeatable delivery path across environments.',
+      'Directed the observability strategy, standing up a stack on Azure-native tooling plus Grafana and Prometheus to give teams a shared view of production health.',
+      'Owned a cost-optimisation initiative that saved up to $1.5M per year on Azure infrastructure — turning platform ownership into measurable business value.',
+      'Oversaw delivery of 50+ services on Azure DevOps and the re-homing of around 80 microservices onto a modern, observable platform.',
     ],
   },
   {
@@ -54,12 +54,12 @@ export const experience: Role[] = [
     title: 'Software Engineer',
     period: '2013 — 2018',
     summary:
-      'Part of the Cloud inception team responsible for delivering the MindSphere PaaS.',
+      'Core member of the Cloud inception team that delivered the MindSphere PaaS from the ground up.',
     achievements: [
-      'Automated software and infrastructure deployments for over 32 microservices across 4 lines of business.',
-      'Migrated over 40 application instances from on-premise infrastructure to Azure public cloud.',
-      'Reduced development overhead dramatically by removing over 50,000 lines of deprecated code from the baseline of a $1.2M project.',
-      'Ensured availability of production and development systems, largely based on Azure VMs and AKS.',
+      'Helped stand up the MindSphere PaaS as part of the founding Cloud inception team, automating deployments for 32+ microservices across 4 lines of business.',
+      'Drove the migration of 40+ application instances from on-premise infrastructure to Azure public cloud.',
+      'Removed 50,000+ lines of deprecated code from a $1.2M project baseline, dramatically reducing development overhead and risk.',
+      'Owned availability of production and development systems built largely on Azure VMs and AKS.',
     ],
   },
   {
@@ -67,10 +67,10 @@ export const experience: Role[] = [
     title: 'Java Developer',
     period: '2012 — 2013',
     summary:
-      'Teamcenter — a modern PLM system connecting people and processes with a digital thread for innovation.',
+      'Delivered features for Teamcenter — a PLM system connecting people and processes with a digital thread for innovation.',
     achievements: [
-      'Created more than 50 technical design documents and implemented business logic for 20 features.',
-      'Worked on an Android application (a Code Review application) that was selected for patent registration.',
+      'Authored 50+ technical design documents and implemented business logic for 20 features.',
+      'Contributed to an Android application (a Code Review application) that was selected for patent registration.',
     ],
   },
 ];
