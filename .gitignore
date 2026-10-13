@@ -1,1 +1,15 @@
 .history
+
+# dependencies
+node_modules/
+
+# build output
+dist/
+.astro/
+
+# environment
+.env
+.env.production
+
+# macOS
+.DS_Store

@@ -1,0 +1,103 @@
+---
+import { competencies, skills } from '../data/skills';
+---
+
+<section class="section" id="skills">
+  <div class="container">
+    <div class="reveal">
+      <p class="eyebrow">Skills</p>
+      <h2 class="section-title">Capabilities &amp; toolkit</h2>
+    </div>
+
+    <div class="skills-grid reveal">
+      <div class="competencies">
+        <h3 class="sub">Core competencies</h3>
+        <ul class="competency-list">
+          {competencies.map((c) => <li>{c}</li>)}
+        </ul>
+      </div>
+
+      <div class="toolkit">
+        <h3 class="sub">Technical toolkit</h3>
+        <div class="skill-groups">
+          {
+            skills.map((g) => (
+              <div class="skill-group">
+                <p class="skill-group-label">{g.label}</p>
+                <ul class="skill-items">
+                  {g.items.map((i) => (
+                    <li class="tag">{i}</li>
+                  ))}
+                </ul>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: clamp(1.5rem, 5vw, 4rem);
+  }
+
+  .sub {
+    font-size: 1.05rem;
+    margin-bottom: 1.1rem;
+    color: var(--text);
+  }
+
+  .competency-list {
+    list-style: none;
+    display: grid;
+    gap: 0.6rem;
+  }
+
+  .competency-list li {
+    position: relative;
+    padding-left: 1.4rem;
+    color: var(--text-muted);
+  }
+
+  .competency-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 7px;
+    height: 7px;
+    border-radius: 2px;
+    background-color: var(--accent);
+  }
+
+  .skill-groups {
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  .skill-group-label {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin-bottom: 0.6rem;
+  }
+
+  .skill-items {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  @media (max-width: 760px) {
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

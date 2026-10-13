@@ -1,0 +1,135 @@
+---
+import { projects } from '../data/projects';
+---
+
+<section class="section" id="projects">
+  <div class="container">
+    <div class="reveal">
+      <p class="eyebrow">Projects</p>
+      <h2 class="section-title">Flagship work &amp; outcomes</h2>
+    </div>
+
+    <div class="project-grid">
+      {
+        projects.map((p) => (
+          <article class="card reveal">
+            <div class="card-top">
+              <h3 class="card-title">{p.name}</h3>
+              <p class="card-meta">
+                <span class="card-org">{p.org}</span>
+                <span class="card-dot" aria-hidden="true">
+                  •
+                </span>
+                <span class="card-period">{p.period}</span>
+              </p>
+            </div>
+
+            <dl class="card-body">
+              <div>
+                <dt>Challenge</dt>
+                <dd>{p.problem}</dd>
+              </div>
+              <div>
+                <dt>What I did</dt>
+                <dd>{p.work}</dd>
+              </div>
+              <div>
+                <dt>Outcome</dt>
+                <dd class="card-outcome">{p.outcome}</dd>
+              </div>
+            </dl>
+
+            <ul class="card-stack">
+              {p.stack.map((s) => (
+                <li class="tag">{s}</li>
+              ))}
+            </ul>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-elev);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 1.75rem;
+    transition: transform 0.25s ease, border-color 0.25s ease,
+      box-shadow 0.25s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-4px);
+    border-color: var(--border-strong);
+    box-shadow: var(--shadow);
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.35rem;
+    font-family: var(--font-mono);
+    font-size: 0.76rem;
+    color: var(--text-faint);
+  }
+
+  .card-org {
+    color: var(--accent);
+  }
+
+  .card-body {
+    margin-top: 1.25rem;
+    display: grid;
+    gap: 0.9rem;
+    flex: 1;
+  }
+
+  .card-body dt {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin-bottom: 0.2rem;
+  }
+
+  .card-body dd {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+  }
+
+  .card-outcome {
+    color: var(--text) !important;
+    font-weight: 500;
+  }
+
+  .card-stack {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+  }
+
+  @media (max-width: 760px) {
+    .project-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

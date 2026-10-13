@@ -1,45 +1,59 @@
-# DevOps-Portfolio 
+# DevOps-Portfolio
 
 | **Licence**  | [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)  |
 |---|---|
 | **Deploy status**  |  [![Netlify Status](https://api.netlify.com/api/v1/badges/d0268492-3c13-4c56-aa3d-6c40adadfd0f/deploy-status)](https://app.netlify.com/sites/adityagundecha/deploys) |
 
+The personal portfolio site for **Aditya Gundecha**, Lead Senior DevOps Engineer. A fast, minimalist single-page site built with [Astro](https://astro.build/).
 
-A website to showcase DevOps professional portfolio
-# Project Title
+## Tech
 
-A personal prject to create a portfolio website for a DevOps Engineer
+- **Astro** — static-site generator, ships zero JS by default
+- Dark-first design with a light-mode toggle (CSS custom properties)
+- Self-hosted fonts via `@fontsource` (Space Grotesk, Inter, JetBrains Mono)
+- Deployed to [Netlify](https://www.netlify.com/)
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-See deployment for notes on how to deploy the project on a live system.
-To get started clone the repository and start coding. Continuous Delivery is implemented using __Github Actions__ and __Netlify__ Wbhook
+```bash
+npm install      # install dependencies
+npm run dev      # local dev server at http://localhost:4321
+npm run build    # production build into ./dist
+npm run preview  # preview the production build locally
+```
 
 ### Prerequisites
 
-- VS Code or any other editor. (Few that I recommend are Vim, Sublime Text, Notepad++ )
-- Live Server extension for VS Code
-- Git lens for VS Code
+- Node.js 22+
+- VS Code (or any editor)
 
+## Content
 
-End with an example of getting some data out of the system or using it for a little demo
+Site content lives as structured data in `src/data/`:
 
+- `site.ts` — name, title, tagline, contact links, about
+- `experience.ts` — career timeline
+- `projects.ts` — flagship project case studies
+- `skills.ts` — competencies and technical toolkit
+
+Edit these files to update the site — no markup changes needed. The headshot and CV live in `public/`.
+
+## Project Docs
+
+- `CONTEXT.md` — domain glossary
+- `docs/adr/` — architecture decision records
+- `docs/agents/` — agent/issue-tracker conventions
 
 ## Deployment
 
-Deployment is done via [Netlify](https://www.netlify.com/).
+Pushes to `master` trigger a GitHub Actions workflow that pings a Netlify build
+webhook; Netlify builds with `npm run build` (see `netlify.toml`) and publishes
+`dist/`.
 
-## Authors
+## Author
 
-* **Aditya Gundecha** - *Initial work* 
+**Aditya Gundecha**
 
 ## License
 
-This project is licensed under the Apache 2.0 License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+Licensed under the Apache 2.0 License.
