@@ -1,0 +1,43 @@
+---
+import { site } from '../data/site';
+---
+
+<section class="section" id="about">
+  <div class="container about-grid reveal">
+    <div class="about-head">
+      <p class="eyebrow">About</p>
+      <h2 class="section-title">Engineering velocity,<br />reliability &amp; trust.</h2>
+    </div>
+    <div class="about-body">
+      {site.about.map((p) => <p>{p}</p>)}
+    </div>
+  </div>
+</section>
+
+<style>
+  .about-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: clamp(1.5rem, 5vw, 4rem);
+  }
+
+  .about-head .section-title {
+    margin-bottom: 0;
+  }
+
+  .about-body p {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    margin-bottom: 1.1rem;
+  }
+
+  .about-body p:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 760px) {
+    .about-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

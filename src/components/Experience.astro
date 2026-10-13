@@ -1,0 +1,136 @@
+---
+import { experience } from '../data/experience';
+---
+
+<section class="section" id="experience">
+  <div class="container">
+    <div class="reveal">
+      <p class="eyebrow">Experience</p>
+      <h2 class="section-title">A decade of DevOps leadership</h2>
+    </div>
+
+    <ol class="timeline">
+      {
+        experience.map((role) => (
+          <li class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true" />
+            <div class="role">
+              <div class="role-head">
+                <h3 class="role-title">{role.title}</h3>
+                <span class="role-period">{role.period}</span>
+              </div>
+              <p class="role-company">{role.company}</p>
+              {role.summary && <p class="role-summary">{role.summary}</p>}
+              <ul class="role-achievements">
+                {role.achievements.map((a) => (
+                  <li>{a}</li>
+                ))}
+              </ul>
+            </div>
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</section>
+
+<style>
+  .timeline {
+    list-style: none;
+    position: relative;
+    margin-left: 0.5rem;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 6px;
+    bottom: 6px;
+    width: 2px;
+    background: linear-gradient(
+      to bottom,
+      var(--accent),
+      var(--border) 70%
+    );
+  }
+
+  .timeline-item {
+    position: relative;
+    padding-left: 2.25rem;
+    padding-bottom: 2.75rem;
+  }
+
+  .timeline-item:last-child {
+    padding-bottom: 0;
+  }
+
+  .timeline-marker {
+    position: absolute;
+    left: 0;
+    top: 0.45rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--bg);
+    border: 2px solid var(--accent);
+    box-shadow: 0 0 0 4px var(--accent-soft);
+  }
+
+  .role-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  .role-title {
+    font-size: 1.25rem;
+  }
+
+  .role-period {
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    letter-spacing: 0.08em;
+  }
+
+  .role-company {
+    color: var(--accent);
+    font-weight: 500;
+    margin-top: 0.15rem;
+  }
+
+  .role-summary {
+    color: var(--text-muted);
+    margin-top: 0.6rem;
+  }
+
+  .role-achievements {
+    margin-top: 1rem;
+    padding-left: 0;
+    list-style: none;
+    display: grid;
+    gap: 0.6rem;
+  }
+
+  .role-achievements li {
+    position: relative;
+    padding-left: 1.4rem;
+    color: var(--text-muted);
+    font-size: 0.97rem;
+  }
+
+  .role-achievements li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.65em;
+    width: 0.7rem;
+    height: 1px;
+    background-color: var(--accent);
+  }
+</style>

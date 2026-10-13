@@ -1,0 +1,113 @@
+---
+import { principles, impact } from '../data/leadership';
+---
+
+<section class="section" id="leadership">
+  <div class="container">
+    <div class="reveal">
+      <p class="eyebrow">Leadership</p>
+      <h2 class="section-title">How I lead &amp; the impact of it</h2>
+    </div>
+
+    <div class="impact-band reveal">
+      {
+        impact.map((i) => (
+          <div class="impact-tile">
+            <span class="impact-value">{i.value}</span>
+            <span class="impact-label">{i.label}</span>
+          </div>
+        ))
+      }
+    </div>
+
+    <div class="principles reveal">
+      {
+        principles.map((p, idx) => (
+          <article class="principle">
+            <span class="principle-num">{String(idx + 1).padStart(2, '0')}</span>
+            <div>
+              <h3 class="principle-title">{p.title}</h3>
+              <p class="principle-body">{p.body}</p>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .impact-band {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .impact-tile {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.75rem;
+    background-color: var(--bg-elev);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    transition: border-color 0.25s ease, transform 0.25s ease;
+  }
+
+  .impact-tile:hover {
+    border-color: var(--border-strong);
+    transform: translateY(-3px);
+  }
+
+  .impact-value {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: clamp(1.4rem, 2.6vw, 2rem);
+    letter-spacing: -0.01em;
+    color: var(--text);
+    line-height: 1.1;
+  }
+
+  .impact-label {
+    font-size: 0.86rem;
+    color: var(--text-muted);
+  }
+
+  .principles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 2.75rem;
+  }
+
+  .principle {
+    display: flex;
+    gap: 1.1rem;
+  }
+
+  .principle-num {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    color: var(--accent);
+    padding-top: 0.15rem;
+  }
+
+  .principle-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .principle-body {
+    color: var(--text-muted);
+    font-size: 0.97rem;
+  }
+
+  @media (max-width: 760px) {
+    .impact-band {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .principles {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

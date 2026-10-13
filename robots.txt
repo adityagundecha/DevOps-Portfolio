@@ -1,3 +1,0 @@
-User-agent: *
-
-Sitemap: https://adityagundecha.com/sitemap_index.xml

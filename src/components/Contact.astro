@@ -1,0 +1,104 @@
+---
+import { site } from '../data/site';
+
+const year = new Date().getFullYear();
+---
+
+<section class="section contact" id="contact">
+  <div class="container contact-inner reveal">
+    <p class="eyebrow">Contact</p>
+    <h2 class="contact-title">Let's build something reliable.</h2>
+    <p class="contact-lead">
+      Open to Engineering Manager, Head of Platform and Director of Engineering
+      roles — and always up for a good conversation about platform strategy and
+      building teams.
+    </p>
+
+    <div class="contact-actions">
+      <a class="btn btn-primary" href={`mailto:${site.email}`}>Email me</a>
+      <a
+        class="btn btn-ghost"
+        href={site.linkedin}
+        target="_blank"
+        rel="noopener noreferrer">LinkedIn</a
+      >
+      <a class="btn btn-ghost" href={site.cv} download>Download CV</a>
+    </div>
+
+    <p class="contact-email">{site.email}</p>
+  </div>
+
+  <footer class="footer container">
+    <span>© {year} {site.name}</span>
+    <span class="footer-note">Built with Astro · {site.location}</span>
+  </footer>
+</section>
+
+<style>
+  .contact {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .contact::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      36rem 24rem at 50% 0%,
+      var(--accent-soft),
+      transparent 65%
+    );
+    pointer-events: none;
+  }
+
+  .contact-inner {
+    position: relative;
+    max-width: 44rem;
+    margin-inline: auto;
+  }
+
+  .contact-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 1rem;
+  }
+
+  .contact-lead {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 2.25rem;
+  }
+
+  .contact-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+    justify-content: center;
+    margin-bottom: 1.75rem;
+  }
+
+  .contact-email {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    color: var(--text-faint);
+  }
+
+  .footer {
+    position: relative;
+    margin-top: clamp(3rem, 7vw, 5rem);
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: space-between;
+    font-size: 0.82rem;
+    color: var(--text-faint);
+  }
+
+  .footer-note {
+    font-family: var(--font-body);
+  }
+</style>
