@@ -19,7 +19,7 @@
   --accent-soft: rgba(147, 108, 43, 0.12);
   --shadow: 0 26px 60px -30px rgba(40, 32, 18, 0.32);
 
-  color-scheme: light;
+  color-scheme: dark;
 }
 
 [data-theme='dark'] {
